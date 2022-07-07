@@ -1,8 +1,12 @@
 import React from 'react';
+import Header from '../header/header'
+
+
 
 export default function Services() {
     return (
       <div>
+        <Header></Header>
         <h1>Services</h1>
         <p>
           Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
