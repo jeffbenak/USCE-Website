@@ -4,17 +4,9 @@ import usce from '../images/Logo.png'
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className='align'>
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}  
-        >
-          <img className='usce' alt='USCE' src={usce}></img>
-        </a>
-      </li>
+      <ul className="nav nav-tabs1">
 
-      <li className="nav-item">
+    <li className="nav-item">
         <a
           href="#loginsignup"
           onClick={() => handlePageChange('Login/Signup')}
@@ -24,13 +16,25 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
 
+      </ul>
+    <ul className="nav nav-tabs">
+
+    <li className="nav-item">
+        <a
+          href="#home"
+          onClick={() => handlePageChange('Home')}  
+        >
+          <img className='usce' alt='USCE' src={usce}></img>
+        </a>
+      </li>
+      
       <li className="nav-item">
         <a
           href="#hof"
           onClick={() => handlePageChange('Hof')}
           className= {currentPage === 'Hof' ? 'nav-link active' : 'nav-link'}
         >
-          Hall of Fame
+          <p className='hof'>Hall of Fame</p>
         </a>
       </li>
       <li className="nav-item">

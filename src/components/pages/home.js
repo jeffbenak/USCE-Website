@@ -1,13 +1,14 @@
 import React from 'react';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import Header from '../header/header'
+import Slider from '../slider/slider'
 
 
 
 export default function Home() {
     return (
       <div>
-        <Header></Header>
+        <Slider></Slider>
         <h1>Home Page</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque

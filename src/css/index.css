@@ -17,15 +17,17 @@ code {
 }
 
 .usce {
-  width: 100px;
-  height: 100px;
-  margin-right: 800px;
+  width: 150px;
+  height: 150px;
+  margin-right: 900px;
+  margin-top: -60px;
 }
 
 .nav-tabs {
-  height: 100px;
+  height: 130px;
   display: flex;
   justify-content: right;
+  padding-top: 30px;
   background-color: rgb(0, 0, 0);
 } 
 
@@ -36,4 +38,14 @@ link:active {
 .nav-link {
     color: black;
     padding-left: 100px;
+}
+.loginsignup {
+  padding-right: 300px;
+}
+
+.nav-tabs1 {
+  justify-content: right;
+  display: flex;
+  background-color: black;
+  height: 40px;
 }

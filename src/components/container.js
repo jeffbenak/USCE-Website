@@ -4,6 +4,7 @@ import Home from './pages/home';
 import Hof from './pages/hof';
 import Rotations from './pages/rotations';
 import Services from './pages/services';
+import LoginSignup from './pages/loginsignup';
 
 export default function Container() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -17,6 +18,9 @@ export default function Container() {
     }
     if (currentPage === 'Rotations') {
       return <Rotations />;
+    }
+    if (currentPage === 'Login/Signup') {
+      return <LoginSignup />;
     }
     return <Services />;
   };

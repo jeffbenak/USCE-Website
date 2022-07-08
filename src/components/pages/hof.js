@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from '../header/header'
 
 
 
 export default function Hof() {
     return (
       <div>
-        <Header></Header>
         <h1>Hall of Fame</h1>
         <p>
           Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
