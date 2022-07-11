@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './slider.css';
 import BtnSlider from './btnslider'
 import dataSlider from './data';
@@ -6,43 +6,46 @@ import dataSlider from './data';
 
 export default function Slider() {
 
-    const [slideIndex, setSlideIndex] = useState(1)
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const slideLength = dataSlider.length;
 
     const nextSlide = () => {
-        if(slideIndex !== dataSlider.length) {
-            setSlideIndex(slideIndex + 1)
-        } else if (slideIndex === dataSlider.length) {
-            setSlideIndex(1)
-        }
-
-    }
+        setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+        console.log("next");
+    };
 
     const prevSlide = () => {
-        if(slideIndex !== 1){
-            setSlideIndex(slideIndex - 1)
-        }
-        else if (slideIndex === 1){
-            setSlideIndex(dataSlider.length)
-        }
+        setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
+        console.log("prev");
+      };
 
-    }
+      useEffect(() => {
+        setCurrentSlide(0);
+      }, []);
 
     const moveDot = index => {
-        setSlideIndex(index)
+        setCurrentSlide(index)
     }
 
     return (
-        <div className='container-slider'>
-            {dataSlider.map((obj, index) => {
+        <div className='slider'>
+            {dataSlider.map((slide, index) => {
                 return (
-                    <div 
-                    key={obj.id}
-                    className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
-
-                        <img 
-                        src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
-                        />
-                    </div>
+                <div
+                    className={index === currentSlide ? "slide current" : "slide"}
+                    key={index}
+                    >
+                    {index === currentSlide && (
+                        <div>
+                            <img src={slide.image} alt="slide" className='image'/>
+                            <div className='content'>
+                            <h2>{slide.title}</h2>
+                            <p>{slide.desc}</p>
+                            <hr />
+                            </div>
+                        </div>
+                    )}
+                </div>
                 )            
                 })}
             <BtnSlider moveSlide={nextSlide} direction={'next'}/>   
@@ -50,10 +53,10 @@ export default function Slider() {
             <BtnSlider moveSlide={prevSlide} direction={'prev'}/>
 
             <div className="container-dots">
-                {Array.from({length: 5}).map((item, index) => (
+                {Array.from({length: 4}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
-                    className={slideIndex === index + 1 ? "dot active" : "dot"}
+                    className={currentSlide === index ? "dot active" : "dot"}
                     ></div>
                 ))}
             </div>
