@@ -1,5 +1,14 @@
 import React from 'react';
 import Slider from '../../slider/slider'
+import Header from '../header/header'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/fontawesome-free-brands';
+import { faFacebook } from '@fortawesome/fontawesome-free-brands';
+import { faWhatsapp } from '@fortawesome/fontawesome-free-brands';
+
+
+
 
 
 
@@ -7,20 +16,18 @@ import Slider from '../../slider/slider'
 export default function Home() {
     return (
       <div>
-        <Slider>
-        </Slider>
-        <h1>Home Page</h1>
+        <Header></Header>
+        <ul className='socials'>
+          <li><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
+          <li><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></li>         
+        </ul>
+        <Slider></Slider>
+        <h1></h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-          velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-          ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-          non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-          ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-          rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-          tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-          porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-          vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus.
+          
         </p>
       </div>
     );

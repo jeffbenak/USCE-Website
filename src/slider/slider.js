@@ -11,17 +11,17 @@ export default function Slider() {
 
     const nextSlide = () => {
         setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
-        console.log("next");
+        console.log('next');
     };
 
     const prevSlide = () => {
         setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-        console.log("prev");
+        console.log('prev');
       };
 
-      useEffect(() => {
-        setCurrentSlide(0);
-      }, []);
+    //   useEffect(() => {
+    //     setCurrentSlide(0);
+    //   }, []);
 
     const moveDot = index => {
         setCurrentSlide(index)
@@ -32,16 +32,19 @@ export default function Slider() {
             {dataSlider.map((slide, index) => {
                 return (
                 <div
-                    className={index === currentSlide ? "slide current" : "slide"}
+                    
+                    className={index === currentSlide ? 'slide current' : 'slide'}
                     key={index}
+                
                     >
                     {index === currentSlide && (
                         <div>
-                            <img src={slide.image} alt="slide" className='image'/>
+                            {/* <div className='image'><img src={slide.image} alt='slide'/></div> */}
+                            {slide.image}
                             <div className='content'>
                             <h2>{slide.title}</h2>
-                            <p>{slide.desc}</p>
-                            <hr />
+                            <p className='text'>{slide.desc}</p>
+                            <button>{slide.button}</button>
                             </div>
                         </div>
                     )}

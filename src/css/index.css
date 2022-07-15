@@ -16,36 +16,35 @@ code {
   display: none;
 }
 
+.socials {
+  list-style-type: none;
+  position: relative;
+  right: auto;
+  left: 35%;
+}
+
 .usce {
   width: 150px;
   height: 150px;
-  margin-right: 900px;
-  margin-top: -60px;
+  margin-right: 700px;
 }
 
-.nav-tabs {
-  height: 130px;
-  display: flex;
-  justify-content: right;
-  padding-top: 30px;
-  background-color: rgb(0, 0, 0);
-} 
-
-link:active {
-  background-color: black;
+.nav-link:hover {
+  color: rgb(200, 86, 86);
 }
 
-.nav-link {
-    color: black;
-    padding-left: 100px;
-}
 .loginsignup {
   padding-right: 300px;
 }
 
-.nav-tabs1 {
-  justify-content: right;
+.nav-tabs {
   display: flex;
-  background-color: black;
-  height: 40px;
+  margin: auto;
+  justify-content: space-between;
+  background-color: rgb(171, 171, 171);
+  height: auto;
+}
+
+.header {
+  font-size: 20px;
 }

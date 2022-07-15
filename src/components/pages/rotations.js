@@ -1,10 +1,12 @@
 import React from 'react';
+import Header from '../header/header'
 
 
 
 export default function Rotations() {
     return (
       <div>
+        <Header></Header>
         <h1>Rotations</h1>
         <p>
           Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
