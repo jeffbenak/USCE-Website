@@ -11,17 +11,19 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function Header() {
     return (
       
-        <div className='header'>
-    <Navbar bg="light" expand="xl">
-      <Container className='nav'>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav varient='tabs' defaultActiveKey="/" className="me-auto nav-tabs">
-            <NavItem>
-              <NavLink to="/"><img className='usce' src={usce}></img></NavLink>
-            </NavItem>
+  <div className='header'>
+    <Navbar expand="xxl">
+      <Container className='navbar'>
+          <Nav varient='tabs' className="nav-tabs .d-lg-flex">
+            <div className='pull-left'>
+            <NavLink to="/"><img className='usce' src={usce}></img></NavLink>
+            </div>
+            
+            <Navbar.Collapse>
+            <div className='items'>
             <NavItem>
               <NavLink style={{color: 'black'}} className='nav-link' to="/hof">Hall of Fame</NavLink>
-            </NavItem>
+              </NavItem>
             <NavItem>
               <NavLink style={{color: 'black'}} className='nav-link' to="/rotations">U.S Rotations</NavLink>
             </NavItem>   
@@ -31,6 +33,9 @@ export default function Header() {
             <NavItem>
               <Nav.Link style={{color: 'black'}}className='nav-link' to="#link">USCE Match Chatroom</Nav.Link>  
             </NavItem>
+            </div>
+            </Navbar.Collapse>
+            
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item href="/">Home</NavDropdown.Item>
               <NavDropdown.Item href="hof">
@@ -43,10 +48,11 @@ export default function Header() {
               </NavDropdown.Item>
           </NavDropdown>        */}
         </Nav>
-      </Navbar.Collapse>
     </Container>
+    <div className='pull-right hidden-lg'>
+            <Navbar.Toggle/>
+            </div>
   </Navbar>
-
-      </div>
+</div>
     )
 }

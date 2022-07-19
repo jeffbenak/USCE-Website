@@ -16,17 +16,37 @@ code {
   display: none;
 }
 
-.socials {
+.list {
   list-style-type: none;
-  position: relative;
-  right: auto;
-  left: 35%;
+}
+
+.socials {
+  text-align: right;
+  padding-right: 200px;
+}
+
+.log {
+  font-size: 20px;
+  font-family: 'Oswald';
+}
+
+h2 {
+  font-family: 'Roboto Slab' serif;
 }
 
 .usce {
   width: 150px;
   height: 150px;
-  margin-right: 700px;
+  align-items: left;
+}
+
+.navbar {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: gray;
 }
 
 .nav-link:hover {
@@ -37,14 +57,38 @@ code {
   padding-right: 300px;
 }
 
-.nav-tabs {
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  background-color: rgb(171, 171, 171);
-  height: auto;
-}
-
 .header {
+
   font-size: 20px;
 }
+
+.about {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.toggle .collapsed {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.items {
+  display: flex;
+  text-align: right;
+  justify-content: right;
+}
+
+
+.navbar-collapse .collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+

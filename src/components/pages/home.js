@@ -1,11 +1,10 @@
 import React from 'react';
-import Slider from '../../slider/slider'
-import Header from '../header/header'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Slider from '../../slider/slider';
+import Header from '../header/header';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
-import { faInstagram } from '@fortawesome/fontawesome-free-brands';
-import { faFacebook } from '@fortawesome/fontawesome-free-brands';
-import { faWhatsapp } from '@fortawesome/fontawesome-free-brands';
+import { faFacebook, faWhatsapp, faInstagram } from '@fortawesome/fontawesome-free-brands';
 
 
 
@@ -17,18 +16,30 @@ export default function Home() {
     return (
       <div>
         <Header></Header>
-        <ul className='socials'>
-          <li><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></li>
-          <li><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></li>
-          <li><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></li>
+        <div className='socials'>
+        <ul className='list'>
+          <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
+          <li><a href='tel:+12248884000'><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
+          <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
           <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
           <li><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></li>         
         </ul>
+        </div>
         <Slider></Slider>
-        <h1></h1>
-        <p>
-          
+        <br></br>
+        <br></br>
+        <p className='log'>
+          <Link to='/loginsign'>Log in</Link> to view the trade in secrets
         </p>
+
+        <h2>What Is USCE Match?</h2>
+        <br></br>
+        <p className='about'>
+          GET MATCHED USCE LLC is composed of young international clinical professionals from Chicago who are result-oriented, trustworthy, and your loyal partner in strategizing your USMLE journey.															
+		      We have assisted numerous satisfied IMG's in the past few years and created a sizable GETMATCHED success stories.  															
+          Now, we would like to share our best practices in assisting more IMG's by providing more clinical rotations and services that will																	
+		      help every applicant to become a step closer to getting matched to your dream residency program.															
+          </p>
       </div>
     );
   }
