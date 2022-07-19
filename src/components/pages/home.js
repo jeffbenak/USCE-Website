@@ -34,12 +34,14 @@ export default function Home() {
 
         <h2>What Is USCE Match?</h2>
         <br></br>
-        <p className='about'>
+        <div className='about'>
+        <p>
           GET MATCHED USCE LLC is composed of young international clinical professionals from Chicago who are result-oriented, trustworthy, and your loyal partner in strategizing your USMLE journey.															
 		      We have assisted numerous satisfied IMG's in the past few years and created a sizable GETMATCHED success stories.  															
           Now, we would like to share our best practices in assisting more IMG's by providing more clinical rotations and services that will																	
 		      help every applicant to become a step closer to getting matched to your dream residency program.															
           </p>
+          </div>
       </div>
     );
   }

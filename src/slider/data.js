@@ -18,7 +18,7 @@ const Slider = [
     image: <img className='image3' src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
 '></img>,
     title: "Slide Three",
-    desc: "Reviews of ultiple doctors who have joined our program",
+    desc: "Reviews of multiple doctors who have joined our program",
     button: <Link to="/">Click Here</Link>
   },
   {
