@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import './css/index.css';
 import Container from "./components/container";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/index.css';
 import  Services  from './components/pages/services';
 import  Hof  from './components/pages/hof';
 import  Home  from './components/pages/home';

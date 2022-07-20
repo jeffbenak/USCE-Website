@@ -13,7 +13,7 @@ export default function Header() {
       
   <div className='header'>
     <Navbar expand="xxl">
-      <Container className='navbar'>
+      <Container className='navbar-container'>
           <Nav varient='tabs' className="nav-tabs .d-lg-flex">
             <div className='pull-left'>
             <NavLink to="/"><img className='usce' src={usce}></img></NavLink>
@@ -22,16 +22,16 @@ export default function Header() {
             <Navbar.Collapse>
             <div className='items'>
             <NavItem>
-              <NavLink style={{color: 'black'}} className='nav-link' to="/hof">Hall of Fame</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/hof">Hall of Fame</NavLink>
               </NavItem>
             <NavItem>
-              <NavLink style={{color: 'black'}} className='nav-link' to="/rotations">U.S Rotations</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/rotations">U.S Rotations</NavLink>
             </NavItem>   
             <NavItem>
-              <NavLink style={{color: 'black'}} className='nav-link' to="/services">Professional Services</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
             </NavItem>
             <NavItem>
-              <Nav.Link style={{color: 'black'}}className='nav-link' to="#link">USCE Match Chatroom</Nav.Link>  
+              <Nav.Link style={{color: 'white'}} className='nav-link' to="#link">USCE Match Chatroom</Nav.Link>  
             </NavItem>
             </div>
             </Navbar.Collapse>
