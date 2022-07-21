@@ -91,7 +91,6 @@ h2 {
 @media screen and (max-width: 750px) {
   p {
     font-size: 13px;
-
   }
 }
 
@@ -100,7 +99,7 @@ h2 {
 }
 
 .button:hover {
-  background-color:rgb(3, 141, 44);
+  background-color: rgb(3, 141, 44);
   box-shadow: 5px 5px rgb(3, 2, 2);
   transform: translateY(0px);
 }
@@ -171,6 +170,18 @@ h2 {
 
 .team {
   background-color: #c2dcc8;
+}
+
+.footer {
+  background: radial-gradient(circle at left, rgb(64, 207, 100) 0%, rgb(3, 61, 19) 100%);
+  color: white;
+}
+
+.fchild {
+  display: inline-block;
+  padding: 80px 80px;
+  margin: 70px 70px;
+  background-color: #185332;
 }
 
 /* .toggle .collapsed {

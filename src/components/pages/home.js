@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from '../../slider/slider';
 import Header from '../header/header';
+import Footer from '../footer/footer'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
@@ -50,6 +51,9 @@ export default function Home() {
             <h2>The Leadership Team</h2>
 
           </div>
+          <br></br>
+          <br></br>
+          <Footer></Footer>
       </div>
     );
   }
