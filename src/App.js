@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 import Container from "./components/container";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/index.css';
+import './App.css';
 import  Services  from './components/pages/services';
 import  Hof  from './components/pages/hof';
 import  Home  from './components/pages/home';
@@ -12,6 +11,7 @@ import Header from './components/header/header'
 import { Navbar } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavItem } from 'react-bootstrap';
+import './css/index.css';
 
 
 function App() {

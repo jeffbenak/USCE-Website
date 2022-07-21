@@ -32,8 +32,7 @@ export default function Home() {
           <Link to='/loginsign'>Log in</Link> to view the trade in secrets
         </p>
 
-        <h2>What Is USCE Match?</h2>
-        <br></br>
+        <h1>What Is USCE Match?</h1>
         <div className='about'>
         <p>
           GET MATCHED USCE LLC is composed of young international clinical professionals from Chicago who are result-oriented, trustworthy, and your loyal partner in strategizing your USMLE journey.															
@@ -41,6 +40,15 @@ export default function Home() {
           Now, we would like to share our best practices in assisting more IMG's by providing more clinical rotations and services that will																	
 		      help every applicant to become a step closer to getting matched to your dream residency program.															
           </p>
+          </div>
+
+          <div className='team'>
+            <h2>OUR STORY</h2>
+            <br></br>
+            <h2>OUR VISION and MISSION</h2>
+            <br></br>
+            <h2>The Leadership Team</h2>
+
           </div>
       </div>
     );

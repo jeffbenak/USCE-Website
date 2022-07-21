@@ -81,7 +81,51 @@ h2 {
   }
 }
 
+@media screen and (max-width: 990px) {
+  p {
+    font-size: 15px;
 
+  }
+}
+
+@media screen and (max-width: 750px) {
+  p {
+    font-size: 13px;
+
+  }
+}
+
+ a {
+  text-decoration: none !important;
+}
+
+.button:hover {
+  background-color:rgb(3, 141, 44);
+  box-shadow: 5px 5px rgb(3, 2, 2);
+  transform: translateY(0px);
+}
+
+.button:active {
+  background-color: rgb(3, 141, 44);
+  box-shadow: 5px 5px rgb(3, 2, 2);
+  transform: translateY(4px);
+}
+
+.button {
+  padding: 15px 25px;
+  background-color: rgb(255, 255, 255);
+}
+
+.click {
+  color: black;
+  font-family: 'Cormorant SC', serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.click:hover {
+  color: black;
+}
 
 /* .nav-link.active:hover {
   color: rgb(200, 86, 86);
@@ -104,26 +148,36 @@ h2 {
 .about {
   font-family: 'Roboto', sans-serif;
   text-align: justify;
-  width: 50%;
+  width: 55%;
   height: 50%;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
+  font-size: 18px;
 }
 
+.items {
+  display: flex;
+  text-align: left;
+}
+
+h1 {
+  color:rgb(8, 96, 34);
+}
+
+h2 {
+  color:#1c482f;
+}
+
+.team {
+  background-color: #c2dcc8;
+}
 
 /* .toggle .collapsed {
   display: flex;
   justify-content: right;
   align-items: right;
 } */
-
-.items {
-  display: flex;
-  text-align: left;
-  
-}
-
 /* 
 .navbar-collapse .collapse {
   display: flex;
