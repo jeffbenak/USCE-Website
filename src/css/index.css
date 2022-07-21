@@ -73,6 +73,10 @@ h2 {
   align-items: left;
 }
 
+/* .login {
+  flex-basis
+} */
+
 @media screen and (min-width: 1000px) {
   .navbar {
     width: 900px;
@@ -147,12 +151,18 @@ h2 {
 .about {
   font-family: 'Roboto', sans-serif;
   text-align: justify;
-  width: 55%;
-  height: 50%;
+  width: 1000px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
   font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    width: auto;
+    padding: 0 1em;
+  }
 }
 
 .items {

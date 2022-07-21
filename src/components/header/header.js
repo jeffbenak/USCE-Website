@@ -33,6 +33,9 @@ export default function Header() {
             <NavItem>
               <Nav.Link style={{color: 'white'}} className='nav-link' to="#link">USCE Match Chatroom</Nav.Link>  
             </NavItem>
+            <NavItem>
+              <Nav.Link style={{color: 'white'}} className='nav-link login' to="/loginsign">Log In | Sign Up</Nav.Link>  
+            </NavItem>
             </div>
             </Navbar.Collapse>
             
