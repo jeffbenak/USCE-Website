@@ -12,7 +12,7 @@ export default function Header() {
     return (
       
   <div className='header'>
-    <Navbar expand="xxl">
+    <Navbar expand="lg">
       <Container className='navbar-container'>
           <Nav varient='tabs' className="nav-tabs .d-lg-flex">
             <div className='pull-left'>
@@ -31,10 +31,10 @@ export default function Header() {
               <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
             </NavItem>
             <NavItem>
-              <Nav.Link style={{color: 'white'}} className='nav-link' to="#link">USCE Match Chatroom</Nav.Link>  
+              <NavLink style={{color: 'white'}} className='nav-link' to="/link">USCE Match Chatroom</NavLink>  
             </NavItem>
             <NavItem>
-              <Nav.Link style={{color: 'white'}} className='nav-link login' to="/loginsign">Log In | Sign Up</Nav.Link>  
+              <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">Log In | Sign Up</NavLink>  
             </NavItem>
             </div>
             </Navbar.Collapse>
@@ -53,7 +53,7 @@ export default function Header() {
         </Nav>
     </Container>
     <div className='pull-right hidden-lg'>
-            <Navbar.Toggle/>
+            <Navbar.Toggle />
             </div>
   </Navbar>
 </div>

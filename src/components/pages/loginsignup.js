@@ -6,10 +6,12 @@ export default function LoginSignup() {
       <div>
         <Header></Header>
         <h1>Login/ Signup</h1>
+        
+            <h3>Become an insider to USCE Match!</h3>
         <p>
-            Create an Account!
-    
+          There is a $2.99 one time, non-refundable processing membership fee.
         </p>
+
       </div>
     );
   }
