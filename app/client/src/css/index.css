@@ -50,7 +50,6 @@ a.nav-link.active {
 .socials {
   text-align: right;
   margin-right: auto;
-
 }
 
 .header {
@@ -74,14 +73,42 @@ h2 {
   font-family: 'Roboto Slab' serif;
 }
 
+.registration {
+  margin: 50px;
+}
+
+.binfo {
+  padding: 110px;
+}
+
+.meminfo {
+padding: 45px;
+}
+
+.headings {
+  display: flex;
+}
+
+.regbutton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .usce {
   width: 150px;
   height: 150px;
   align-items: left;
 }
 
+.form-control {
+  max-width: 250px
+}
+
  a {
   text-decoration: none !important;
+  height: auto;
+  width: auto;
 }
 
 .button:hover {
@@ -99,24 +126,101 @@ h2 {
 .button {
   padding: 15px 25px;
   background-color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .click {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  font-weight: bold;
 }
 
 .click:hover {
   color: black;
 }
 
-.login {
-  color: white;
-  margin-left: autof;
+.click2 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-left: 120px
 }
 
+.login {
+  color: white;
+}
+
+.textinput {
+  width: 23%;
+  height: 140%;
+}
+
+.text2 {
+  padding-left: 200px;
+}
+
+.text3 {
+  padding-left: 140px;
+}
+
+.vid1 {
+  margin-top: -100px;
+}
+/* .userlogin {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.loginbutton {
+  color: white;
+  margin-top: 50px;
+  padding: .5rem;
+  border-radius: 20%;
+  background-color: #008037;
+  box-shadow: 0 10px 20px -10px #000000;
+}
+
+h4 {
+  display: inline;
+}
+
+.loginbutton:active {
+  transform: translateY(4px);
+}
+
+.emailbox {
+  width: 80%;
+  margin: auto;
+}
+
+.pl1 {
+  color: black;
+}
+
+.userform {
+  width: 20%;
+  display: inline-block;
+}
+
+.infoform {
+  width: 20%;
+  display: inline-block;
+}
+
+/* .countbox {
+  width: 200%  !important;
+} */
+
+
+
+.reg1:hover {
+  opacity: .6;
+}
+
+/* .loginbutton:hover {
+  transform: translateX(-2px);
+} */
 
 .about {
   font-family: 'Roboto', sans-serif;
@@ -137,9 +241,23 @@ h2 {
   font-size: 18px;
 }
 
+.mainform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .items {
   display: flex;
   text-align: left;
+}
+
+.fgroup {
+  display: inline-block;
+}
+
+.status {
+  color: black;
 }
 
 h1 {

@@ -44,7 +44,7 @@ export default function Slider() {
                             <div className='content'>
                             <h2>{slide.title}</h2>
                             <p className='text'>{slide.desc}</p>
-                            <button className='button'>{slide.button}</button>
+                            <div>{slide.button}</div>
                             </div>
                         </div>
                     )}

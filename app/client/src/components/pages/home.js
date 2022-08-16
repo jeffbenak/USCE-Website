@@ -57,8 +57,6 @@ export default function Home() {
             <p className='p-3'>Imperdiet dui accumsan sit amet. Sed cras ornare arcu dui. Ullamcorper eget nulla facilisi etiam dignissim diam. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Justo nec ultrices dui sapien eget mi. Faucibus et molestie ac feugiat. Suspendisse sed nisi lacus sed viverra tellus in hac. Dolor sit amet consectetur adipiscing elit ut. Viverra adipiscing at in tellus integer feugiat scelerisque. Ac tortor dignissim convallis aenean et tortor at risus.</p>
 
           </div>
-          <br></br>
-          <br></br>
           <Footer></Footer>
       </div>
     );
