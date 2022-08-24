@@ -1,0 +1,19 @@
+.cart {
+position: absolute;
+font-size: 2.3rem;
+top: 8.3rem;
+right: .5rem;
+overflow: auto;
+}
+ 
+.cart:hover {
+    transform: rotate(8deg);
+}
+
+.abouts {
+    display: block;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+}

@@ -16,6 +16,8 @@ export default function LoginSignup() {
 
   const [loginStatus, setLoginStatus] = useState(false);
 
+
+
   const login = () => {
     Axios.post('http://localhost:3001/login', {
      email: email,
@@ -24,30 +26,33 @@ export default function LoginSignup() {
 
       if (!response.data.auth) {
         setLoginStatus(false); 
+        console.log(response.data)
       } else {
         localStorage.setItem('token', response.data.token);
         setLoginStatus(true);
+        window.location.assign('/');
+        console.log(response.data)
       }
     });
   };
 
   useEffect(()=> {
     Axios.get('http://localhost:3001/login').then((response) => {
-      if (response.data.loggedIn == true) {
+      if (response.data.loggedIn === true) {
         setLoginStatus(response.data.user[0].email);
       }
     })
   }, []);
 
-  const userAuthenticated = () => {
-    Axios.get('http://localhost:3001/isUserAuth', {
-      headers: {
-        'x-access-token': localStorage.getItem('token'),
-      },
-    }).then((response) => {
+  // const userAuthenticated = () => {
+  //   Axios.get('http://localhost:3001/isUserAuth', {
+  //     headers: {
+  //       'x-access-token': localStorage.getItem('token'),
+  //     },
+  //   }).then((response) => {
 
-    })
-  }
+  //   })
+  // }
 
     return (
       <div>
@@ -97,8 +102,10 @@ export default function LoginSignup() {
         {/* {loginStatus && (
           <button onClick={userAuthenticated}>Check if Authenticated</button>
         )}     */}
-
-        <p className='pl1'>Dont have an account? <Link className='reg1' to='/register'>Sign up</Link> here</p>
+        <div className='pl1'>
+        <p>Become an insider to USCE Match! There is a $2.99 one time, non-refundable processing membership fee.</p>
+        <p>Dont have an account? <Link className='reg1' to='/register'>Sign up</Link> here</p>
+        </div>
       </div>
         <Footer></Footer>
       </div>

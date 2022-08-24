@@ -7,18 +7,22 @@ import { Link } from 'react-router-dom';
 import { NavItem } from 'react-bootstrap';
 import usce from '../../images/Logo.png'
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Auth from '../../utils/auth'
 
 export default function Header() {
-    return (
-      
-  <div className='header'>
-    <Navbar expand="lg">
-      <Container className='navbar-container'>
+
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
+  function navigationBar() {
+
+    if (Auth.loggedIn()) {
+      return (
+        <Container className='navbar-container'>
           <Nav varient='tabs' className="nav-tabs .d-lg-flex">
-            <div className='pull-left'>
-            <NavLink to="/"><img className='usce' src={usce}></img></NavLink>
-            </div>
-            
+
             <Navbar.Collapse>
             <div className='items'>
             <NavItem>
@@ -34,28 +38,70 @@ export default function Header() {
               <NavLink style={{color: 'white'}} className='nav-link' to="/link">USCE Match Chatroom</NavLink>  
             </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">Log In | Sign Up</NavLink>  
+              <NavLink style={{color: 'white'}} className='nav-link' to="/logout" onClick={logout}>Logout</NavLink>  
             </NavItem>
+            
             </div>
             </Navbar.Collapse>
-            
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="/">Home</NavDropdown.Item>
-              <NavDropdown.Item href="hof">
-                Hall of Fame
-              </NavDropdown.Item>
-              <NavDropdown.Item href="rotations">Rotations</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="services">
-                Professional Services
-              </NavDropdown.Item>
-          </NavDropdown>        */}
         </Nav>
-    </Container>
+   
     <div className='pull-right hidden-lg'>
             <Navbar.Toggle />
             </div>
-  </Navbar>
-</div>
+    </Container>
+    
+      );
+    } else {
+      return (
+        <Container className='navbar-container'>
+          <Nav varient='tabs' className="nav-tabs .d-lg-flex">
+            <Navbar.Collapse>
+            <div className='items'>
+            <NavItem>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/hof">Hall of Fame</NavLink>
+              </NavItem>
+            <NavItem>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/rotations">U.S Rotations</NavLink>
+            </NavItem>   
+            <NavItem>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/link">USCE Match Chatroom</NavLink>  
+            </NavItem>
+            <NavItem>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">Login | Signup</NavLink>  
+            </NavItem>
+            
+            </div>
+            </Navbar.Collapse>
+        </Nav>
+    
+    <div className='pull-right hidden-lg'>
+            <Navbar.Toggle />
+            </div>
+            </Container>
+      );
+    }
+  }
+
+
+  
+    return (
+
+      <div className='header'>
+        <Navbar expand="lg">
+      <div className='pull-left'>
+            <NavLink to="/"><img className='usce' src={usce}></img></NavLink>
+            </div>
+
+          {navigationBar()}
+
+          <div className='pull-right hidden-lg'>
+          <Navbar.Toggle />
+          </div>
+    </Navbar>
+    </div>
+  
     )
 }
