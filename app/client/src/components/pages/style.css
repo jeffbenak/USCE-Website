@@ -5,15 +5,92 @@ top: 8.3rem;
 right: .5rem;
 overflow: auto;
 }
- 
+
+
 .cart:hover {
     transform: rotate(8deg);
 }
 
 .abouts {
-    display: block;
-    text-align: justify;
-    margin-right: auto;
-    margin-left: auto;
-    width: 40%;
+    display: flex;
+    margin-right: 10%;
 }
+
+ /* .neuro {
+    text-align: ;
+ } */
+
+.doc {
+    margin-left: 1sem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.docimg {
+    width: 100%;
+}
+
+
+/* .logy {
+
+    margin-left: 30%;
+} */
+
+.pb {
+    color: #008037;
+    padding-top: 20%;
+}
+
+.doclist {
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: 10%;
+    
+}
+
+.medlist {
+    list-style-type: none;
+    margin-top: 5%;
+    margin-left: 25%;
+
+}
+
+.bot {
+    color: #008037;
+}
+
+.botr {
+    text-align: justify;
+    word-break: break-all;
+}
+
+.profback {
+    text-align: justify;
+    word-break: break-all;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .profback {
+      width: auto;
+  
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .profback {
+      font-size: 15px;
+      width: auto;
+  
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .profback {
+      font-size: 13px;
+      width: auto;
+    }
+  }
+
+
+
+
