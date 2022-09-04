@@ -31,7 +31,7 @@ code {
 } */
 
 .container {
-  margin-left: 0 !important;
+  /* margin-left: 0 !important; */
   width: auto !important;
 }
 
@@ -224,6 +224,7 @@ h4 {
 
 .about {
   font-family: 'Roboto', sans-serif;
+  word-break: break-all;
   text-align: justify;
   width: 1000px;
   margin-left: auto;
@@ -235,6 +236,7 @@ h4 {
 .p-3 {
   text-align: justify;
   width: 1000px;
+  word-break: break-all;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
@@ -264,9 +266,9 @@ h1 {
   color:rgb(8, 96, 34);
 }
 
-h2 {
+/* h2 {
   color:#1c482f;
-}
+} */
 
 .team {
   background-color: #c2dcc8;

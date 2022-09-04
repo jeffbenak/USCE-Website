@@ -68,6 +68,36 @@ overflow: auto;
     word-break: break-all;
 }
 
+.fame {
+    margin: 5% 0 0 0;
+}
+
+.studimg {
+    margin-right: 30%;
+    width: 70%;
+    height: 400px;
+}
+
+.doctitle {
+    line-height: 3em;
+}
+
+.review {
+    color: #008037;
+}
+
+.studrev {
+    text-align: justify;
+    word-break: break-all;
+    line-height: 1.7em;
+}
+
+.matched {
+    line-height: 1.7em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
     .profback {
