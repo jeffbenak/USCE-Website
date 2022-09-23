@@ -1,15 +1,5 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav-tabs {
@@ -55,8 +45,6 @@ a.nav-link.active {
 .header {
   font-size: 20px;
   background-color: #008037;
-  margin-right: -15px;
-  padding-right: 15px;
 }
 
 .list li {
@@ -71,6 +59,7 @@ a.nav-link.active {
 
 h2 {
   font-family: 'Roboto Slab' serif;
+
 }
 
 .registration {
@@ -146,9 +135,9 @@ padding: 45px;
   margin-left: 120px
 }
 
-.login {
+/* .login {
   color: white;
-}
+} */
 
 .textinput {
   width: 23%;
@@ -223,8 +212,6 @@ h4 {
 } */
 
 .about {
-  font-family: 'Roboto', sans-serif;
-  word-break: break-all;
   text-align: justify;
   width: 1000px;
   margin-left: auto;
@@ -236,7 +223,6 @@ h4 {
 .p-3 {
   text-align: justify;
   width: 1000px;
-  word-break: break-all;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5;
@@ -262,14 +248,6 @@ h4 {
   color: black;
 }
 
-h1 {
-  color:rgb(8, 96, 34);
-}
-
-/* h2 {
-  color:#1c482f;
-} */
-
 .team {
   background-color: #c2dcc8;
 }
@@ -281,8 +259,8 @@ h1 {
 
 .fchild {
   display: inline-block;
-  padding: 80px 80px;
-  margin: 70px 70px;
+  padding: 5% 2% 5% 2%;
+  margin: 7% 5% 5% 10%;
   background-color: #185332;
 }
 
