@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../header/header';
 import Footer from '../footer/footer';
 import DocImg from '../../images/doctor.jpg';
@@ -166,12 +167,19 @@ export default function Rotations() {
 
        <hr className='hrblock'></hr>
 
-       <Row>
-        <div className='backgroundcont'>
+    <div className='backgroundcont'>
+
+      <div className='titleof'>
 
 
         <h2>BACKGROUND OF THE ROTATION</h2>
-        <Col>
+
+      </div>
+
+    <div className='backexpectcont'>
+
+      <div className='backofrotate'>
+
         <p>
            This is a hands-on neurology rotation for about 40-50 hours per week with a minimum of four weeks (up to 
            12 weeks depending on spot availability) where you get to closely work with your peers and Dr Calimag (the 
@@ -179,7 +187,6 @@ export default function Rotations() {
            assigned senior resident within the group.
 
         </p>
-        </Col>
             
         <p>
 
@@ -202,18 +209,27 @@ export default function Rotations() {
 
         </p>
 
+      </div>
 
+
+
+        <div className='expectcont'>
+
+          <div className='responsetitle'>
+
+        <h2>EXPECTATIONS AND RESPONSIBILITIES</h2>
 
         </div>
 
+      <div className='medprofs'>
 
-       </Row>
+        <p>
+        Medical professionals:
+        </p>
 
-       <Row>
-        <div className='expectcont'>
+      </div>
 
 
-        <h2>EXPECTATIONS AND RESPONSIBILITIES</h2>
         <ul>
           <li>
         <p>
@@ -338,15 +354,24 @@ export default function Rotations() {
 
         </div>
 
+        </div>
 
-       </Row>
+        </div>
+
+      <br></br>
 
        <hr className='hrblock'></hr>
+
+       <br></br>
 
        <Row>
             <div className='schedule'>
 
               <h2 className='sched'>SCHEDULE</h2>
+
+              <br></br>
+
+              <div className='schedulecont'>
 
 
               <div>
@@ -354,7 +379,7 @@ export default function Rotations() {
                   MONDAY:
                 </h3>
 
-                <div>
+                <div className='mondaycont'>
                   <p>
                     In the morning in Park Ridge, we normally start at 10:00 AM to see patients, followed by a
                     pharmaceutical lunch from 11:30 AM to 12:30 PM.
@@ -377,7 +402,7 @@ export default function Rotations() {
                   TUESDAY:
                 </h3>
 
-                <div>
+                <div className='tuesdaycont'>
                   <p>
                     Every other Tuesday Dr Calimag goes to New Lenox to see patients from 10AM to 1PM. This
                     location is about an hour away from Park Ridge so if you have the travel privileges inclusive in
@@ -395,7 +420,7 @@ export default function Rotations() {
                   WEDNESDAY:
                 </h3>
 
-                <div>
+                <div className='wednesdaycont'>
                   <p>
                     In the morning in Park Ridge, we normally start at 10 AM to see patients, followed by a
                     pharmaceutical lunch from 11:30 AM to 12:30 PM. In the afternoon, we would conduct the
@@ -413,7 +438,7 @@ export default function Rotations() {
                 </h3>
 
 
-                <div>
+                <div className='thursdaycont'>
                   <p>
                     If you have the travel privileges inclusive in your package, you need to meet Dr Calimag in
                     Park Ridge at 7:30 AM since St Anthony Hospital is about an hour drive away. Dr Calimag sees
@@ -430,7 +455,7 @@ export default function Rotations() {
                 <h3>
                   FRIDAY:
                 </h3>
-                <div>
+                <div className='fridaycont'>
 
                   <p>
                     If you have the travel privileges inclusive in your package, you need to meet Dr Calimag in
@@ -452,7 +477,7 @@ export default function Rotations() {
                 </h3>
 
 
-                <div>
+                <div className='saturdaycont'>
                   <p>
                     If you have the travel privileges inclusive in your package, you need to meet Dr Calimag in
                     Park Ridge at 9:00 AM. In St Anthony there will be scheduled patients for EMG/NCV from
@@ -460,33 +485,96 @@ export default function Rotations() {
                   </p>
                 </div>
 
+                </div>
+                <br></br>
+
 
 
               </div>
 
 
+            </div>
+
+          
+       </Row>
 
 
 
+       <br></br>
+
+       <div className='addresscont'>
+
+
+            <p>Outpatient:</p>
+            <div className='outpat'>
+
+        
+        <div className='underline'>
+            <p>Neurology and Neurodiagnostics</p> 
+        </div>
+        <div className='addcont'>
+            <p >at 1600 Dempster St. Park Ridge, Illinois 60068</p>
+            </div>
+            </div>
+
+            <div className='silvercont'>
+
+            <div className='underline'>
+
+            <p>Silver Cross Hospital Medical Center</p> 
 
             </div>
 
+            <div className='addcont'>
 
-
-
-       </Row>
-
-       <div>
-
-            <p>Outpatient:</p>
-            <p>Neurology and Neurodiagnostics</p> 
-            <p>at 1600 Dempster St. Park Ridge, Illinois 60068</p>
-            <p>Silver Cross Hospital Medical Center</p> 
             <p>at 250 E Maple St, New Lenox, Illinois 60451</p>
+
+            </div>
+
+            </div>
+
+          <br></br>
+
+
+          <p>Outpatient and Inpatient:</p>
+            <div className='outpat'>
+
+        
+        <div className='underline'>
+            <p>Thorek Hospital Andersonville</p> 
+        </div>
+        <div className='addcont'>
+            <p > at 5025 N Paulina St Chicago, IL 60640</p>
+            </div>
+            </div>
+
+            <div className='silvercont'>
+
+            <div className='underline'>
+
+            <p>Saint Anthony Hospital</p> 
+
+            </div>
+
+            <div className='addcont'>
+
+            <p> at 2875 W 19th St. Chicago, IL, 60623</p>
+
+            </div>
+
+            </div>
 
        </div>
 
+
+
+
+
        <hr className='hrblock'></hr>
+
+
+
+
 
         <div>
         
@@ -545,6 +633,566 @@ export default function Rotations() {
             </div>
 
           </div>
+
+          <br></br>
+          <br></br>
+
+
+
+
+        </div>
+
+
+        <div className='evalsection'>
+          <br></br>
+          <br></br>
+        
+
+          <div className='evaltitle'>
+
+          <h2 className='posteval'>POST-EVALUATION AND LETTERS OF RECOMMENDATION</h2>
+
+          </div>
+
+          <br></br>
+          <br></br>
+
+          <div className='evaluate'>
+
+            <div className='listtitle'>
+
+            <p>We evaluate every medical professional based on the following:</p>
+
+            </div>
+
+            <div className='evallist'>
+
+            <ul>
+
+            <li>
+            Professional Reliability, clinical skillset, and work ethic
+            </li>
+            <li>
+            Academic background and step exam scores
+            </li>
+            <li>
+            Communication/interpersonal skills
+            </li>
+            <li>
+            Commitment to the specialty
+            </li>
+            <li>
+            Individual case research presentation performance
+            </li>
+
+
+            </ul>
+            
+            </div>
+
+            <div className='evalinfo'>
+
+            <p> We provide a personalized merit-based letter of recommendation to deserving applicants only. According to 
+                some program directors, this rotation is well known for providing an excellent letter of recommendation for 
+                worthy applicants.
+            </p>
+
+            <p>
+                The letterhead will be Saint Anthony Hospital in Chicago. The letter will indicate the number of actual hours 
+                you participated, so outstanding attendance and professional punctuality are encouraged. 
+            </p>
+
+            <p>
+                For exceptional medical professionals, we can proactively recommend your candidacy directly to our 
+                network of medical residency programs. Although we cannot guarantee your chances to match into a 
+                program successfully, our previous experience has helped several deserving medical professionals to secure 
+                an interview and be successfully matched.
+
+            </p>
+
+            </div>
+
+            <br></br>
+            <br></br>
+            <br></br>
+
+
+
+          </div>
+
+
+
+
+
+
+        </div>
+
+        <br></br>
+
+        <hr className='hrblock'></hr>
+
+            <br></br>
+
+        <div>
+
+          <div className='addit'>
+            <h3 className='afaq'>Additional FAQs</h3>
+          </div>
+
+          <br></br>
+
+          <div className='faqcont'>
+
+            <div className='cases'>
+
+            <h5>
+            WHAT KIND OF CASES WILL I SEE? 
+            </h5>
+
+            </div>
+
+            <div className='aboutdr'>
+
+            <p>
+
+            Dr. Calimag is a general neurologist who has been in practice for 40 years; expect to see various cases, such as 
+            different types of seizures (even sometimes the rare ones), different types of migraine, brain concussion, 
+            Parkinson's disease, Cervical, and Lumbosacral Radiculopathies, Transient Ischemic Attack, Dementia, 
+            Insomnia, Cluster Headache, Post Herpetic Neuralgia, Tenosynovitis, TBI, Diabetic Neuropathy, Carpal Tunnel 
+            Syndrome, Cubital Tunnel Syndrome, Multiple Sclerosis, Meralgia Parasthetica, Peripheral Neuropathies and 
+            also some interesting cases like Marchiafava Bignami Syndrome, Post COVID Neurological manifestations, 
+            Charcot-Marie-Tooth Disorder, Diffuse Idiopathic Skeletal Hyperostosis, Post Lyme Disease Syndrome, 
+            Pseudotumor Cerebri, Cervical Spinal Stenosis, Meningioma, Tourette syndrome, Narcolepsy, absence seizures, 
+            PSP, Occipital Neuralgia, Radial Nerve Injury (wrist drop), Etc.
+
+              
+            </p>
+
+            </div>
+
+            <br></br>
+
+            <div className='rotatecost'>
+
+            <h5>
+            HOW MUCH WILL THIS ROTATION COST?
+            </h5>
+
+            </div>
+
+            <div>
+
+            <div className='faqanswers'>
+
+              <p>
+              We offer three types of neurology packages, depending on your needs: assistance with accommodation, 
+              transportation, interview sessions, personal statements, ERAS photos, etc.
+              </p>
+
+              
+
+              <p>
+              The price for the package starts at $ 2,299.
+
+              </p>
+
+              </div>
+
+              <br></br>
+
+              <h5>
+              DO YOU PROVIDE ASSISTANCE IN ACCOMMODATION? 
+              </h5>
+
+              <div className='faqanswers'>
+
+              <p>
+              We have three neurology packages- one is inclusive of the accommodation. You are free to decide where you 
+              would like to stay. However, we strongly recommend that you stay close to the clinic in Park Ridge.
+              </p>
+
+              </div>
+
+              <br></br>
+
+              <h5>
+              DO YOU PROVIDE TRANSPORTATION? 
+              </h5>
+
+              <div className='faqanswers'>
+
+              <p>
+              Chicago also has an established transportation system with trains and buses conveniently available. We offer 
+              transportation privileges as well, inclusive of some of our packages.
+              </p>
+
+              
+
+              <p>
+              Some of our medical professionals can drive and go to four locations alone; however, finding parking in Chicago 
+              can be stressful and expensive.
+              </p>
+
+              </div>
+
+              <br></br>
+
+              <h5>
+              WILL THERE BE ROOM EXCLUSIVE FOR THE MEDICAL PROFESSIONALS? 
+              </h5>
+
+              <div className='faqanswers'>
+
+              <p>
+              The clinic in Park Ridge has a dedicated area for medical professionals to stay and leave their belongings. We 
+              also have a room with snacks, water, drinks, and coffee, all free for everyone in practice.
+              </p>
+
+              </div>
+
+              <h5>
+              I DON'T HAVE A U.S. VISA. DO YOU PROVIDE US VISA SPONSORSHIP? 
+              </h5>
+
+              <div className='faqanswers'>
+
+              <p>
+              We unfortunately do not sponsor any form of US VISA. We can provide a letter of confirmation (VISA LETTER) 
+              with your neurology rotation with Dr. Calimag as soon as we receive your essential requirements, verify the 
+              availability of the slot for the rotation and process the non-refundable reservation fee of $500 for the neurology 
+              package.
+              </p>
+
+              <p>
+              You can present this letter to the US consulate on your application; however, we cannot guarantee your US 
+              VISA application approval.
+              </p>
+
+              </div>
+
+              <h5>
+              DO YOU GIVE GROUP DISCOUNTS OR ANY DISCOUNTS? 
+              </h5>
+
+              <div className='faqanswers'>
+
+                <p>
+                Every applicant is carefully assessed based on our metrics for admission. Our spots are minimal and very limited, 
+                and we cannot guarantee the same rotation schedule for group applicants.
+                </p>
+
+                <p>
+                We also offer a structured, quality, result-driven rotation where we treat every medical professional as a part 
+                of our family. We value your presence and do not discount your worth, thus our prices are reasonable. 
+                </p>
+
+
+
+              </div>
+
+              
+
+           
+
+            </div>
+            
+            <br></br>
+
+            
+
+
+          </div>
+
+          <br></br>
+
+          <hr className='hrblock'></hr>
+
+          <br></br>
+
+
+          <div>
+
+
+            <div className='steps'>
+
+            <h3>
+            STEPS IN THE APPLICATION
+            </h3>
+
+            </div>
+
+            <br></br>
+
+            <div className='stepscont'>
+
+            <h4>
+            FIRST STEP:
+            </h4>
+
+            
+
+            <div>
+              <br></br>
+
+              <p> 
+              Read the entirety of the neurology rotation description to help answer any questions you may have.
+              </p>
+
+              <p>
+              Follow our <a className='instalink' href='https://www.instagram.com/uscematch/?hl=en'>Instagram</a> page USCEMatch to stay updated.
+              </p>
+
+              <p>
+              Send an e-mail of interest to <a href='mailto:andrewgulde@uscematch.com'>andrewgulde@uscematch.com</a>, including the following:
+              </p>
+
+              <br></br>
+
+              <div className='essentials'>
+
+              <h6>
+              ESSENTIAL REQUIREMENTS: THE FIRST FIVE ARE 
+              </h6>
+              <h6 className='mandatory'>
+              MANDATORY 
+              </h6>
+
+              </div>
+
+            </div>
+
+            <div className='fivesteps'>
+
+            <ul className='steplist'>
+
+            <li>
+              <div className='stepall'>
+                <div className='step1title'>
+              <h6>
+              STEP 1 SCORE REPORT -
+              </h6>
+              </div>
+              <div className='step1cont'>
+              <p>
+              Step 1 score report should be at least 220 numeric score.
+              </p>
+              <div className='firsttake'>
+              <p>
+              If taken by January 2022, should pass on the first take only.
+              </p>
+              </div>
+              </div>
+              </div>
+            </li>
+
+            <div className='stepall'>
+
+            <li>
+            <h6>
+            STEP 2 CK SCORE REPORT - at least 220 numeric score.
+              </h6>
+            </li>
+
+            </div>
+
+            <div className='stepall'>
+
+            <li>
+              <h6>
+              PASSPORT COPY/GOVERNMENT-ISSUED PHOTO ID 
+              </h6>
+            </li>
+
+            </div>
+
+            <div className='stepall'>
+
+            <li>
+              <h6>
+              CURRICULUM VITAE 
+              </h6>
+            </li>
+
+            </div>
+
+            <div className='stepall'>
+
+            <li>
+              <h6>
+              SEND 2-3 PHOTOS OF YOU HAVING FUN with friends, colleagues, or family. 
+              </h6>
+            </li>
+
+            </div>
+
+            <div className='stepall'>
+
+            <li>
+              <h6>
+              MEDICAL DIPLOMA  <h7 className='optional'>(optional, only if available)</h7>
+              </h6>
+            </li>
+
+            </div>
+
+
+            </ul>
+
+            </div>
+
+            </div>
+
+            <br></br>
+            <br></br>
+
+            <div className='stepcontent'>
+
+
+            <h4>
+              SECOND STEP:
+            </h4>
+            
+
+            <div className='secondalign'>
+
+            <p>
+            Within 48-72 business hours, we will send you the application form, the inclusions, descriptions, and 
+            prices for the neurology packages.
+            </p>
+
+            </div>
+
+            <br></br>
+
+
+            </div>
+
+            <br></br>
+            <br></br>
+
+            <div className='stepcontent'>
+
+
+            <h4>
+              THIRD STEP:
+            </h4>
+            
+
+            <div className='stepalign'>
+
+            <p>
+            We will agree on a time and date (we are central time) to call you through Instagram call or WhatsApp 
+            to assist you in confirming the start date of your rotation, verify availability, and confirm which 
+            package you wish to proceed with and instructions for the non-refundable reservation fee of $ 500.
+            </p>
+
+            </div>
+
+
+            </div>
+
+            <br></br>
+            <br></br>
+
+            <div className='stepcontent'>
+
+
+            <h4>
+              FOURTH STEP:
+            </h4>
+
+            <div className='stepalign'>
+
+            <p>
+            You will receive an e-mail confirmation that the $ 500 has successfully been processed.
+            </p>
+            
+
+            <p>
+            30 days before the start of your rotation, you are expected to submit the following:
+            </p>
+
+          <div className='secreq'>
+
+            <h6 className='secndary'>
+            SECONDARY REQUIREMENTS: 
+            </h6>
+
+          </div>
+
+          <div className='fourthlist'>
+
+
+            <ul className='requiredlist'>
+
+              <li>
+              Immunization/vaccination records, including covid vaccines 
+              </li>
+
+              <li>
+              Medical Health Insurance (MANDATORY)- <h7 className='mhi'>You must be physically fit for the rotation. 
+              The USCE MATCH is not liable for any health emergency.</h7>
+              </li>
+
+              <li>
+              US MOBILE PHONE NUMBER 
+              </li>
+
+              <li>
+              US ADDRESS WHERE YOU WILL STAY DURING THE DURATION OF YOUR ROTATION.
+              </li>
+
+            </ul>
+
+          </div>
+
+            </div>
+
+
+            </div>
+
+            <br></br>
+            <br></br>
+
+            <div className='stepcontent'>
+
+
+            <h4>
+              FIFTH STEP:
+            </h4>
+
+            
+
+            <div className='fifthalign'>
+
+            <p>
+            Come in with your beautiful/handsome smile because you will soon match to a US Medical Residency Program.
+            </p>
+            
+            <p>
+            Please bring your valid photo ID. You will have the clinic onboarding and initial interview with Dr. Calimag.
+            </p>
+
+            <p>
+            Kindly bring the payment method to settle the remaining balance in full.
+            </p>
+
+            </div>
+
+
+            </div>
+
+            <br></br>
+
+
+
+
+
+
+
+          </div>
+          
+
 
 
 

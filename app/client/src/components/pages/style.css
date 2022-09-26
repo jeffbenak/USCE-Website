@@ -1,5 +1,5 @@
 h1 {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     color:rgb(8, 96, 34);
 }
 
@@ -123,42 +123,312 @@ h2 {
     text-align: left;
 }
 
-.backgroundcont {
-    text-align: left;
-    width: 50%;
-}
-
-.expectcont {
-    text-align: left;
-}
-
 .hrblock {
     border: 1px solid black;
 }
 
 
-.sched {
-    color: white !important;
-    background-color: #008037;
-    width: 50%;
-    margin-left: 25%;
+.schedulecont {
+    background-color: #c2dcc8;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 1% 1% 1%;
 }
 
-.schedule > div {
+
+.sched {
+    color: white !important;
+    background: radial-gradient(circle at left, rgb(1, 115, 29) 0%, rgb(3, 61, 19) 100%);
+    padding: 0.1%;
+}
+
+.schedule > div > div {
     display: flex;
     text-align: left;
 }
 
-.schedule > div > h3 {
-    width: 500px;
-    
+
+.mondaycont {
+    padding-left: 5.8em;
 }
 
-.schedule > div > div {
-    padding-left: 1em;
-    
+.tuesdaycont {
+    padding-left: 6em;
 }
 
+.wednesdaycont {
+    padding-left: 3em;
+}
+
+.thursdaycont {
+    padding-left: 4.5em;
+}
+
+.fridaycont {
+    padding-left: 7.6em;
+}
+
+.saturdaycont {
+    padding-left: 4.8em;
+}
+
+.addresscont {
+    display: block;
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.outpat {
+    display: flex;
+    margin-left: 5%;
+
+}
+
+.silvercont {
+    display: flex;
+    margin-left: 5%;
+}
+
+.addcont {
+    margin-left: 1%;
+}
+.underline {
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.backgroundcont {
+    text-align: left;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.backofrotate {
+    padding: 1% 0 0 1%;
+}
+
+.backgroundcont > div > h2 {
+    text-align: center;
+}
+
+.evalsection {
+    background-color: #c2dcc8;
+    width: 70%;
+
+}
+
+.expectcont {
+    text-align: left;
+    padding: 0.7% 0 0 0;
+}
+
+.responsetitle {
+    background-color: #008037;
+    text-align: center;
+    width: 68%;
+    margin-left: -4%;
+}
+
+.responsetitle > h2 {
+    color: white;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.backexpectcont {
+    background-color: #c2dcc8;
+    padding: 0 1% 1% 0;
+
+}
+
+.medprofs {
+    padding: 1% 0 0 1%;
+}
+
+.evaltitle {
+    background-color: #008037;
+    margin-left: -4.5%;
+    padding: 0.2%;
+    padding-left: 1%;
+    width: 95%;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.posteval {
+    color: white;
+    font-size: 31px;
+}
+
+.evaluate {
+    padding: 0 1% 0 1%;
+}
+
+.listtitle {
+    text-align: left;
+}
+
+.evallist {
+    display: flex;
+    text-align: left;
+}
+
+.evalinfo {
+    text-align: left;
+}
+
+
+
+
+.afaq {
+    color: white;
+    font-size: 200%;
+}
+
+.addit {
+    background-color: #008037;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1%;
+}
+
+.faqcont {
+    background-color: #c2dcc8;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.faqanswers {
+    padding-top: 1%;
+    padding-right: 1%;
+}
+
+
+
+
+.steps {
+    color: white;
+    background-color: #008037;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stepscont {
+    background-color: #c2dcc8;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+}
+
+.instalink {
+    color: black;
+}
+
+.instalink:hover {
+    color: blue;
+}
+
+.mandatory {
+    text-decoration: underline;
+    margin-left: 0.5%;
+}
+
+.essentials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1%;
+}
+
+.fivesteps {
+    text-align: left;
+    padding-left: 2%;
+}
+
+.steplist {
+    list-style-type: decimal;
+    font-weight: bold;
+}
+
+.stepall {
+    display: flex;
+    margin-top: 2%;
+}
+
+.step1title {
+    margin-top: 0.2%;
+}
+
+.step1cont {
+    width: 60%;
+    margin-left: 1%;
+    font-weight: normal;
+}
+
+.firsttake {
+    margin-top: -3%;
+}
+
+.optional {
+    font-weight: normal;
+}
+
+.stepcontent {
+    background-color: #c2dcc8;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 1% 0.5% 1%;
+}
+
+.stepalign {
+    margin-top: 1.5%;
+}
+
+.secondalign {
+    margin-top: 1.5%;
+    margin-bottom: -2%;
+}
+
+.requiredlist {
+    text-align: left;
+    list-style-type: decimal;
+    font-weight: bold;
+}
+
+.secreq {
+    margin-top: 2%;
+}
+
+.secndary {
+    font-weight: bold;
+}
+
+.mhi {
+    font-weight: 400;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.fourthlist {
+    margin-top: 2.3%;
+    padding: 0 1% .5% 6%;
+}
+
+.fifthalign {
+    text-align: left;
+    padding: 1.5% 0 2% 0;
+}
 
 
 
