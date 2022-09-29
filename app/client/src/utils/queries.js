@@ -17,8 +17,8 @@ export const QUERY_SERVICES = gql`
 `;
 
 export const QUERY_CHECKOUT = gql`
-  query getCheckout($products: [ID]!) {
-    checkout(products: $products) {
+  query getCheckout($services: [ID]!) {
+    checkout(services: $services) {
       session
     }
   }
@@ -26,7 +26,7 @@ export const QUERY_CHECKOUT = gql`
 
 export const QUERY_ALL_PRODUCTS = gql`
   {
-    products {
+    services {
       _id
       name
       description
