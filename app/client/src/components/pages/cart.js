@@ -6,12 +6,12 @@ import './style.css';
 
 
 export default function Cart () {
-  const [state, dispatch] = useStoreContext();
+  // const [state, dispatch] = useStoreContext();
 
 
-function toggleCart() {
-  dispatch({ type: TOGGLE_CART });
-}
+// function toggleCart() {
+//   dispatch({ type: TOGGLE_CART });
+// }
 
 
 
@@ -30,8 +30,8 @@ function toggleCart() {
 
 
   return (
-      <div className='cart'>
-        <div 
+      <div>
+        {/* <div 
         // onClick={toggleCart}
         >
                <span role='img' aria-label='trash'>
@@ -44,7 +44,7 @@ function toggleCart() {
                 
               ) : (
                 <span>(log in to check out)</span>
-              )}
+              )} */}
         </div>
         
     );

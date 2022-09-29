@@ -15,155 +15,283 @@ export default function Rotations() {
       <div>
         <Header></Header>
         <Container className='rotations'>
+
+      <div className='titlecont'>
+
+          <div className='rotatetitle'>
+
           <h2>USCE MATCH with Dr David Calimag (Neurologist)</h2>
           <h2 className='chicagoneuro'>CHICAGO NEUROLOGY HANDS-ON ROTATION</h2>
-      <Row className='abouts'>
-        <Col>
-       <div className='neuro'>
-        <ul className='doclist'>
-      <li>
-       <h1 className='logy'>Neurology</h1>
-      </li>
+
+          </div>
+
+          <br></br>
+          <br></br>
+
+        <div className='infohead'>
+
+          <div className='contactus'>
+
+            <p className='contus'>
+              CONTACT US:
+            </p>
+
+            <p>
+            847-299-1960
+            </p>
+
+            <p>
+            847-299-1961
+            </p>
+
+            <p>
+            847-881-7474 (mobile)
+            </p>
+
+          </div>
+
+          <div className='socialinsta'>
+
+            <p>
+            USCEMatch in Instagram
+            </p>
+
+            <p className='underline'>
+            <a href="mailto:andrewgulde@uscematch.com">andrewgulde@uscematch.com</a>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
       <br></br>
-      <li>
-       <div className='doc'>
-       <p>Dr. David Calimag</p>
-       </div>
-      </li>
+
+
+        <div className='dctitle'>
+
+        <h2 className='white dcwho'>
+        WHO IS DAVID CALIMAG MD?
+        </h2>
+
+        </div>
+
+    <div className='dccontent'>
+
+
+
+        <div className='flex'>
+
+          <h6 className='drtitle'>
+          PRE-MEDICAL EDUCATION:
+          </h6>
+
+          <p>
+          College of Science, University of Sto. Tomas,
+          </p>
+
+          </div>
+
+          <p>
+          Manila, Philippines - 1964 to 1968
+          </p>
+
+          <p>
+          Degree Conferred: B.S. General - March 1968
+          </p>
+
+
+
+          <div className='mededu'>
+
+            <div className='flex'>
+
+          <h6 className='drtitle'>
+          MEDICAL EDUCATION:
+          </h6>
+
+          <p>
+          Faculty of Medicine and Surgery, University of Sto. Tomas
+          </p>
+          
+
+          </div>
+
+          <p>
+          Manila, Philippines - 1968 to 1972
+          </p>
+
+          <p>
+          Degree Conferred: M.D. - April 1972 with a grade of Meritus
+          </p>
+
+          </div>
+
+
+
+          <div className='mededu'>
+
+            <div className='flex'>
+
+          <h6 className='drtitle'>
+          POST GRADUATE TRAINING: 
+          </h6>
+
+          <p>
+          Sto. Tomas University Hospital, Manila, Philippines
+          </p>
+          
+
+          </div>
+
+          <p>
+          Rotating Medical Internship - July 1972 to June 1973
+          </p>
+
+          <p>
+          Residency in Neuropsychiatry - July 1973 to June 1975
+          </p>
+
+          <p>
+          Fellowship in Neuropsychiatry - July 1975 to June 1976 in a program
+          </p>
+
+          <p>
+          jointly sponsored by the University of Sto. Tomas and Winthrop Stearns, Inc.
+          </p>
+
+          </div>
+
+          <div className='mededu'>
+
+            <div className='flex'>
+
+          <h6 className='drtitle'>
+          POST GRADUATE TRAINING: 
+          </h6>
+
+          <p>
+          United States
+          </p>
+          
+
+          </div>
+
+          <p>
+          Residency in Neurology - Louisville General University Hospital,
+          </p>
+
+          <p>
+          Louisville, Kentucky - July 1977 to June 1979
+          </p>
+
+          <p>
+          Fellowship in Neuromuscular Diseases as M.D.A. Fellow, University of
+          </p>
+
+          <p>
+          Cincinnati Medical Center - July 1979 to June 1980
+          </p>
+
+          <p>
+          Residency in Neurology as Senior Resident - University of Cincinnati
+          </p>
+
+          <p>
+          Medical Center - July 1980 to June 1981
+          </p>
+
+          </div> 
+
+
+          <div className='staffpos'>
+
+            <h6>
+            STAFF POSITION: 
+            </h6>
+            
+            <ul>
+
+              <li>
+                <div className='stafflist'>
+                <div className='atn'>
+                <h6>
+                Attending Neurologist 
+                </h6>
+                <p>
+                - Oak Forest Hospital, Division of Cook County Hospital System
+                </p>
+                </div>
+                <p>
+                Head of Neurodiagnostic Clinic, i.e. EEG and EMG
+                </p>
+                <p>
+                Retired: November 2008
+                </p>
+                </div>
+              </li>
+
+
+              <li>
+                <div className='stafflist'>
+                <div className='atn'>
+                <h6>
+                Consulting Neurologist and Head of Neurodiagnostic Clinic, Saint Anthony Hospital 
+                </h6>
+                <p>
+                - 2008
+                </p>
+                </div>
+                <p>
+                to present
+                </p>
+                </div>
+              </li>
+
+            </ul>
+            
+            
+          </div> 
+
+          <div className='privateprac'> 
+
+            <p>
+            In private practice since 1981; licensed to practice in Illinois, Wisconsin, and Kentucky. Associate Clinical 
+            Member of the American Academy of Neurology since 1983. Diplomate: American Academy of Pain 
+            Management.
+            </p>
+
+            <p className='saintanth'>
+            He has been a member of Saint Anthony Hospital's medical staff (S.A.H.) from 1982 until the present. He 
+            knows most of his patients at S.A.H. He speaks their language and understands their lifestyle and culture, 
+            making his patients feel amazingly comfortable.
+            </p>
+
+            <div className='dcexp'>
+
+            <p className='indent'>
+            He is an old-school general neurologist with a wealth of experience and wisdom, being in practice
+            </p>
+
+            <p>
+            for about 40 years. He loves having students around him- it makes him feel young.
+            </p>
+
+            </div>
+
+            
+          </div>
+
+
+      </div>
+
+
+      
+
       <br></br>
-      <li>
-       <div>
-        <img className='docimg' src={DocImg}></img>
-       </div>
-       </li>
-       
-       </ul>
-       
-        
-       </div>
-       </Col>
 
 
-       <br></br>
 
-       <Col>
-       <div className='background'>
-        <ul className='medlist'>
-      <li>
-       <h1 className='im'>WHO IS DAVID CALIMAG MD?</h1>
-      </li>
-      
-        <li>
-       <div className='pb'>
-       <h2>PRE-MEDICAL EDUCATION:</h2>
-       </div>
-       </li>
-       <li>
-       <div className='profback'>
-        <p>College of Science, University of Sto. Tomas,
-           Manila, Philippines - 1964 to 1968
-           Degree Conferred: B.S. General - March 1968
-        </p>
-       </div>
-       </li>
-
-       <li>
-       <div className='bot'>
-       <h2>MEDICAL EDUCATION:</h2>
-       </div>
-      </li>
-      <li>
-      <div className='botr'>
-      <p>Faculty of Medicine and Surgery, University of Sto. Tomas
-         Manila, Philippines - 1968 to 1972
-         Degree Conferred: M.D. - April 1972 with a grade of Meritus 
-        </p>
-      </div>
-      </li>
-
-      <li>
-       <div className='bot'>
-       <h2>POST GRADUATE TRAINING:</h2>
-       </div>
-      </li>
-      <li>
-      <div className='botr'>
-      <p> United States
-         Residency in Neurology - Louisville General University Hospital,
-         Louisville, Kentucky - July 1977 to June 1979
-         Fellowship in Neuromuscular Diseases as M.D.A. Fellow, University of
-         Cincinnati Medical Center - July 1979 to June 1980
-         Residency in Neurology as Senior Resident - University of Cincinnati
-         Medical Center - July 1980 to June 1981
-        </p>
-      </div>
-      </li>
-      
-       
-       </ul>
-
-       <Col>
-
-       <div>
-
-       <h2>STAFF POSITION:</h2>
-       
-       <ul>
-
-       <li>
-       <div className='bot'>
-       </div>
-      </li>
-
-      <li>
-      <h3>Attending Neurologist</h3>
-        <p>- Oak Forest Hospital, Division of Cook County Hospital System
-           Head of Neurodiagnostic Clinic, i.e. EEG and EMG
-           Retired: November 2008</p>
-      </li>
-
-      <li>
-        <h3>Consulting Neurologist and Head of Neurodiagnostic Clinic, Saint Anthony Hospital</h3>
-        <p> - 1982 to present.
-        </p>
-      </li>
-      <li>
-        <h3>Consulting Neurologist and Head of Neurodiagnostic Clinic Bethany Methodist Hospital</h3>
-        <p>- 2008 to present.</p>
-      </li>
-
-      </ul>
-
-      </div>
-
-      </Col>
-
-      <Col>
-      
-      <div className='dccont'>
-
-      <p>In private practice since 1981; licensed to practice in Illinois, Wisconsin, and Kentucky. Associate Clinical 
-        Member of the American Academy of Neurology since 1983. Diplomate: American Academy of Pain 
-        Management.
-      </p>
-
-      <p>He has been a member of Saint Anthony Hospital's medical staff (S.A.H.) from 1982 until the present. He 
-         knows most of his patients at S.A.H. He speaks their language and understands their lifestyle and culture, 
-         making his patients feel amazingly comfortable
-        
-      </p>
-
-      <p>He is an old-school general neurologist with a wealth of experience and wisdom, being in practice 
-         for about 40 years. He loves having students around him- it makes him feel young
-      </p>
-        
-       </div>
-       </Col>
-
-       </div>
-       </Col>
-
-       </Row>
 
        <hr className='hrblock'></hr>
 
@@ -172,7 +300,7 @@ export default function Rotations() {
       <div className='titleof'>
 
 
-        <h2>BACKGROUND OF THE ROTATION</h2>
+        <h2 className='white backrotate'>BACKGROUND OF THE ROTATION</h2>
 
       </div>
 
@@ -367,7 +495,7 @@ export default function Rotations() {
        <Row>
             <div className='schedule'>
 
-              <h2 className='sched'>SCHEDULE</h2>
+              <h2 className='sched white'>SCHEDULE</h2>
 
               <br></br>
 
@@ -510,7 +638,7 @@ export default function Rotations() {
 
         
         <div className='underline'>
-            <p>Neurology and Neurodiagnostics</p> 
+            <p className='neurodiag'>Neurology and Neurodiagnostics</p> 
         </div>
         <div className='addcont'>
             <p >at 1600 Dempster St. Park Ridge, Illinois 60068</p>
@@ -721,10 +849,6 @@ export default function Rotations() {
           </div>
 
 
-
-
-
-
         </div>
 
         <br></br>
@@ -738,8 +862,6 @@ export default function Rotations() {
           <div className='addit'>
             <h3 className='afaq'>Additional FAQs</h3>
           </div>
-
-          <br></br>
 
           <div className='faqcont'>
 
@@ -792,7 +914,7 @@ export default function Rotations() {
               
 
               <p>
-              The price for the package starts at $ 2,299.
+              The price for the package starts at $2,299.
 
               </p>
 
@@ -905,7 +1027,7 @@ export default function Rotations() {
 
           <br></br>
 
-          <hr className='hrblock'></hr>
+          <hr className='hr'></hr>
 
           <br></br>
 
@@ -915,7 +1037,7 @@ export default function Rotations() {
 
             <div className='steps'>
 
-            <h3>
+            <h3 className='appsteps'>
             STEPS IN THE APPLICATION
             </h3>
 
@@ -985,7 +1107,7 @@ export default function Rotations() {
               </div>
             </li>
 
-            <div className='stepall'>
+            <div className='stepall secondstep'>
 
             <li>
             <h6>
@@ -1078,12 +1200,12 @@ export default function Rotations() {
             </h4>
             
 
-            <div className='stepalign'>
+            <div className='stepalign thirdcont'>
 
             <p>
             We will agree on a time and date (we are central time) to call you through Instagram call or WhatsApp 
             to assist you in confirming the start date of your rotation, verify availability, and confirm which 
-            package you wish to proceed with and instructions for the non-refundable reservation fee of $ 500.
+            package you wish to proceed with and instructions for the non-refundable reservation fee of $500.
             </p>
 
             </div>
@@ -1104,7 +1226,7 @@ export default function Rotations() {
             <div className='stepalign'>
 
             <p>
-            You will receive an e-mail confirmation that the $ 500 has successfully been processed.
+            You will receive an e-mail confirmation that the $500 has successfully been processed.
             </p>
             
 
@@ -1156,10 +1278,13 @@ export default function Rotations() {
 
             <div className='stepcontent'>
 
+              <div className='fifthstep'>
 
             <h4>
               FIFTH STEP:
             </h4>
+
+            </div>
 
             
 

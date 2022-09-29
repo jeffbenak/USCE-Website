@@ -7,6 +7,31 @@ h2 {
     color:rgb(8, 96, 34);
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.indent {
+    margin-left: 6.6%;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+
+
+
+
+
 .review {
     display: inline-block;
     color: #008037;
@@ -109,8 +134,137 @@ h2 {
 
 
 
+
+
+/* .titlecont {
+    display: block;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .infohead {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    background-color:#008037;
+    z-index: 2;
+    width: 37%;
+    height: 25%;
+    margin-top: 5%;
+    margin-left: 18.7%;
+} */
+
+
+/* .rotatetitle {
+
+} */
+
+.infohead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactus {
+    display: block;
+    text-align: left;
+    margin-left: 22%;
+}
+
+.contus {
+    font-weight: bold;
+}
+
+.socialinsta {
+    display: block;
+    text-align: left;
+    margin-right: 18%;
+}
+
+.dctitle {
+    background-color: #008037;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dcwho {
+    padding: 0.7%;
+}
+
+.dccontent {
+    width: 60%;
+    background-color: #c2dcc8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 1% 0 0.5% 1%;
+    text-align: left;
+    line-height: 0.5;
+}
+
+.drtitle {
+    margin-right: 0.5%;
+    margin-top: -0.7%;
+}
+
+.mededu {
+    padding-top: 2.5%;
+}
+
+.staffpos {
+    padding: 2% 0 0 0;
+}
+
+.staffpos > ul {
+    list-style-type: decimal;
+}
+
+.atn {
+    display: flex;
+}
+
+.atn > h6 {
+    font-weight: bold;
+}
+
+.atn > p {
+    padding: .7% 0 0 .8%;
+}
+
+.stafflist {
+    margin-left: 1.5%;
+}
+
+.titleof {
+    background-color: #008037;
+    width: 60%;
+    margin-left: auto;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.backrotate {
+    padding: 0.9%;
+}
+
+.privateprac {
+    line-height: 2;
+}
+
+.saintanth {
+    margin-top: -2%;
+}
+
+.dcexp {
+    line-height: 1;
+    margin-top: 2.5%;
+}
+
+
+
+
 .hr {
-    border: 1px solid rgb(1, 60, 11);
+    border: 1px solid rgb(0, 0, 0);
     width: 100%;
 }
 
@@ -119,12 +273,10 @@ h2 {
     font-weight: bold;
 }
 
-.dccont {
-    text-align: left;
-}
-
 .hrblock {
     border: 1px solid black;
+    width: 70%;
+    margin: auto;
 }
 
 
@@ -138,9 +290,11 @@ h2 {
 
 
 .sched {
-    color: white !important;
     background: radial-gradient(circle at left, rgb(1, 115, 29) 0%, rgb(3, 61, 19) 100%);
-    padding: 0.1%;
+    padding: 0.3%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .schedule > div > div {
@@ -194,8 +348,8 @@ h2 {
 .addcont {
     margin-left: 1%;
 }
-.underline {
-    text-decoration: underline;
+
+.neurodiag {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -205,8 +359,7 @@ h2 {
 .backgroundcont {
     text-align: left;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2% auto;
 }
 
 .backofrotate {
@@ -220,7 +373,7 @@ h2 {
 .evalsection {
     background-color: #c2dcc8;
     width: 70%;
-
+    margin: auto;
 }
 
 .expectcont {
@@ -237,6 +390,7 @@ h2 {
 
 .responsetitle > h2 {
     color: white;
+    padding: 0.9%;
     box-shadow: 5px 5px #003f1b;
 }
 
@@ -253,7 +407,6 @@ h2 {
 .evaltitle {
     background-color: #008037;
     margin-left: -4.5%;
-    padding: 0.2%;
     padding-left: 1%;
     width: 95%;
     box-shadow: 5px 5px #003f1b;
@@ -262,6 +415,7 @@ h2 {
 .posteval {
     color: white;
     font-size: 31px;
+    padding: 0.9%;
 }
 
 .evaluate {
@@ -287,24 +441,27 @@ h2 {
 .afaq {
     color: white;
     font-size: 200%;
+    padding: 0.5%;
+    box-shadow: 5px 5px #003f1b;
 }
 
 .addit {
     background-color: #008037;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.1%;
+    width: 50%;
+    margin: auto;
 }
 
 .faqcont {
     background-color: #c2dcc8;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2% auto;
     text-align: left;
     padding-left: 1%;
     padding-top: 1%;
+}
+
+.faqcont > div > p {
+    line-height: 2;
 }
 
 .faqanswers {
@@ -319,15 +476,17 @@ h2 {
     color: white;
     background-color: #008037;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+}
+
+.appsteps {
+    padding: 0.6%;
 }
 
 .stepscont {
     background-color: #c2dcc8;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     padding-top: 0.5%;
     padding-bottom: 0.1%;
 }
@@ -399,6 +558,11 @@ h2 {
 .secondalign {
     margin-top: 1.5%;
     margin-bottom: -2%;
+    line-height: 2;
+}
+
+.secondstep {
+    margin-top: -0.2%;
 }
 
 .requiredlist {
@@ -420,15 +584,26 @@ h2 {
     font-family: 'Roboto', 'sans-serif';
 }
 
+.thirdcont {
+    line-height: 2;
+}
+
 .fourthlist {
-    margin-top: 2.3%;
+    margin-top: 2.8%;
     padding: 0 1% .5% 6%;
 }
 
-.fifthalign {
-    text-align: left;
-    padding: 1.5% 0 2% 0;
+.fifthstep {
+    padding-top: -1%;
 }
+
+.fifthalign {
+    text-align: center;
+    padding: 1.5% 0 2% 0;
+    line-height: 1;
+}
+
+
 
 
 
@@ -679,10 +854,6 @@ overflow: auto;
     transform: rotate(8deg);
 }
 
-.abouts {
-    margin-right: 10%;
-}
-
 .aboutmatch {
     display: inline-block;
 }
@@ -694,33 +865,6 @@ overflow: auto;
 
 .docimg {
     width: 100%;
-}
-
-.pb {
-    color: #008037;
-    padding-top: 20%;
-}
-
-.doclist {
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: 10%;
-    
-}
-
-.medlist {
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: 25%;
-
-}
-
-.bot {
-    color: #008037;
-}
-
-.botr {
-    text-align: justify;
 }
 
 .profback {
