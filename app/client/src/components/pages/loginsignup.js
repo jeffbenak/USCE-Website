@@ -62,7 +62,7 @@ export default function LoginSignup() {
    
       <div className='login'>
       <Container fluid="md">
-        <h2>Login</h2>
+        <h2 className='login'>Login</h2>
         <br></br>
         <div className='userlogin'>
           <Row sm={1}>

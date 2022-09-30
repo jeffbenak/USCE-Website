@@ -7,6 +7,7 @@ import  Home  from './components/pages/home';
 import  LoginSignup  from './components/pages/loginsignup';
 import  Rotations  from './components/pages/rotations';
 import  Register  from './components/pages/register';
+import Chatroom from './components/pages/chatroom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './css/index.css';
 
@@ -22,6 +23,7 @@ function App() {
     <Route exact path="/rotations" element={<Rotations />}/>
     <Route exact path="/hof" element={<Hof />}/>
     <Route exact path="/register" element={<Register />}/>
+    <Route exact path="/chatroom" element={<Chatroom />}/>
     </Routes>
     
     </Router>

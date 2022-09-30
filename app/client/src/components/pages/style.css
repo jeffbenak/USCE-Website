@@ -1,3 +1,847 @@
+h1 {
+    /* font-family: 'Roboto', sans-serif; */
+    color:rgb(8, 96, 34);
+}
+
+h2 {
+    color:rgb(8, 96, 34);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.white {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.indent {
+    margin-left: 6.6%;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+
+
+
+
+
+.review {
+    display: inline-block;
+    color: #008037;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.inline {
+    display: inline-block;
+    color: #008037;
+}
+
+.studrev {
+    text-align: justify;
+    line-height: 1.7em;
+}
+
+.drrev {
+    background-color: #c2dcc8;
+}
+
+.drjash {
+    margin: 32% 5% 5% 5%;
+    width: 90%;
+    height: 500px;
+}
+
+.drshik {
+    margin: 15% 5% 5% 5%;
+    width: 80%;
+    height: 70%;
+}
+
+.drkat {
+    margin: 42% 5% 5% 5%;
+    width: 100%;
+    height: 600px;
+}
+
+.drchef {
+    margin: 23% 5% 5% 5%;
+    width: 80%;
+    height: 500px;
+}
+
+.drjuan {
+    margin: 14% 5% 5% 5%;
+    width: 85%;
+    height: 500px;
+}
+
+.drparo {
+    margin: 30% 5% 5% 5%;
+    width: 90%;
+    height: 620px;
+}
+
+.drprad {
+    margin: 34% 5% 5% 5%;
+    width: 85%;
+    height: 550px;
+}
+
+.drfatima {
+    margin: 18% 5% 5% 5%;
+    width: 70%;
+    height: 450px;
+}
+
+.drkim {
+    margin: 7% 5% 5% 5%;
+    width: 70%;
+    height: 450px;
+}
+
+.drcesar {
+    margin: 17% 5% 5% 5%;
+    width: 70%;
+    height: 450px;
+}
+
+.drmonica {
+    margin: 12% 5% 5% 5%;
+    width: 70%;
+    height: 450px;
+}
+
+.drronald {
+    margin: 8% 5% 5% 5%;
+    width: 70%;
+    height: 450px;
+}
+
+.drharpreet {
+    margin: 8% 5% 5% 5%;
+    width: 70%;
+    height: 450px;
+}
+
+
+
+
+
+
+/* .titlecont {
+    display: block;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .infohead {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    background-color:#008037;
+    z-index: 2;
+    width: 37%;
+    height: 25%;
+    margin-top: 5%;
+    margin-left: 18.7%;
+} */
+
+
+/* .rotatetitle {
+
+} */
+
+.infohead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactus {
+    display: block;
+    text-align: left;
+    margin-left: 22%;
+}
+
+.contus {
+    font-weight: bold;
+}
+
+.socialinsta {
+    display: block;
+    text-align: left;
+    margin-right: 18%;
+}
+
+.dctitle {
+    background-color: #008037;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dcwho {
+    padding: 0.7%;
+}
+
+.dccontent {
+    width: 60%;
+    background-color: #c2dcc8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 1% 0 0.5% 1%;
+    text-align: left;
+    line-height: 0.5;
+}
+
+.drtitle {
+    margin-right: 0.5%;
+    margin-top: -0.7%;
+}
+
+.mededu {
+    padding-top: 2.5%;
+}
+
+.staffpos {
+    padding: 2% 0 0 0;
+}
+
+.staffpos > ul {
+    list-style-type: decimal;
+}
+
+.atn {
+    display: flex;
+}
+
+.atn > h6 {
+    font-weight: bold;
+}
+
+.atn > p {
+    padding: .7% 0 0 .8%;
+}
+
+.stafflist {
+    margin-left: 1.5%;
+}
+
+.titleof {
+    background-color: #008037;
+    width: 60%;
+    margin-left: auto;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.backrotate {
+    padding: 0.9%;
+}
+
+.privateprac {
+    line-height: 2;
+}
+
+.saintanth {
+    margin-top: -2%;
+}
+
+.dcexp {
+    line-height: 1;
+    margin-top: 2.5%;
+}
+
+
+
+
+.hr {
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+}
+
+
+.chicagoneuro {
+    font-weight: bold;
+}
+
+.hrblock {
+    border: 1px solid black;
+    width: 70%;
+    margin: auto;
+}
+
+
+.schedulecont {
+    background-color: #c2dcc8;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 1% 1% 1%;
+}
+
+
+.sched {
+    background: radial-gradient(circle at left, rgb(1, 115, 29) 0%, rgb(3, 61, 19) 100%);
+    padding: 0.3%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.schedule > div > div {
+    display: flex;
+    text-align: left;
+}
+
+
+.mondaycont {
+    padding-left: 5.8em;
+}
+
+.tuesdaycont {
+    padding-left: 6em;
+}
+
+.wednesdaycont {
+    padding-left: 3em;
+}
+
+.thursdaycont {
+    padding-left: 4.5em;
+}
+
+.fridaycont {
+    padding-left: 7.6em;
+}
+
+.saturdaycont {
+    padding-left: 4.8em;
+}
+
+.addresscont {
+    display: block;
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.outpat {
+    display: flex;
+    margin-left: 5%;
+
+}
+
+.silvercont {
+    display: flex;
+    margin-left: 5%;
+}
+
+.addcont {
+    margin-left: 1%;
+}
+
+.neurodiag {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+.backgroundcont {
+    text-align: left;
+    width: 70%;
+    margin: 2% auto;
+}
+
+.backofrotate {
+    padding: 1% 0 0 1%;
+}
+
+.backgroundcont > div > h2 {
+    text-align: center;
+}
+
+.evalsection {
+    background-color: #c2dcc8;
+    width: 70%;
+    margin: auto;
+}
+
+.expectcont {
+    text-align: left;
+    padding: 0.7% 0 0 0;
+}
+
+.responsetitle {
+    background-color: #008037;
+    text-align: center;
+    width: 68%;
+    margin-left: -4%;
+}
+
+.responsetitle > h2 {
+    color: white;
+    padding: 0.9%;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.backexpectcont {
+    background-color: #c2dcc8;
+    padding: 0 1% 1% 0;
+
+}
+
+.medprofs {
+    padding: 1% 0 0 1%;
+}
+
+.evaltitle {
+    background-color: #008037;
+    margin-left: -4.5%;
+    padding-left: 1%;
+    width: 95%;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.posteval {
+    color: white;
+    font-size: 31px;
+    padding: 0.9%;
+}
+
+.evaluate {
+    padding: 0 1% 0 1%;
+}
+
+.listtitle {
+    text-align: left;
+}
+
+.evallist {
+    display: flex;
+    text-align: left;
+}
+
+.evalinfo {
+    text-align: left;
+}
+
+
+
+
+.afaq {
+    color: white;
+    font-size: 200%;
+    padding: 0.5%;
+    box-shadow: 5px 5px #003f1b;
+}
+
+.addit {
+    background-color: #008037;
+    width: 50%;
+    margin: auto;
+}
+
+.faqcont {
+    background-color: #c2dcc8;
+    width: 75%;
+    margin: 2% auto;
+    text-align: left;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.faqcont > div > p {
+    line-height: 2;
+}
+
+.faqanswers {
+    padding-top: 1%;
+    padding-right: 1%;
+}
+
+
+
+
+.steps {
+    color: white;
+    background-color: #008037;
+    width: 70%;
+    margin: auto;
+}
+
+.appsteps {
+    padding: 0.6%;
+}
+
+.stepscont {
+    background-color: #c2dcc8;
+    width: 70%;
+    margin: auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+}
+
+.instalink {
+    color: black;
+}
+
+.instalink:hover {
+    color: blue;
+}
+
+.mandatory {
+    text-decoration: underline;
+    margin-left: 0.5%;
+}
+
+.essentials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1%;
+}
+
+.fivesteps {
+    text-align: left;
+    padding-left: 2%;
+}
+
+.steplist {
+    list-style-type: decimal;
+    font-weight: bold;
+}
+
+.stepall {
+    display: flex;
+    margin-top: 2%;
+}
+
+.step1title {
+    margin-top: 0.2%;
+}
+
+.step1cont {
+    width: 60%;
+    margin-left: 1%;
+    font-weight: normal;
+}
+
+.firsttake {
+    margin-top: -3%;
+}
+
+.optional {
+    font-weight: normal;
+}
+
+.stepcontent {
+    background-color: #c2dcc8;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1% 1% 0.5% 1%;
+}
+
+.stepalign {
+    margin-top: 1.5%;
+}
+
+.secondalign {
+    margin-top: 1.5%;
+    margin-bottom: -2%;
+    line-height: 2;
+}
+
+.secondstep {
+    margin-top: -0.2%;
+}
+
+.requiredlist {
+    text-align: left;
+    list-style-type: decimal;
+    font-weight: bold;
+}
+
+.secreq {
+    margin-top: 2%;
+}
+
+.secndary {
+    font-weight: bold;
+}
+
+.mhi {
+    font-weight: 400;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.thirdcont {
+    line-height: 2;
+}
+
+.fourthlist {
+    margin-top: 2.8%;
+    padding: 0 1% .5% 6%;
+}
+
+.fifthstep {
+    padding-top: -1%;
+}
+
+.fifthalign {
+    text-align: center;
+    padding: 1.5% 0 2% 0;
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+.grid-container {
+    display: none;
+    width: 1296px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0px;
+    grid-auto-rows: minmax(100px, auto);
+    /* position: relative;
+    left: 125px; */
+}
+
+
+
+/* COLUMN 1 */
+
+
+.c-1 {
+    grid-column: 1;
+    grid-row: 1;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: 51px;
+    width: 101%;
+    height: 50%;
+    font-weight: bold;
+}
+
+.c-1-1 {
+    grid-column: 1;
+    grid-row: 2;
+    border: 2px solid black;
+    padding-top: 10%;
+    width: 101%;
+    height: 60%;
+    font-size: 15px;
+}
+
+.c-1-2 {
+    grid-column: 1;
+    grid-row: 3;
+    border: 2px solid black;
+    padding-top: 20px;
+    margin-top: -31%;
+    width: 101%;
+    height: 80%;
+    font-size: 15px;
+}
+
+.c-1-3 {
+    grid-column: 1;
+    grid-row: 4;
+    border: 2px solid black;
+    padding-top: 20px;
+    margin-top: -88px;
+    width: 101%;
+    height: 79%;
+    font-size: 15px;
+}
+
+
+
+/* COLUMN 2 */
+
+
+
+.c-2 {
+    grid-column: 2;
+    grid-row: 1;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: 51px;
+    width: 70%;
+    height: 50%;
+    font-weight: bold;
+    
+}
+
+.c-2-1 {
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid black;
+    padding-top: 40%;
+    width: 70%;
+    height: 156%;
+    
+}
+
+
+
+/* COLUMN 3 */
+
+
+
+.c-3 {
+    grid-column: 3;
+    grid-row: 1;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: 51px;
+    margin-left: -66px;
+    width: 71%;
+    height: 50%;
+    font-weight: bold;
+}
+
+.c-3-1 {
+    grid-column: 3;
+    grid-row: 2;
+    border: 2px solid black;
+    padding-top: 40%;
+    margin-left: -66px;
+    width: 71%;
+    height: 156%;
+}
+
+
+
+/* COLUMN 4 */
+
+
+
+.c-4 {
+    grid-column: 4;
+    grid-row: 1;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: 51px;
+    margin-left: -130px;
+    width: 71%;
+    height: 50%;
+    font-weight: bold;
+}
+
+.c-4-1 {
+    grid-column: 4;
+    grid-row: 2;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-left: -130px;
+    width: 71%;
+    height: 156%;
+}
+
+
+
+/*  COLUMN 5 */
+
+
+
+.c-5 {
+    grid-column: 5;
+    grid-row: 1;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: 51px;
+    margin-left: -194px;
+    width: 71%;
+    height: 50%;
+    font-weight: bold;
+}
+
+.c-5-1 {
+    grid-column: 5;
+    grid-row: 2;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-left: -194px;
+    width: 71%;
+    height: 50%;
+}
+
+.c-5-2 {
+    grid-column: 5;
+    grid-row: 3;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: -83px;
+    margin-left: -194px;
+    width: 71%;
+    height: 174%;
+}
+
+
+
+
+/* COLUMN 6 */
+
+
+
+.c-6 {
+    grid-column: 6;
+    grid-row: 1;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: 51px;
+    margin-left: -258px;
+    width: 101%;
+    height: 50%;
+    font-weight: bold;
+}
+
+.c-6-1 {
+    grid-column: 6;
+    grid-row: 2;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-left: -258px;
+    width: 101%;
+    height: 50%;
+}
+
+.c-6-2 {
+    grid-column: 6;
+    grid-row: 3;
+    border: 2px solid black;
+    padding-top: 15px;
+    margin-top: -83px;
+    margin-left: -258px;
+    width: 101%;
+    height: 174%;
+}
+
+
+
+
+
+
 .cart {
 position: absolute;
 font-size: 2.3rem;
@@ -6,19 +850,13 @@ right: .5rem;
 overflow: auto;
 }
 
-
 .cart:hover {
     transform: rotate(8deg);
 }
 
-.abouts {
-    display: flex;
-    margin-right: 10%;
+.aboutmatch {
+    display: inline-block;
 }
-
- /* .neuro {
-    text-align: ;
- } */
 
 .doc {
     margin-left: 1sem;
@@ -29,73 +867,54 @@ overflow: auto;
     width: 100%;
 }
 
-
-/* .logy {
-
-    margin-left: 30%;
-} */
-
-.pb {
-    color: #008037;
-    padding-top: 20%;
-}
-
-.doclist {
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: 10%;
-    
-}
-
-.medlist {
-    list-style-type: none;
-    margin-top: 5%;
-    margin-left: 25%;
-
-}
-
-.bot {
-    color: #008037;
-}
-
-.botr {
-    text-align: justify;
-    word-break: break-all;
-}
-
 .profback {
     text-align: justify;
-    word-break: break-all;
 }
 
 .fame {
     margin: 5% 0 0 0;
 }
 
-.studimg {
-    margin-right: 30%;
-    width: 70%;
-    height: 400px;
-}
-
 .doctitle {
     line-height: 3em;
-}
-
-.review {
-    color: #008037;
-}
-
-.studrev {
-    text-align: justify;
-    word-break: break-all;
-    line-height: 1.7em;
 }
 
 .matched {
     line-height: 1.7em;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.chatroom {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20%;
+}
+
+.pagein {
+    font-size: 100px;
+    color: black !important;
+}
+
+.chatlink {
+    font-size: 60px;
+    color: black !important;
+    
+}
+
+.here {
+    color: black;
+}
+
+.here:hover {
+    color: #008037;
+}
+
+.hammer {
+    font-size: 100px;
+    color: black;
+}
+
+
 
  /* MEDIA QUERIES */
 
