@@ -612,8 +612,8 @@ h6 {
 
 
 .grid-container {
-    display: none;
     width: 1296px;
+    margin-left: 10.5%;
 }
 
 
@@ -622,8 +622,6 @@ h6 {
     grid-template-columns: repeat(6, 1fr);
     gap: 0px;
     grid-auto-rows: minmax(100px, auto);
-    /* position: relative;
-    left: 125px; */
 }
 
 
@@ -940,6 +938,46 @@ overflow: auto;
     }
   }
 
+  @media screen and (max-width: 1400px) {
+    .grid-container {
+        width: 896px;
+        margin-left: 5%;
+    }
+    .grid {
+        grid-template-columns: 24% 24% 24% 24% 24% 22%;
+    }
+  }
+
+  
+  @media screen and (max-width: 1200px) {
+    .grid-container {
+        width: 796px;
+        margin-left: -2.5%;
+    }
+    .grid {
+        grid-template-columns: 27% 27% 27% 27% 27% 24%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .grid-container {
+        width: 396px;
+        margin-left: -17%;
+    }
+    .grid {
+        grid-template-columns: 53% 53% 53% 53% 53% 35%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        width: 50%;
+        margin-left: -17%;
+    }
+    .grid {
+        grid-template-columns: 71% 71% 71% 71% 70% 70%;
+  }
+}
 
 
 
