@@ -3,19 +3,20 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 
 import DrShikhar from '../pages/reviewimgs/drshikhar.png';
-import DrJashank from '../pages/reviewimgs/drjash.png';
+import DrJashank from '../pages/reviewimgs/drjash.jpg';
 import DrKatryna from '../pages/reviewimgs/drkatryna.png';
-import DrChef from '../pages/reviewimgs/drchef.png';
+import DrChef from '../pages/reviewimgs/drchef.jpg';
 import DrJuan from '../pages/reviewimgs/drjuan.png';
 import DrParo from '../pages/reviewimgs/drparo.png';
-import DrPradeep from '../pages/reviewimgs/drprad.png';
-import DrFatima from '../pages/reviewimgs/drfatima.png';
+import DrPradeep from '../pages/reviewimgs/drprad.jpg';
+import DrFatima from '../pages/reviewimgs/drfatima.jpg';
 import DrKim from '../pages/reviewimgs/drkim.png';
-import DrCesar from '../pages/reviewimgs/dranthony.png';
+import DrCesar from '../pages/reviewimgs/dranthony.jpg';
 import DrMonica from '../pages/reviewimgs/drmonica.png';
-import DrRonald from '../pages/reviewimgs/drronald.png';
-// import DrPari from '../pages/reviewimgs/drpari.png';
-import DrHarpreet from '../pages/reviewimgs/drharpreet.png';
+import DrRonald from '../pages/reviewimgs/drronald.jpg';
+import DrPari from '../pages/reviewimgs/drpari.jpg';
+import DrHarpreet from '../pages/reviewimgs/drharpreet.jpg';
+import DrClint from '../pages/reviewimgs/drclint.png'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -26,23 +27,35 @@ import Col from 'react-bootstrap/Col';
 export default function Hof() {
     return (
       <div>
+        <a name='header'></a>
         <Header></Header>
+        <br></br>
         <Container>
-          <Row className='fame'>
+
+          <div className='hoftitle'>
+          <h1>Hall Of Fame</h1>
+          </div>
+
+          <Row className='fame doctorreview'>
             <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Shikhar Khurana From M. S. Ramaiah Medical College</h4>
+            
+          
+            </div>
+
+            <br></br>
+            
 
         <div>
         <img className='drshik' src={DrShikhar}></img>
        </div>
             </Col>
 
-            <Col>
+            <Col className='drshikrev'>
 
-            <div className='doctitle'>
-              <h4>Dr. Shikhar Khurana From M. S. Ramaiah Medical College</h4>
             <br></br>
-            <h5 className='matched'></h5>
-            </div>
             <br></br>
          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
          <br></br>
@@ -97,8 +110,15 @@ export default function Hof() {
 
           <br></br>
 
-          <Row className='drrev'>
+          <Row className='drjashrev doctorreview'>
+
+            
             <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Jashank Parwani From Lokmanya Tilak Municipal Medical College, Mumbai, India</h4>
+            <br></br>
+            </div>
 
         <div>
         <img className='drjash' src={DrJashank}></img>
@@ -107,11 +127,6 @@ export default function Hof() {
 
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr. Jashank Parwani From Lokmanya Tilak Municipal Medical College, Mumbai, India</h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
             <br></br>
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
@@ -172,8 +187,14 @@ export default function Hof() {
             */}
 
         <Container>
-          <Row className='fame'>
+          <Row className='fame doctorreview'>
             <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Katryna Torres From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine</h4>
+            </div>
+            
+            <br></br>
 
         <div>
         <img className='drkat' src={DrKatryna}></img>
@@ -182,11 +203,6 @@ export default function Hof() {
 
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr. Katryna Torres From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine</h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
             <br></br>
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
@@ -255,22 +271,24 @@ export default function Hof() {
 
           <br></br>
 
-          <Row className='drrev'>
+          <Row className='drrev doctorreview'>
             <Col>
+
+            <div className='doctitle'>
+              <br></br>
+              <h4>Dr. Chef Stan Macaraeg From FEU-NRMF Institute of Medicine - Philippines</h4>
+          
+            </div>
+
+            <br></br>
 
         <div>
         <img className='drchef' src={DrChef}></img>
        </div>
             </Col>
 
-            <Col>
+            <Col className='drchefrev'>
 
-            <div className='doctitle'>
-              <br></br>
-              <h4>Dr. Chef Stan Macaraeg From FEU-NRMF Institute of Medicine - Philippines</h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
             <br></br>
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
@@ -326,21 +344,24 @@ export default function Hof() {
 
           
 <Container>
-          <Row className='fame'>
+          <Row className='fame doctorreview'>
             <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Juan Fernando Ortiz is from Universidad San Francisco de Quito</h4>
+          
+            </div>
+
+            <br></br>
 
         <div>
         <img className='drjuan' src={DrJuan}></img>
        </div>
             </Col>
 
-            <Col>
+            <Col className='reviewtitle'>
 
-            <div className='doctitle'>
-              <h4>Dr. Juan Fernando Ortiz is from Universidad San Francisco de Quito</h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
+
             <br></br>
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
@@ -381,28 +402,96 @@ export default function Hof() {
           *********** 
             */}
 
+            <br></br>
+
+<Container>
+          <Row className='drpradrev doctorreview'>
+            <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Pradeep Chevula is from Soochow University Medical College </h4>
+          
+            </div>
+
+            <br></br>
+
+        <div>
+        <img className='drprad' src={DrPradeep}></img>
+       </div>
+            </Col>
+
+            <Col>
+
+            <br></br>
+          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <br></br>
+          <br></br>
+          <div className='studrev'>
+            <p>
+            I'm Dr. Pradeep Chevula. I'm very fortunate to do my Neurology clinical rotation with Dr. Calimag. He is a fantastic person and a great teacher! 
+        </p>
+        <p>
+        During the four weeks of my rotation, I got a chance to see the most common cases in Neurology, such as seizures, 
+        migraine, brain concussion, Parkinson's, Cervical and lumbosacral radiculopathies, TIA, Dementia, Insomnia, Cluster 
+        headache, Post herpetic neuralgia, Tenosynovitis, TBI, diabetic neuropathy, carpal tunnel syndrome, cubital tunnel 
+        syndrome, Multiple sclerosis, Meralgia Parasthetica, Peripheral neuropathies and also some interesting cases like 
+        Marchiafava big-name syndrome, Post COVID Neurological manifestations, Diffuse idiopathic skeletal hyperostosis, 
+        Post Lyme disease syndrome, Pseudotumor cerebral, cervical spinal stenosis, Meningioma, Tourette syndrome, 
+        Narcolepsy, absence seizures, PSP, occipital neuralgia, radial nerve injury (wrist drop).  
+        </p>
+        <p>
+
+        Dr. Calimag also taught us EMG and the basics of EEG. Most importantly, Dr.Calimag is fun-loving and easygoing. 
+        He has an excellent staff who makes everything organized and easy right from the start of the rotation till the end.  
+
+        </p>
+        
+        <p>
+        I want to thank Dr. Calimag for giving me this opportunity; I've learned so much from your experience, advice, and guidance. 
+        My time as an observer under you has been a valuable part of my career journey. 
+
+        </p>
+
+        <p>
+        I'll definitely carry the things I've learned here with me, and I'll always look back on this experience with a lot of fondness.
+
+        </p>
+
+        </div>
+
+            </Col>
+
+          </Row>
+          <br></br>
+          <hr className='hr'></hr>
+
+          </Container>
+
+          
+
+
 <Container>
 
 
-<br></br>
-
-<Row className='drrev'>
+<Row className='drparorev doctorreview'>
   <Col>
+
+  <div className='doctitle'>
+    <h4>Dr. Paro Bhaya is from Tbilisi State Medical University, Georgia </h4>
+
+  </div>
+
+  <br></br>
 
 <div>
 <img className='drparo' src={DrParo}></img>
 </div>
   </Col>
 
+  <br></br>
+
   <Col>
 
-  <div className='doctitle'>
-    <br></br>
-    <h4>Dr. Paro Bhaya is from Tbilisi State Medical University, Georgia </h4>
-  <br></br>
-  <h5 className='matched'></h5>
-  </div>
-  <br></br>
 <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
 <br></br>
 <br></br>
@@ -463,96 +552,31 @@ treatment strategies.
           *********** 
             */}
 
-<Container>
-          <Row className='fame'>
-            <Col>
-
-        <div>
-        <img className='drprad' src={DrPradeep}></img>
-       </div>
-            </Col>
-
-            <Col>
-
-            <div className='doctitle'>
-              <h4>Dr. Pradeep Chevula is from Soochow University Medical College </h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
-            <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
-          <br></br>
-          <br></br>
-          <div className='studrev'>
-            <p>
-            I'm Dr. Pradeep Chevula. I'm very fortunate to do my Neurology clinical rotation with Dr. Calimag. He is a fantastic person and a great teacher! 
-        </p>
-        <p>
-        During the four weeks of my rotation, I got a chance to see the most common cases in Neurology, such as seizures, 
-        migraine, brain concussion, Parkinson's, Cervical and lumbosacral radiculopathies, TIA, Dementia, Insomnia, Cluster 
-        headache, Post herpetic neuralgia, Tenosynovitis, TBI, diabetic neuropathy, carpal tunnel syndrome, cubital tunnel 
-        syndrome, Multiple sclerosis, Meralgia Parasthetica, Peripheral neuropathies and also some interesting cases like 
-        Marchiafava big-name syndrome, Post COVID Neurological manifestations, Diffuse idiopathic skeletal hyperostosis, 
-        Post Lyme disease syndrome, Pseudotumor cerebral, cervical spinal stenosis, Meningioma, Tourette syndrome, 
-        Narcolepsy, absence seizures, PSP, occipital neuralgia, radial nerve injury (wrist drop).  
-        </p>
-        <p>
-
-        Dr. Calimag also taught us EMG and the basics of EEG. Most importantly, Dr.Calimag is fun-loving and easygoing. 
-        He has an excellent staff who makes everything organized and easy right from the start of the rotation till the end.  
-
-        </p>
-        
-        <p>
-        I want to thank Dr. Calimag for giving me this opportunity; I've learned so much from your experience, advice, and guidance. 
-        My time as an observer under you has been a valuable part of my career journey. 
-
-        </p>
-
-        <p>
-        I'll definitely carry the things I've learned here with me, and I'll always look back on this experience with a lot of fondness.
-
-        </p>
-
-        </div>
-
-            </Col>
-
-          </Row>
-          <hr className='hr'></hr>
-
-          </Container>
-
-          {/*
-          *********** 
-          *********** 
-          NEXT REVIEW
-          *********** 
-          *********** 
-            */}
-
 
 <Container>
 
 
 <br></br>
 
-<Row className='drrev'>
+<Row className='drrev drfatimarev doctorreview'>
   <Col>
+
+  <div className='doctitle'>
+    <h4>Dr. Fatima Anwer From King Edward Medical University, Lahore Pakistan</h4>
+
+  </div>
+
+  <br></br>
 
 <div>
 <img className='drfatima' src={DrFatima}></img>
 </div>
   </Col>
 
+  <br></br>
+
   <Col>
 
-  <div className='doctitle'>
-    <br></br>
-    <h4>Dr. Fatima Anwer From King Edward Medical University, Lahore Pakistan</h4>
-  <br></br>
-  <h5 className='matched'></h5>
-  </div>
   <br></br>
 <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
 <br></br>
@@ -602,22 +626,25 @@ I have never seen patients with migraine being so satisfied with their treatment
             */}
 
 <Container>
-          <Row className='fame'>
+          <Row className='fame drkimrev doctorreview'>
             <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Kim Abbegail Aldecoa From Far Eastern University- Nicanor Reyes Medical Foundation</h4>
+          
+            </div>
+
+            <br></br>
 
         <div>
         <img className='drkim' src={DrKim}></img>
        </div>
             </Col>
 
-            <Col>
+            <br></br>
 
-            <div className='doctitle'>
-              <h4>Dr. Kim Abbegail Aldecoa From Far Eastern University- Nicanor Reyes Medical Foundation</h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
-            <br></br>
+            <Col className='reviewtitle'>
+
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
           <br></br>
@@ -628,7 +655,7 @@ I have never seen patients with migraine being so satisfied with their treatment
             and Dinorah are very approachable, so we had no problems adjusting to the new environment. 
         </p>
         <p>
-        It definitely exceeds my expectation. I’ll give it an 11/10.  
+        It definitely exceeds my expectation. I'll give it an 11/10.  
         </p>
 
 
@@ -654,23 +681,27 @@ I have never seen patients with migraine being so satisfied with their treatment
 
 <br></br>
 
-<Row className='drrev'>
+<Row className='drrev drcesarrev doctorreview'>
   <Col>
+
+  <div className='doctitle'>
+
+    <h4>Dr. Cesar Anthony Calvo From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine.</h4>
+
+
+  </div>
+
+  <br></br>
 
 <div>
 <img className='drcesar' src={DrCesar}></img>
 </div>
   </Col>
 
-  <Col>
+<br></br>
 
-  <div className='doctitle'>
-    <br></br>
-    <h4>Dr. Cesar Anthony Calvo From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine.</h4>
-  <br></br>
-  <h5 className='matched'></h5>
-  </div>
-  <br></br>
+  <Col className='reviewtitle'>
+
 <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
 <br></br>
 <br></br>
@@ -717,21 +748,23 @@ and practice whenever it was available.
 
 
 <Container>
-          <Row className='fame'>
+          <Row className='drmonicarev doctorreview'>
             <Col>
+
+            <div className='doctitle'>
+              <h4>Dr. Monica Kaitlyn Musni From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine.</h4>
+          
+            </div>
+
+            <br></br>
 
         <div>
         <img className='drmonica' src={DrMonica}></img>
        </div>
             </Col>
 
-            <Col>
+            <Col className='reviewtitle'>
 
-            <div className='doctitle'>
-              <h4>Dr. Monica Kaitlyn Musni From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine.</h4>
-            <br></br>
-            <h5 className='matched'></h5>
-            </div>
             <br></br>
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
@@ -774,22 +807,24 @@ and practice whenever it was available.
 
 <br></br>
 
-<Row className='drrev'>
+<Row className='drrev drronrev doctorreview'>
   <Col>
+
+  <div className='doctitle'>
+    <h4>Dr. Ronald Roque From Angeles University Foundation - School of Medicine</h4>
+
+  </div>
+
+  <br></br>
 
 <div>
 <img className='drronald' src={DrRonald}></img>
 </div>
   </Col>
 
-  <Col>
+  <Col className='reviewtitle'>
 
-  <div className='doctitle'>
-    <br></br>
-    <h4>Dr. Ronald Roque From Angeles University Foundation - School of Medicine</h4>
-  <br></br>
-  <h5 className='matched'></h5>
-  </div>
+
   <br></br>
 <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
 <br></br>
@@ -832,29 +867,33 @@ and knows when to refer to a specialist.
             */}
 
 <Container>
-          <Row className='fame'>
-            <Col>
-
-        <div>
-        <img className='drmonica' src={DrMonica}></img>
-       </div>
-            </Col>
-
+          <Row className='fame doctorreview drbavrev'>
             <Col>
 
             <div className='doctitle'>
               <h4>Dr. Bavithra Pari From Government Mohan Kumaramangalam Medical College</h4>
-            <br></br>
-            <h5 className='matched'></h5>
+          
             </div>
+
+            <br></br>
+
+        <div>
+        <img className='drpari' src={DrPari}></img>
+       </div>
+            </Col>
+
+            <br></br>
+
+            <Col className='reviewtitle'>
+
             <br></br>
           <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
           <br></br>
           <br></br>
           <div className='studrev'>
             <p>
-            I loved the hands-on experience I got, including neurological examination, 
-            nerve conduction studies, and access to the EMR. 
+            I loved the hands-on experience I got, inlcluding neurological examination, nerve conduction studies,
+            and access to the EMR. 
         </p>
         <p>
         We also had good clinical exposure to both inpatient and outpatient neurology settings. 
@@ -890,22 +929,25 @@ and knows when to refer to a specialist.
 
 <br></br>
 
-<Row className='drrev'>
+<Row className='drrev drharprev doctorreview'>
   <Col>
+
+  <div className='doctitle'>
+    <h4>Dr. Harpreet Virk From the Caribbean Medical University School of Medicine </h4>
+
+  </div>
+
+  <br></br>
 
 <div>
 <img className='drharpreet' src={DrHarpreet}></img>
 </div>
   </Col>
 
-  <Col>
-
-  <div className='doctitle'>
-    <br></br>
-    <h4>Dr. Harpreet Virk From the Caribbean Medical University School of Medicine </h4>
   <br></br>
-  <h5 className='matched'></h5>
-  </div>
+
+  <Col className='reviewtitle'>
+
   <br></br>
 <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
 <br></br>
@@ -919,11 +961,11 @@ and knows when to refer to a specialist.
 <p>
 I liked that we were able to perform complete Neuro exams on each patient, and each student 
 had an opportunity to do so. Dr. Calimag is very well-liked by his patients, so it was 
-always a great experience to be a part of that
+always a great experience to be a part of that.
 </p>
 
 <p>
-If you are interested in Neurology, as I was, you will thrive under Dr. Calimag’s guidance. 
+If you are interested in Neurology, as I was, you will thrive under Dr. Calimag's guidance. 
 </p>
 <br></br>
 
@@ -936,15 +978,87 @@ If you are interested in Neurology, as I was, you will thrive under Dr. Calimag�
 
 <br></br>
 
+
 <hr className='hr'></hr>
-
-
 </Container>
 
 
 
 
 
+   {/*
+          *********** 
+          *********** 
+          NEXT REVIEW
+          *********** 
+          *********** 
+            */}
+
+
+
+<Container>
+          <Row className='fame drkimrev doctorreview'>
+            <Col>
+
+            <div className='doctitle'>
+              <h4>Dr Clint Christian Garbanzos is from St. Luke's College of Medicine-William H. Quasha Memoria</h4>
+          
+            </div>
+
+            <br></br>
+
+        <div>
+        <img className='drclint' src={DrClint}></img>
+       </div>
+            </Col>
+
+            <br></br>
+
+            <Col className='reviewtitle'>
+
+          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <br></br>
+          <br></br>
+          <div className='studrev'>
+            <p>
+            My structured one-on-one interview prep with Andrew boosted my confidence and helped me present myself
+            even better for the interview season.
+        </p>
+        <p>
+        The interview phase was a crucial part of my application process; having no USCE, it was ultimately necessary 
+        for me to give 101% best effort for every interview. Andrew taught me how to connect spontaneously better and 
+        be more conversational with the interviewer. He showed me how to develop professional comportment   
+        that compliments my best attributes, and he shared his best practices to help me stand out, which was very effective. 
+        His sales experience enabled him to show me how to sell myself during the interview humbly.
+        </p>
+
+        <p>
+        We discussed in detail the core questions, different types of questions, and how best to curate an   
+        adequate response. I appreciated the honest and unbiased feedback and how Andrew went above and 
+        beyond in helping me review my application, the CV, to prepare for any questions that might be asked.
+        </p>
+
+        <p>
+          I can wholly describe myself as very satisfied and highly recommend Andrew and his team!
+        </p>
+
+
+        </div>
+
+            </Col>
+
+          </Row>
+
+          </Container>
+
+
+          <a className='backtotop' href='#header'>Back to the top</a>
+
+
+
+
+
+        <br></br>
         <br></br>
 
         <Footer></Footer>

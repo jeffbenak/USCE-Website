@@ -23,6 +23,7 @@ export default function LoginSignup() {
      email: email,
      password: password,
     }).then((response) => {
+      console.log(email)
 
       if (!response.data.auth) {
         setLoginStatus(false); 
@@ -53,6 +54,30 @@ export default function LoginSignup() {
 
   //   })
   // }
+
+  function checkoutButton() {
+    fetch('http://localhost:3001/create-checkout-sess', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        items: [
+          { id: 1, quantity: 1 }
+        ],
+      }),
+    })
+    .then(res => {
+      if (res.ok) return res.json()
+      return res.json().then(json => Promise.reject(json))
+    })
+    .then(({ url }) => {
+      window.location = url
+    })
+    .catch(e => {
+      console.error(e.error)
+    })
+  }
 
     return (
       <div>
@@ -91,8 +116,13 @@ export default function LoginSignup() {
         </div>
      
         </Container>
-            <br></br>
+        <br></br>
+
             <p className='status'>{loginStatus}</p>
+
+            <button onClick={checkoutButton}>Checkout</button>
+
+            <br></br>
 
         <Button variant='success' className='loginbutton' onClick={login}>Login</Button>
         <br></br>
@@ -103,7 +133,7 @@ export default function LoginSignup() {
           <button onClick={userAuthenticated}>Check if Authenticated</button>
         )}     */}
         <div className='pl1'>
-        <p>Become an insider to USCE Match! There is a $2.99 one time, non-refundable processing membership fee.</p>
+        <p>Become an insider to USCE Match! There is a $2.99 one time, non-refundable processing membership fee. Click the checkout button above.</p>
         <p>Dont have an account? <Link className='reg1' to='/register'>Sign up</Link> here</p>
         </div>
       </div>

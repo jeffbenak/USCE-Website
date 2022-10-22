@@ -34,10 +34,6 @@ export default function Header() {
             <NavItem>
               <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
             </NavItem>
-            
-            <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/chatroom">USCE Match Chatroom</NavLink>  
-            </NavItem>
             <NavItem>
               <NavLink style={{color: 'white'}} className='nav-link' to="/logout" onClick={logout}>Logout</NavLink>  
             </NavItem>
@@ -65,9 +61,6 @@ export default function Header() {
             </NavItem>   
             <NavItem>
               <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/chatroom">USCE Match Chatroom</NavLink>  
             </NavItem>
             <NavItem>
               <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">Login | Signup</NavLink>  

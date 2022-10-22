@@ -2,17 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import DocImg from '../../images/doctor.jpg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import David from '../pages/reviewimgs/drdavid.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 
 
 export default function Rotations() {
     return (
       <div>
+        <a name='header'></a>
         <Header></Header>
         <Container className='rotations'>
 
@@ -53,7 +56,7 @@ export default function Rotations() {
           <div className='socialinsta'>
 
             <p>
-            USCEMatch in Instagram
+            USCEMatch on <a className='instalink' href='https://www.instagram.com/uscematch/?hl=en'>Instagram</a>
             </p>
 
             <p className='underline'>
@@ -67,8 +70,17 @@ export default function Rotations() {
 
       <br></br>
 
+      <hr className='hrblock'></hr>
+      <br></br>
+
+      <div className='rotationcontent'>
+
+        
+
 
         <div className='dctitle'>
+
+          
 
         <h2 className='white dcwho'>
         WHO IS DAVID CALIMAG MD?
@@ -76,22 +88,31 @@ export default function Rotations() {
 
         </div>
 
+
     <div className='dccontent'>
+      <Row>
 
+ 
+    <Col>
 
+    
 
-        <div className='flex'>
 
           <h6 className='drtitle'>
           PRE-MEDICAL EDUCATION:
           </h6>
 
+      
+
+
+
+          
+
+          
+       
           <p>
           College of Science, University of Sto. Tomas,
           </p>
-
-          </div>
-
           <p>
           Manila, Philippines - 1964 to 1968
           </p>
@@ -104,7 +125,7 @@ export default function Rotations() {
 
           <div className='mededu'>
 
-            <div className='flex'>
+
 
           <h6 className='drtitle'>
           MEDICAL EDUCATION:
@@ -115,7 +136,7 @@ export default function Rotations() {
           </p>
           
 
-          </div>
+
 
           <p>
           Manila, Philippines - 1968 to 1972
@@ -125,42 +146,69 @@ export default function Rotations() {
           Degree Conferred: M.D. - April 1972 with a grade of Meritus
           </p>
 
-          </div>
 
-
-
-          <div className='mededu'>
-
-            <div className='flex'>
-
-          <h6 className='drtitle'>
-          POST GRADUATE TRAINING: 
-          </h6>
-
-          <p>
-          Sto. Tomas University Hospital, Manila, Philippines
-          </p>
           
 
           </div>
 
+
+
+          <div className='mededu'>
+
+
+
+          <h6 className='drtitle'>
+          POST GRADUATE TRAINING: 
+          </h6>
+
           <p>
-          Rotating Medical Internship - July 1972 to June 1973
+          Sto. Tomas University Hospital, Manila, Philippines.
+          </p>
+          
+
+
+
+          <p>
+          Rotating Medical Internship - July 1972 to June 1973.
           </p>
 
           <p>
-          Residency in Neuropsychiatry - July 1973 to June 1975
+          Residency in Neuropsychiatry - July 1973 to June 1975.
           </p>
 
           <p>
-          Fellowship in Neuropsychiatry - July 1975 to June 1976 in a program
+          Fellowship in Neuropsychiatry - July 1975 to June 1976 in a
           </p>
 
           <p>
-          jointly sponsored by the University of Sto. Tomas and Winthrop Stearns, Inc.
+          program.
+          </p>
+
+          <p>
+          Jointly sponsored by the University of Sto. Tomas and
+          </p>
+
+          <p>
+          Winthrop Stearns, Inc.
           </p>
 
           </div>
+          
+          </Col>
+
+
+
+
+          <Col>
+      
+      <img src={David} className='drdavidimg' alt='drdavid'></img>
+  
+      </Col>
+
+      
+
+
+</Row>
 
           <div className='mededu'>
 
@@ -171,7 +219,7 @@ export default function Rotations() {
           </h6>
 
           <p>
-          United States
+          United States.
           </p>
           
 
@@ -289,6 +337,7 @@ export default function Rotations() {
       
 
       <br></br>
+      <br></br>
 
 
 
@@ -303,6 +352,8 @@ export default function Rotations() {
         <h2 className='white backrotate'>BACKGROUND OF THE ROTATION</h2>
 
       </div>
+      
+      <br></br>
 
     <div className='backexpectcont'>
 
@@ -695,16 +746,17 @@ export default function Rotations() {
        </div>
 
 
-
+            <br></br>
 
 
        <hr className='hrblock'></hr>
 
 
 
+            <br></br>
 
 
-        <div>
+        <div className='schedulesummary'>
         
         <h3>SUMMARY OF SCHEDULE</h3>
 
@@ -719,7 +771,7 @@ export default function Rotations() {
               <div className='c-1'>MONDAY</div>
               <div className='c-1-1'>10:00 AM - 12:30 PM in Park Ridge</div>
               <div className='c-1-2'>1:00 PM - 3:00 PM in Thorek Hospital Andersonville</div>
-              <div className='c-1-3'>4:00 PM- 5/6 PMIn Park Ridge</div>
+              <div className='c-1-3'>4:00 PM- 5/6 PM in Park Ridge</div>
 
 
                 {/* COLUMN 2 */}
@@ -765,10 +817,16 @@ export default function Rotations() {
           <br></br>
           <br></br>
 
-
-
+          
 
         </div>
+        <hr className='hrblock'></hr>
+
+        <br></br>
+        <br></br>
+        
+
+        
 
 
         <div className='evalsection'>
@@ -841,8 +899,6 @@ export default function Rotations() {
             </div>
 
             <br></br>
-            <br></br>
-            <br></br>
 
 
 
@@ -850,11 +906,13 @@ export default function Rotations() {
 
 
         </div>
+        <br></br>
 
         <br></br>
 
         <hr className='hrblock'></hr>
 
+            <br></br>
             <br></br>
 
         <div>
@@ -1323,12 +1381,179 @@ export default function Rotations() {
 
         </div>
 
+
+        <hr className='hr'></hr>
+        <br></br>
+
+
+
+        <div className='gridspots'>
+
+            <div><h5></h5></div>
+            <div ><h5> AVAILABILITY</h5></div>
+            <div ><h5> START DATE</h5></div>
+            <div ><h5> LAST DATE</h5></div>
+
+
+
+            <div ><p>OPTION 1</p></div>
+            <div ><p>FULL</p></div>
+            <div ><p>September 26, 2022</p></div>
+            <div ><p>October 21, 2022</p></div>
+
+              
+
+            <div><p>OPTION 2</p></div>
+            <div ><p>FULL</p></div>
+            <div ><p>October 3, 2022</p></div>
+            <div ><p>October 29, 2022</p></div>
+
+              
+
+            <div ><p>OPTION 3 BROKEN SCHEDULE</p></div>
+            <div ><p>4 SPOTS</p></div>
+            <div ><p>October 17, 2022</p></div>
+            <div ><p>October 31, 2022</p></div>
+
+
+            <div ><p></p></div>
+            <div ><p></p></div>
+            <div ><p>November 14,2022</p></div>
+            <div ><p>November 26, 2022</p></div>
+
+
+
+            <div ><p>OPTION 4 BROKEN SCHEDULE </p></div>
+            <div ><p>3 SPOTS</p></div>
+            <div ><p>October 24, 2022</p></div>
+            <div ><p>October 31, 2022</p></div>
+
+
+            <div ><p></p></div>
+            <div ><p></p></div>
+            <div ><p>November 14,2022</p></div>
+            <div ><p>December 3, 2022</p></div>
+
+            
+
+            <div ><p>OPTION 5</p></div>
+            <div ><p>3 SPOTS</p></div>
+            <div ><p>November 14, 2022</p></div>
+            <div ><p>December 6, 2022</p></div>
+
+              
+
+            <div><p>OPTION 6</p></div>
+            <div ><p>4 SPOTS</p></div>
+            <div ><p>January 2, 2023</p></div>
+            <div ><p>January 28, 2023</p></div>
+
+
+            <p>OPTION 7</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>January 9, 2023</p></div>
+            <div ><p>February 4, 2023</p></div>
+
+
+            <p>OPTION 8</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>January 16, 2023</p></div>
+            <div ><p>February 11, 2023</p></div>
+
+            
+            <p>OPTION 9</p> 
+            <div ><p>3 SPOTS</p></div>
+            <div ><p>January 30, 2023</p></div>
+            <div ><p>February 25, 2023</p></div>
+
+
+            <p>OPTION 10</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>February 6, 2023</p></div>
+            <div ><p>March 4, 2023</p></div>
+
+
+            <p>OPTION 11</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>February 20, 2023</p></div>
+            <div ><p>March 18, 2023</p></div>
+
+
+            <p>OPTION 12</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>February 27, 2023</p></div>
+            <div ><p>March 25, 2023</p></div>
+
+
+            <p>OPTION 13</p> 
+            <div ><p>4 SPOTS</p></div>
+            <div ><p>April 3, 2023</p></div>
+            <div ><p>April 29, 2023</p></div>
+
+
+            <p>OPTION 14</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>April 10, 2023</p></div>
+            <div ><p>May 6, 2023</p></div>
+
+
+            <p>OPTION 15</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>April 24, 2023</p></div>
+            <div ><p>May 20, 2023</p></div>
+
+
+            <p>OPTION 16</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>May 1, 2023</p></div>
+            <div ><p>May 27, 2023</p></div>
+
+
+            <p>OPTION 17</p> 
+            <div ><p>2 SPOTS</p></div>
+            <div ><p>May 15, 2023</p></div>
+            <div ><p>June 10, 2023</p></div>
+
+
+            <p>OPTION 18</p> 
+            <div ><p>3 SPOTS</p></div>
+            <div ><p>May 29, 2023</p></div>
+            <div ><p>June 24, 2023</p></div>
+
+
+
+
+        </div>
+
+
             
  
-       
+        </div>
+
+
+        <hr className='hr'></hr>
+
+
+        <br></br>
+
+
+
+      
+        
        </Container>
 
+
+       <a className='backtotop' href='#header'>Back to the top</a>
+
+
+
+       
+
       <br></br>
+      <br></br>
+
+      
+  
 
       <Footer></Footer>
 

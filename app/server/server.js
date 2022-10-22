@@ -3,9 +3,13 @@ const mysql = require('mysql2');
 const cors = require('cors');
 require("dotenv").config();
 
+
+const { typeDefs, resolvers } = require('./schemas');
+const { authMiddleware } = require('./utils/auth');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const { ApolloServer } = require('apollo-server-express');  
 
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
@@ -17,9 +21,6 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-let refreshTokens = []
-const users = []
-
 app.use(express.json());
 app.use(cors({
   origin: ["http://localhost:3000"],
@@ -27,6 +28,97 @@ app.use(cors({
   credentials: true,
 })
 );
+
+
+const stripe = require('stripe')(process.env.STRIPE_KEY)
+
+async function startServer() {
+  const server = new ApolloServer({
+    typeDefs,
+    resolvers,
+    context: authMiddleware
+  });
+  await server.start();
+  server.applyMiddleware({ app });
+  }
+  
+  
+  startServer();
+
+  // PROFESSIONAL SERVICES CHECKOUT PAGE
+
+  const storeItems = new Map ([
+    [1, { priceInCents: 299, name: 'Our Services' }],
+  ])
+
+  app.post('/create-checkout-session', async (req, res) => {
+    try {
+      const session = await stripe.checkout.sessions.create({
+        payment_method_types: ['card'],
+        mode: 'payment',
+        line_items: req.body.items.map(item => {
+          const storeItem = storeItems.get(item.id)
+          return {
+            price_data: {
+              currency: 'usd',
+              product_data: {
+                name: storeItem.name
+              },
+              unit_amount: storeItem.priceInCents
+            },
+            quantity: item.quantity
+          }
+        }),
+        success_url: `${process.env.CLIENT_URL}/services`,
+        cancel_url: `${process.env.CLIENT_URL}/`,
+      })
+  
+      res.json({ url: session.url })
+    } catch (e) {
+      res.status(500).json({ error: e.message })
+    }
+  })
+
+
+
+  // $0.99 MEMBERSHIP FEE CHECKOUT PAGE
+
+
+  const storeCharge = new Map ([
+    [1, { priceInCents: 299, name: 'One Time Membership Fee' }]
+  ])
+
+  app.post('/create-checkout-sess', async (req, res) => {
+    try {
+      const session = await stripe.checkout.sessions.create({
+        payment_method_types: ['card'],
+        mode: 'payment',
+        line_items: req.body.items.map(item => {
+          const storeFee = storeCharge.get(item.id)
+          return {
+            price_data: {
+              currency: 'usd',
+              product_data: {
+                name: storeFee.name
+              },
+              unit_amount: storeFee.priceInCents
+            },
+            quantity: item.quantity
+          }
+        }),
+        success_url: `${process.env.CLIENT_URL}/loginsign`,
+        cancel_url: `${process.env.CLIENT_URL}/`,
+      })
+  
+      res.json({ url: session.url })
+    } catch (e) {
+      res.status(500).json({ error: e.message })
+    }
+  })
+
+
+let refreshTokens = []
+const users = []
 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended:true }));
@@ -132,6 +224,7 @@ app.post('/login', (req, res) => {
             
             const username = req.body.username
             const user = { name: username }
+            console.log(user)
             // const id = result[0].id;
             const accessToken = generateAccessToken(user)
             const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET)

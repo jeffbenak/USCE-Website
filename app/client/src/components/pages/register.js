@@ -7,18 +7,25 @@ import Button from 'react-bootstrap/Button';
 
 export default function Register() {
 
+
+    const inputValues = {fullname: '', email: '', password: '', confirmpassword: '', phonenumber: '', country: '', state: '', city: '', zip: '', address: '', visa: ''};
+    const [formValues, setFormValues] = useState(inputValues);
+    const [formErrors, setFormErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
+
+
+
     const [emailReg, setEmailReg] = useState('')
     const [passwordReg, setPasswordReg] = useState('')
-    const [nameReg, setNameReg] = useState('')
+    const [confirmPasswordReg, setConfirmPasswordReg] = useState('')
     const [phoneReg, setPhoneReg] = useState('')
+    const [nameReg, setNameReg] = useState('')
     const [countryReg, setCountryReg] = useState('')
     const [stateReg, setStateReg] = useState('')
     const [cityReg, setCityReg] = useState('')
     const [zipReg, setZipReg] = useState('')
     const [addressReg, setAddressReg] = useState('')
     const [visaReg, setVisaReg] = useState('')
-
-
 
     Axios.defaults.withCredentials = true;
 
@@ -33,7 +40,7 @@ export default function Register() {
          city: cityReg,
          zip: zipReg,
          address: addressReg,
-         visa: visaReg
+         visa: visaReg,
         }).then((response) => {
           console.log(response)
         })
@@ -44,107 +51,260 @@ export default function Register() {
 
 
 
+
+
+      // const handleChange = (e) => {
+      //       const {name, value} = e.target;
+      //       console.log(e.target)
+      //       setFormValues({...formValues, [name]: value});
+      // };
+
+      const handleNameChange = (e) => {
+            setNameReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+
+      const handlePasswordChange = (e) => {
+            setPasswordReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleConfirmPasswordChange = (e) => {
+            setConfirmPasswordReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+
+      const handleEmailChange = (e) => {
+            setEmailReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handlePhoneChange = (e) => {
+            setPhoneReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleCountryChange = (e) => {
+            setCountryReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleStateChange = (e) => {
+            setStateReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleCityChange = (e) => {
+            setCityReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleZipChange = (e) => {
+            setZipReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleAddressChange = (e) => {
+            setAddressReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+      const handleVisaChange = (e) => {
+            setVisaReg(e.target.value);
+            const {name, value} = e.target;
+            setFormValues({...formValues, [name]: value});
+      }
+
+
+      useEffect(() => {
+            if(Object.keys(formErrors).length === 0 && isSubmit) {
+                  console.log(Object.keys(formErrors).length)
+                  register()
+                  window.location.assign('/loginsign');
+            } else {
+                  console.log(Object.keys(formErrors).length)
+            }
+            }, [formErrors]);
+
+
+      const handleSubmit = (e) => {
+            setFormErrors(validate(formValues));
+            setIsSubmit(true)
+            // if (Object.keys(formErrors).length !== 0) {
+            //       console.log(Object.keys(formErrors).length)
+            //     e.preventDefault()
+            // } else if (Object.keys(formErrors).length === 0) {
+            //       console.log(Object.keys(formErrors).length)
+            //   }
+      };
+
+
+
+
+      const validate = (values, e) => {
+            const errors = {};
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+            const passRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+            if (!values.fullname) {
+                  errors.fullname = 'Name is required';
+            }
+            if (!values.email) {
+                  errors.email = 'Email is required'
+            } else if (!regex.test(values.email)) {
+                  errors.email = 'This is not a valid email format';
+            }
+            if (!values.password) {
+                  errors.password = 'Password is required'
+
+            }
+            // else if (!passRegex.test(values.password)) {
+            //       errors.password = 'Password must contain minimum eight characters, at least one letter, one number and one special character'
+            // }
+            else if (values.password !== values.confirmpassword) {
+                  errors.password = 'Passwords must match'
+            } 
+
+            // if (!values.confirmpassword) {
+            //       errors.confirmpassword = 'Please confirm your password'
+            // }
+            if (!values.phonenumber) {
+                  errors.phonenumber = 'Phone number is required'
+            } else if (values.phonenumber.length < 8 || values.phonenumber.length > 15) {
+                  errors.phonenumber = 'This is not a valid phone number'
+            }
+            if (!values.country) {
+                  errors.country = 'Country is required'
+            }
+            if (!values.state) {
+                  errors.state = 'State is required'
+            }
+            if (!values.city) {
+                  errors.city = 'City is required'
+            }
+            if (!values.zip) {
+                  errors.zip = 'Zip code is required'
+            } else if (values.zip.length !== 5) {
+                  errors.zip = 'This is not a valid zip code'
+            }
+            if (!values.address) {
+                  errors.address = 'Address is required'
+            }
+            if (!values.visa) {
+                  errors.visa = 'Visa status is required'
+            }
+            if (Object.keys(errors).length === 0) {
+                  console.log(errors)
+            }
+            // if (handleSubmit) {
+            //       window.location.assign('/loginsign');
+
+            // }
+            console.log("validate errors:");
+            console.log(errors);
+            return errors;
+      };
+
+
+
     return (
         <div>
         <Header></Header>
+        <br></br>
 
-        {/* <h3>Become an insider to USCE Match!</h3>
-        <p>
-          There is a $2.99 one time, non-refundable processing membership fee.
-        </p> */}
+        <div className='registertitle'>
 
         <h3>Registration</h3>
+
+        </div>
         <div className='registration'>
-            
-      <h4 className='binfo'>Basic Info</h4>
-      <h4 className='meminfo'>Member Information</h4>
+
       <br></br>
       <br></br>
       <div className='mainform'>
-      <Form className='userform'>
-        <Form.Group className='mb-1 emailbox' controlId="formBasicEmail">
-          <Form.Control type='email' placeholder='Email' onChange={(e) => {
-                setEmailReg(e.target.value);
-                }}
+      <Form 
+      className='userform'>
+        <Form.Group className='mb-1 emailbox'>
+          <Form.Control type='email' name='email' placeholder='Email*' onChange={handleEmailChange}
                 >
-          </Form.Control>    
+          </Form.Control>
+          <p className='errortext'>{formErrors.email}</p>
+
           <br></br>    
-          <Form.Control type='password' placeholder='Password' 
-                onChange={(e) => {
-                setPasswordReg(e.target.value);
-                }}
+          <Form.Control type='password' name='password' placeholder='Password*'
+                        onChange={handlePasswordChange}
                 >
           </Form.Control>  
+          <p className='errortext'>{formErrors.password}</p>
           <br></br>
-          <Form.Control type='password' placeholder='Confirm Password'>
+          <Form.Control type='password' name='confirmpassword' placeholder='Confirm Password*'
+                        onChange={handleConfirmPasswordChange}
+                        >
           </Form.Control>
+          <p className='errortext'>{formErrors.confirmpassword}</p>
           <br></br>
-          <Form.Control type='text' placeholder='Full Name'
-                onChange={(e) => {
-                setNameReg(e.target.value);
-                }}
+          <Form.Control type='text' name='fullname' placeholder='Full Name*' value={formValues.fullname}
+                              onChange={handleNameChange}
+                >
+          </Form.Control>  
+          <p className='errortext'>{formErrors.fullname}</p>
+          <br></br>
+          <Form.Control type='tel' name='phonenumber' required placeholder='Phone Number*'
+                onChange={handlePhoneChange}
                 >
           </Form.Control>
-          <br></br>
-          <Form.Control type='tel' placeholder='Phone Number'
-                onChange={(e) => {
-                setPhoneReg(e.target.value);
-                }}
-                >
-          </Form.Control>
+          <p className='errortext'>{formErrors.phonenumber}</p>
         </Form.Group>
       </Form>
       <Form className='infoform'>
         <Form.Group className='mb-1' controlId="formBasicInfo">
-          <Form.Control className='countbox' type='text' placeholder='Country'
-                onChange={(e) => {
-                setCountryReg(e.target.value);
-                }}
+          <Form.Control className='countbox' type='text' name='country' placeholder='Country*'
+                onChange={handleCountryChange}
                 >
           </Form.Control>
+          <p className='errortext'>{formErrors.country}</p>
           <br></br>
-          <Form.Control type='text' placeholder='State'
-                onChange={(e) => {
-                setStateReg(e.target.value);
-                }}
+          <Form.Control type='text' name='state' placeholder='State*'
+                onChange={handleStateChange}
                 >
           </Form.Control>
+          <p className='errortext'>{formErrors.state}</p>
           <br></br>
-          <Form.Control type='text' placeholder='City'  
-                onChange={(e) => {
-                setCityReg(e.target.value);
-                }}
+          <Form.Control type='text' name='city' placeholder='City*' required
+                onChange={handleCityChange}
                 >
           </Form.Control>
+          <p className='errortext'>{formErrors.city}</p>
           <br></br>
-          <Form.Control type='postal' placeholder='Zip'
-                onChange={(e) => {
-                setZipReg(e.target.value);
-                }}
+          <Form.Control type='postal' name='zip' placeholder='Zip*'
+                onChange={handleZipChange}
                 >
           </Form.Control>
+          <p className='errortext'>{formErrors.zip}</p>
           <br></br>
-          <Form.Control type='text' placeholder='Address'
-                onChange={(e) => {
-                setAddressReg(e.target.value);
-                }}
+          <Form.Control type='text' name='address' placeholder='Address'
+                onChange={handleAddressChange}
                 >
           </Form.Control>
+          <p className='errortext'>{formErrors.address}</p>
           <br></br>
-          <Form.Control type='text' placeholder='Visa Status'
-                onChange={(e) => {
-                setVisaReg(e.target.value);
-                }}
+          <Form.Control aria-autocomplete='list' name='visa' type='list' placeholder='Visa Status'
+                onChange={handleVisaChange}
                 >
           </Form.Control>
+          <p className='errortext'>{formErrors.visa}</p>
      
         </Form.Group>
       </Form>
 
       </div>
       
+      <div className='regbut'>
 
-      <Button className='regbutton' variant='outline-success' onClick={register}>Register</Button>
+      <Button className='regbutton' variant='outline-success' onClick={handleSubmit}>Register</Button>
+
+      </div>
       
         </div>
 

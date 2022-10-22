@@ -7,8 +7,16 @@ h2 {
     color:rgb(8, 96, 34);
 }
 
+.App-Background {
+    background-color: #008037 !important;
+}
+
 .underline {
     text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .white {
@@ -16,6 +24,10 @@ h2 {
 }
 
 .flex {
+    display: flex;
+}
+
+.imgflex {
     display: flex;
 }
 
@@ -31,6 +43,21 @@ h6 {
 
 
 
+.hoftitle {
+    background-color: #008037;
+    margin: auto;
+    width: 30%;
+    padding: .2%;
+    box-shadow: 5px 5px #003f1b;
+
+}
+
+.hoftitle > h1 {
+    color: white;
+    font-family: 'Abyssinica SIL', serif;
+    font-weight: bold;
+    font-size: 50px;
+}
 
 .review {
     display: inline-block;
@@ -42,6 +69,7 @@ h6 {
 .inline {
     display: inline-block;
     color: #008037;
+    margin-left: .5%;
 }
 
 .studrev {
@@ -54,81 +82,139 @@ h6 {
 }
 
 .drjash {
-    margin: 32% 5% 5% 5%;
-    width: 90%;
+    margin: 10% 5% 5% 5%;
+    width: auto;
     height: 500px;
 }
 
+.drjashrev {
+    background-color: #c2dcc8;
+    padding-top: 3%;
+}
+
 .drshik {
-    margin: 15% 5% 5% 5%;
-    width: 80%;
+    margin: auto;
+    width: 70%;
     height: 70%;
 }
 
 .drkat {
-    margin: 42% 5% 5% 5%;
-    width: 100%;
-    height: 600px;
+    margin: auto;
+    width: auto;
+    height: 500px;
 }
 
 .drchef {
-    margin: 23% 5% 5% 5%;
-    width: 80%;
-    height: 500px;
+    margin: auto;
+    width: auto;
+    height: 420px;
 }
 
 .drjuan {
     margin: 14% 5% 5% 5%;
-    width: 85%;
-    height: 500px;
+    width: auto;
+    height: 450px;
 }
 
 .drparo {
-    margin: 30% 5% 5% 5%;
-    width: 90%;
-    height: 620px;
+    margin: auto;
+    width: auto;
+    height: 500px;
 }
 
 .drprad {
-    margin: 34% 5% 5% 5%;
-    width: 85%;
-    height: 550px;
+    margin: auto;
+    width: auto;
+    height: 480px;
+}
+
+.drpradrev {
+    background-color: #c2dcc8;
+    padding-top: 3%;
 }
 
 .drfatima {
-    margin: 18% 5% 5% 5%;
-    width: 70%;
-    height: 450px;
+    margin: auto;
+    width: auto;
+    height: 430px;
+}
+
+.drfatimarev {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .drkim {
-    margin: 7% 5% 5% 5%;
-    width: 70%;
-    height: 450px;
+    margin: auto;
+    width: auto;
+    height: 400px;
+}
+
+.drkimrev {
+    padding-bottom: 5%;
 }
 
 .drcesar {
-    margin: 17% 5% 5% 5%;
-    width: 70%;
+    margin: auto;
+    width: auto;
     height: 450px;
+}
+
+.drcesarrev {
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.reviewtitle {
+    margin-top: 8%;
 }
 
 .drmonica {
-    margin: 12% 5% 5% 5%;
-    width: 70%;
+    margin: auto;
+    width: auto;
     height: 450px;
+}
+
+.drmonicarev {
+    margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 .drronald {
-    margin: 8% 5% 5% 5%;
-    width: 70%;
+    margin: auto;
+    width: auto;
     height: 450px;
 }
 
+.drronrev {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.drpari {
+    margin: auto;
+    width: auto;
+    height: 450px; 
+}
+
+.drbavrev {
+    padding-bottom: 4%;
+}
+
 .drharpreet {
-    margin: 8% 5% 5% 5%;
-    width: 70%;
+    margin: auto;
+    width: auto;
     height: 450px;
+}
+.drharprev {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.drclint {
+    margin: auto;
+    width: auto;
+    height: 420px;
 }
 
 
@@ -173,6 +259,7 @@ h6 {
 
 .contus {
     font-weight: bold;
+    color: #008037;
 }
 
 .socialinsta {
@@ -184,6 +271,7 @@ h6 {
 .dctitle {
     background-color: #008037;
     width: 60%;
+    box-shadow: 5px 5px #003f1b;
     margin-left: auto;
     margin-right: auto;
 }
@@ -193,7 +281,7 @@ h6 {
 }
 
 .dccontent {
-    width: 60%;
+    width: 70%;
     background-color: #c2dcc8;
     margin-left: auto;
     margin-right: auto;
@@ -265,7 +353,8 @@ h6 {
 
 .hr {
     border: 1px solid rgb(0, 0, 0);
-    width: 100%;
+    width: 101.9%;
+    margin-left: -.8%;
 }
 
 
@@ -282,7 +371,7 @@ h6 {
 
 .schedulecont {
     background-color: #c2dcc8;
-    width: 75%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding: 1% 1% 1% 1%;
@@ -290,9 +379,9 @@ h6 {
 
 
 .sched {
-    background: radial-gradient(circle at left, rgb(1, 115, 29) 0%, rgb(3, 61, 19) 100%);
+    background: radial-gradient(circle at left, rgb(64, 207, 100) 0%, rgb(3, 61, 19) 100%);;
     padding: 0.3%;
-    width: 75%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -331,7 +420,7 @@ h6 {
     display: block;
     width: 50%;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 .outpat {
@@ -374,6 +463,7 @@ h6 {
     background-color: #c2dcc8;
     width: 70%;
     margin: auto;
+    
 }
 
 .expectcont {
@@ -447,13 +537,13 @@ h6 {
 
 .addit {
     background-color: #008037;
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 
 .faqcont {
     background-color: #c2dcc8;
-    width: 75%;
+    width: 70%;
     margin: 2% auto;
     text-align: left;
     padding-left: 1%;
@@ -475,6 +565,7 @@ h6 {
 .steps {
     color: white;
     background-color: #008037;
+    box-shadow: 5px 5px #003f1b;
     width: 70%;
     margin: auto;
 }
@@ -490,6 +581,91 @@ h6 {
     padding-top: 0.5%;
     padding-bottom: 0.1%;
 }
+
+
+.available {
+    margin-left: 2%;
+}
+
+.startdate {
+    margin-right: 9%;
+}
+
+.lastdate {
+    margin-right: -2.5%;
+}
+
+.gridspots {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+    grid-auto-rows: 10% 10% 10% 10%, 15;
+    margin: auto;
+ }
+ 
+
+ .gridspots > div > h5 {
+    background-color: #c2dcc8;
+ }
+
+
+
+
+
+
+table {
+    width: 100%;
+    line-height: 3em;
+    border: 2px solid black;
+}
+
+
+.tablehead {
+    border: 2px solid black;
+}
+
+.silverdet {
+    margin-left: 10%;
+}
+
+
+.taleft {
+    text-align: left;
+}
+
+.tr1 {
+    background-color: #b2ffd3;
+    width: 25%;
+}
+
+.tr2 {
+    background-color: #4cc681;
+    width: 25%;
+}
+
+.tr3 {
+    background-color: #008037;
+    width: 25%;
+}
+
+
+.packagesummary {
+    text-align: left;
+}
+
+.packagesummary > h5 {
+    background-color: #4cc681;
+    width: 12%;
+}
+
+
+.bronzest {
+    background-color: #4cc681;
+    width: 12.7%;
+
+}
+
 
 .instalink {
     color: black;
@@ -632,7 +808,6 @@ h6 {
 .c-1 {
     grid-column: 1;
     grid-row: 1;
-    border: 2px solid black;
     padding-top: 15px;
     margin-top: 51px;
     width: 101%;
@@ -875,6 +1050,8 @@ overflow: auto;
 
 .doctitle {
     line-height: 3em;
+    width: 70%;
+    margin: auto;
 }
 
 .matched {
@@ -912,6 +1089,10 @@ overflow: auto;
     color: black;
 }
 
+.backtotop {
+    color: #008037;
+}
+
 
 
  /* MEDIA QUERIES */
@@ -937,6 +1118,12 @@ overflow: auto;
       width: auto;
     }
   }
+
+
+
+  /* GRID SCHEDULE MEDIA QUERIES */
+
+
 
   @media screen and (max-width: 1400px) {
     .grid-container {
@@ -979,5 +1166,284 @@ overflow: auto;
   }
 }
 
+
+
+/* HALL OF FAME MEDIA QUERIES */
+
+@media screen and (max-width: 1399px) {
+
+    .drshik {
+        height: auto;
+        width: 80%;
+    }
+    .drjash {
+        height: auto;
+        width: 70%;
+    }
+    .drkat {
+        height: 450px;
+    }
+    .drchef {
+        height: 450px;
+        width: auto;
+        margin: auto;
+    }
+    .drjuan {
+        height: 450px;
+        width: auto;
+    }
+    .drprad {
+        height: 450px;
+        width: auto;
+    }
+    .drparo {
+        height: 500px;
+        width: auto;
+    }
+    .drfatima {
+        width: auto;
+        height: 420px;
+    }
+    .drcesar {
+        width: auto;
+        height: 420px;
+    }
+    .drronald {
+        width: auto;
+        height: 420px;
+    }
+    .drpari {
+        width: auto;
+        height: 420px;
+    }
+    .addresscont {
+        width: auto;
+    }
+    .hrblock {
+        width: 70%;
+    }
+}
+    
+
+@media screen and (max-width: 1199px) {
+
+    .drshik {
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    .drjash {
+        height: auto;
+        width: 80%;
+    }
+    .drkat {
+        height: 450px;
+        width: auto;
+        margin-left: -5%;
+    }
+    .hrblock {
+        width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 991px) {
+
+    .reviewtitle {
+        margin-top: 0;
+    }
+    .drshik {
+        height: auto;
+        width: 65%;
+        margin: auto;
+    }
+    .drjash {
+        height: auto;
+        width: 50%;
+    }
+    .doctorreview {
+        display: block
+    }
+    .drkat {
+        height: auto;
+        width: 60%;
+        margin: auto;
+    }
+    .drchef {
+        height: auto;
+        width: 50%;
+    }
+    .drjuan {
+        height: auto;
+        width: 65%;
+        margin: auto;
+    }
+    .drprad {
+        height: auto;
+        width: 50%;
+    }
+    .drparo {
+        height: auto;
+        width: 65%;
+    }
+    .drfatima {
+        height: auto;
+        width: 50%;
+    }
+    .drkim {
+        height: auto;
+        width: 55%;
+    }
+    .drcesar {
+        height: auto;
+        width: 50%;
+    }
+    .drmonica {
+        height: auto;
+        width: 60%;
+    }
+    .drronald {
+        height: auto;
+        width: 55%;
+    }
+    .drpari {
+        height: auto;
+        width: 55%;
+    }
+    .drharpreet {
+        height: auto;
+        width: 55%;
+    }
+    .drclint {
+        height: auto;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .dccontent {
+        width: auto;
+    }
+    .backgroundcont {
+        width: auto;
+    }
+    .schedulecont {
+        width: auto;
+    }
+    .evalsection {
+        width: auto;
+    }
+    .faqcont {
+        width: auto;
+    }
+    .stepscont {
+        width: auto;
+    }
+    .stepcontent {
+        width: auto;
+    }
+    .addresscont {
+        width: auto;
+    }
+    .rotationcontent > div > div > h2 {
+        font-size: 30px;
+    }
+    .textinput {
+        width: 27%;
+    }
+}
+
+
+@media screen and (max-width: 1399px) {
+    .dccontent {
+        width: 80%;
+    }
+    .backgroundcont {
+        width: 80%;
+    }
+    .schedulecont {
+        width: 80%;    
+    }
+    .evalsection {
+        width: 80%;    
+    }
+    .faqcont {
+        width: 80%;    
+    }
+    .stepscont {
+        width: 80%;    
+    }
+    .stepcontent {
+        width: 80%;    
+    }
+    .addresscont {
+        width: 80%;    
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dccontent {
+        width: auto;
+    }
+
+    .backgroundcont {
+        width: auto;   
+     }
+    .schedulecont {
+        width: auto;   
+     }
+    .evalsection {
+        width: auto;    
+    }
+    .faqcont {
+        width: auto;  
+      }
+    .stepscont {
+        width: auto;   
+     }
+    .stepcontent {
+        width: auto;    
+    }
+    .addresscont {
+        width: auto;    
+    }
+    .textinput {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .textinput {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1513px) {
+    .userform {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .userform {
+        width: auto;
+    }
+    .infoform {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .mainform {
+        display: flex;
+        align-items: center;
+    }
+    .infoform {
+        margin: auto;
+    }
+    .userform {
+        margin: auto;
+    }
+}
 
 
