@@ -6,14 +6,14 @@
     "npm": "6.x"
   },
   "description": "https://usce-website.herokuapp.com/",
-  "main": "server/server.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"cd app && cd server && npm run watch\" \"cd app && cd client && npm start\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeffbenak/USCE-Website.git"
+    "url": "https://github.com/jeffbenak/USCE-Website.git"
   },
   "author": "",
   "license": "ISC",
