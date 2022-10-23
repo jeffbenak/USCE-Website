@@ -7,13 +7,13 @@ import '../components/pages/style.css'
 
 
 const Slider = [
-  {
-    image: <div className='video'><video src={doctorvid} autoPlay
-    width='1550px' height='875px' playing={true} volume='0' muted loop='true'></video></div>,
-    title: "",
-    desc: "Jumpstart your full potential to MATCH to a U.S Medical Residency",
-    button: <Link to='/loginsign' className='click'><button className='button'>Click Here</button></Link>
-  },
+  // {
+  //   image: <div className='video'><video src={doctorvid} autoPlay
+  //   width='1550px' height='875px' playing={true} volume='0' muted loop='true'></video></div>,
+  //   title: "",
+  //   desc: "Jumpstart your full potential to MATCH to a U.S Medical Residency",
+  //   button: <Link to='/loginsign' className='click'><button className='button'>Click Here</button></Link>
+  // },
   {
     image: <div className='video2'><video src={Video1} controls autoPlay
     width='1550px' height='872px' 
