@@ -8,8 +8,12 @@
   "description": "https://usce-website.herokuapp.com/",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd app && cd server && npm run watch\" \"cd app && cd client && npm start\""
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,7 @@
   },
   "homepage": "https://github.com/jeffbenak/USCE-Website#readme",
   "dependencies": {
-    "concurrently": "^7.4.0"
+    "concurrently": "^7.4.0",
+    "serve": "^14.0.1"
   }
 }
