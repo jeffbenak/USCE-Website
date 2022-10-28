@@ -8,12 +8,10 @@
   "description": "https://usce-website.herokuapp.com/",
   "main": "server.js",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "start": "concurrently \"cd app && cd server && npm run watch\" \"cd app && cd client && npm start\"",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
