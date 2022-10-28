@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "cd app && cd server && npm i && cd ../client && npm i",
     "start": "concurrently \"cd app && cd server && npm run watch\" \"cd app && cd client && npm start\"",
-    "build": "cd client && npm run build"
+    "build": "cd app && cd client && npm run build"
   },
   "repository": {
     "type": "git",
