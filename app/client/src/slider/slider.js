@@ -56,7 +56,7 @@ export default function Slider() {
             <BtnSlider moveSlide={prevSlide} direction={'prev'}/>
 
             <div className="container-dots">
-                {Array.from({length: 4}).map((item, index) => (
+                {Array.from({length: 2}).map((item, index) => (
                     <div 
                     onClick={() => moveDot(index + 1)}
                     className={currentSlide === index ? "dot active" : "dot"}

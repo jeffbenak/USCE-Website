@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 .nav-tabs {
@@ -45,6 +46,8 @@ a.nav-link.active {
 .socials {
   text-align: right;
   margin-right: auto;
+
+  
 }
 
 .header {
@@ -67,10 +70,6 @@ h2 {
 
 }
 
-.registration {
-  margin: 50px;
-}
-
 .binfo {
   margin: auto;
 }
@@ -89,6 +88,11 @@ margin: auto;
 
 .regbutton {
   display: block;
+  width: 7%;
+}
+
+.regbutton:hover {
+  color: white;
 }
 
 .regbut {
@@ -98,7 +102,14 @@ margin: auto;
 .usce {
   width: 150px;
   height: 150px;
-  align-items: left;
+  margin-left: 100%;
+  
+}
+
+.uscefooter {
+  width: 150px;
+  height: 150px;
+  
 }
 
 .form-control {
@@ -146,9 +157,9 @@ margin: auto;
   margin-left: 120px
 }
 
-/* .login {
-  color: white;
-} */
+.loginerror {
+  color: red;
+}
 
 .textinput {
   width: 23%;
@@ -179,6 +190,7 @@ margin: auto;
   border-radius: 20%;
   background-color: #008037;
   box-shadow: 0 10px 20px -10px #000000;
+  width: 5%;
 }
 
 h4 {
@@ -198,15 +210,6 @@ h4 {
   color: black;
 }
 
-.drdavidimg {
-  width: 75%;
-  margin-left: 22%;
-}
-
-.userform {
-  width: 20%;
-}
-
 .infoform {
   width: 20%;
 }
@@ -220,6 +223,10 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #008037;
+  font-size: 38px;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 .about {
@@ -245,7 +252,7 @@ h4 {
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 5%;
+  margin-left: 2%;
 }
 
 .items {
@@ -257,13 +264,18 @@ h4 {
   display: inline-block;
 }
 
+.viewlog {
+  margin-top: 5%;
+}
+
+.viewsign {
+  margin-top: 1%;
+}
+
 .status {
   color: black;
 }
 
-.team {
-  background-color: #c2dcc8;
-}
 
 .footer { 
   padding: 5% 5%;
@@ -274,9 +286,6 @@ h4 {
 .footerabout {
   line-height: 2em;
   text-align: justify;
-  
-  /* margin-left: 30%; */
-  
 }
 
 .footerabout > p {
@@ -284,12 +293,9 @@ h4 {
 }
 
 .footerrow {
-  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-left: auto !important;
-  margin-right: auto !important; */
 }
 
 .footeremail {
@@ -331,9 +337,6 @@ h4 {
   margin-left: 1%;
   margin-top: .2%;
 }
-
-
-
 
 .fchild {
   display: inline-block;

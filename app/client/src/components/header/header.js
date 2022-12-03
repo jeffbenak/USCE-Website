@@ -83,7 +83,7 @@ export default function Header() {
 
       <div className='header'>
         <Navbar expand="lg">
-      <div className='pull-left'>
+      <div>
             <NavLink to="/"><img className='usce' src={usce}></img></NavLink>
             </div>
 

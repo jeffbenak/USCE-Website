@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.7.0",
+    "@coreui/react": "^4.4.0",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -22,6 +23,7 @@
     "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
+    "react-collapse": "^5.1.1",
     "react-dom": "^18.2.0",
     "react-grid": "^4.0.4",
     "react-player": "^2.10.1",

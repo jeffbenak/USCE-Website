@@ -11,28 +11,46 @@ import Button from 'react-bootstrap/Button';
 export default function LoginSignup() {
 
 
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   const [loginStatus, setLoginStatus] = useState(false);
 
+  const [failedLogin, setFailedLogin] = useState('');
 
 
   const login = () => {
+     if (email.length === 0 && password.length === 0) {
+         setFailedLogin('Please enter email and password')
+         return;
+     }
     Axios.post('http://localhost:3001/login', {
      email: email,
      password: password,
     }).then((response) => {
-      console.log(email)
+      console.log(response);
+      
 
-      if (!response.data.auth) {
-        setLoginStatus(false); 
-        console.log(response.data)
-      } else {
+       if (response.data.message === 'Wrong email/password combination') { 
+        setFailedLogin('Wrong email/ password combination');  
+      } 
+
+      else if (response.data.message === 'no user exists') {
+        setFailedLogin('No user found');   
+      }
+
+      else if (!response.data.auth) {
+        setLoginStatus(false);
+      } 
+    
+    
+  
+      else {
         localStorage.setItem('token', response.data.token);
         setLoginStatus(true);
         window.location.assign('/');
-        console.log(response.data)
+        // console.log(response.data)
       }
     });
   };
@@ -41,19 +59,11 @@ export default function LoginSignup() {
     Axios.get('http://localhost:3001/login').then((response) => {
       if (response.data.loggedIn === true) {
         setLoginStatus(response.data.user[0].email);
-      }
+      } 
     })
   }, []);
 
-  // const userAuthenticated = () => {
-  //   Axios.get('http://localhost:3001/isUserAuth', {
-  //     headers: {
-  //       'x-access-token': localStorage.getItem('token'),
-  //     },
-  //   }).then((response) => {
 
-  //   })
-  // }
 
   function checkoutButton() {
     fetch('http://localhost:3001/create-checkout-sess', {
@@ -116,16 +126,16 @@ export default function LoginSignup() {
         </div>
      
         </Container>
-        <br></br>
 
             <p className='status'>{loginStatus}</p>
 
-            <button onClick={checkoutButton}>Checkout</button>
-
-            <br></br>
-
         <Button variant='success' className='loginbutton' onClick={login}>Login</Button>
+
         <br></br>
+
+        <p className='loginerror'>{failedLogin}</p>
+
+
         <br></br>
 
 
@@ -133,7 +143,6 @@ export default function LoginSignup() {
           <button onClick={userAuthenticated}>Check if Authenticated</button>
         )}     */}
         <div className='pl1'>
-        <p>Become an insider to USCE Match! There is a $2.99 one time, non-refundable processing membership fee. Click the checkout button above.</p>
         <p>Dont have an account? <Link className='reg1' to='/register'>Sign up</Link> here</p>
         </div>
       </div>

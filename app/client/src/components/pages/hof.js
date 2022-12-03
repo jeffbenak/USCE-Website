@@ -12,7 +12,7 @@ import DrPradeep from '../pages/reviewimgs/drprad.jpg';
 import DrFatima from '../pages/reviewimgs/drfatima.jpg';
 import DrKim from '../pages/reviewimgs/drkim.png';
 import DrCesar from '../pages/reviewimgs/dranthony.jpg';
-import DrMonica from '../pages/reviewimgs/drmonica.png';
+import DrMonica from '../pages/reviewimgs/drmonica.jpg';
 import DrRonald from '../pages/reviewimgs/drronald.jpg';
 import DrPari from '../pages/reviewimgs/drpari.jpg';
 import DrHarpreet from '../pages/reviewimgs/drharpreet.jpg';
@@ -39,11 +39,7 @@ export default function Hof() {
           <Row className='fame doctorreview'>
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr. Shikhar Khurana From M. S. Ramaiah Medical College</h4>
-            
-          
-            </div>
+         
 
             <br></br>
             
@@ -57,7 +53,7 @@ export default function Hof() {
 
             <br></br>
             <br></br>
-         <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+         <h4 className='review'>Graduated From M.S. Ramaiah Medical College</h4>
          <br></br>
           <br></br>
           <div className='studrev'>
@@ -110,25 +106,14 @@ export default function Hof() {
 
           <br></br>
 
-          <Row className='drjashrev doctorreview'>
+          <Row className='drjashrev flex-reverse doctorreview'>
 
-            
-            <Col>
+        
 
-            <div className='doctitle'>
-              <h4>Dr. Jashank Parwani From Lokmanya Tilak Municipal Medical College, Mumbai, India</h4>
-            <br></br>
-            </div>
-
-        <div>
-        <img className='drjash' src={DrJashank}></img>
-       </div>
-            </Col>
-
-            <Col>
+            <Col className='padleft'>
 
             <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From Lokmanya Tilak Municipal Medical College, Mumbai, India</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -169,6 +154,14 @@ export default function Hof() {
 
             </Col>
 
+
+            <Col>
+
+<div>
+<img className='drjash' src={DrJashank}></img>
+</div>
+    </Col>
+
           </Row>
 
           <br></br>
@@ -189,11 +182,7 @@ export default function Hof() {
         <Container>
           <Row className='fame doctorreview'>
             <Col>
-
-            <div className='doctitle'>
-              <h4>Dr. Katryna Torres From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine</h4>
-            </div>
-            
+  
             <br></br>
 
         <div>
@@ -204,7 +193,7 @@ export default function Hof() {
             <Col>
 
             <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -271,26 +260,13 @@ export default function Hof() {
 
           <br></br>
 
-          <Row className='drrev doctorreview'>
-            <Col>
+          <Row className='drrev flex-reverse doctorreview'>
+  
 
-            <div className='doctitle'>
-              <br></br>
-              <h4>Dr. Chef Stan Macaraeg From FEU-NRMF Institute of Medicine - Philippines</h4>
-          
-            </div>
+            <Col className='padleft'>
 
             <br></br>
-
-        <div>
-        <img className='drchef' src={DrChef}></img>
-       </div>
-            </Col>
-
-            <Col className='drchefrev'>
-
-            <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From FEU-NRMF Institute of Medicine - Philippines</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -325,6 +301,17 @@ export default function Hof() {
 
             </Col>
 
+            <Col>
+
+           
+
+<br></br>
+
+<div>
+<img className='drchef' src={DrChef}></img>
+</div>
+</Col>
+
           </Row>
 
           <br></br>
@@ -347,10 +334,7 @@ export default function Hof() {
           <Row className='fame doctorreview'>
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr. Juan Fernando Ortiz is from Universidad San Francisco de Quito</h4>
           
-            </div>
 
             <br></br>
 
@@ -359,11 +343,11 @@ export default function Hof() {
        </div>
             </Col>
 
-            <Col className='reviewtitle'>
+            <Col className=''>
 
 
             <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From Universidad San Francisco de Quito</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -405,25 +389,13 @@ export default function Hof() {
             <br></br>
 
 <Container>
-          <Row className='drpradrev doctorreview'>
-            <Col>
+          <Row className='drpradrev flex-reverse doctorreview'>
+       
 
-            <div className='doctitle'>
-              <h4>Dr. Pradeep Chevula is from Soochow University Medical College </h4>
-          
-            </div>
+            <Col className='padleft'>
 
             <br></br>
-
-        <div>
-        <img className='drprad' src={DrPradeep}></img>
-       </div>
-            </Col>
-
-            <Col>
-
-            <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From Soochow University Medical College</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -461,6 +433,18 @@ export default function Hof() {
 
             </Col>
 
+
+            <Col>
+
+
+
+<br></br>
+
+<div>
+<img className='drprad' src={DrPradeep}></img>
+</div>
+</Col>
+
           </Row>
           <br></br>
           <hr className='hr'></hr>
@@ -476,11 +460,6 @@ export default function Hof() {
 <Row className='drparorev doctorreview'>
   <Col>
 
-  <div className='doctitle'>
-    <h4>Dr. Paro Bhaya is from Tbilisi State Medical University, Georgia </h4>
-
-  </div>
-
   <br></br>
 
 <div>
@@ -492,7 +471,7 @@ export default function Hof() {
 
   <Col>
 
-<h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+<h4 className='review'>Graduated From Tbilisi State Medical University, Georgia</h4>
 <br></br>
 <br></br>
 <div className='studrev'>
@@ -536,7 +515,7 @@ treatment strategies.
 
 </Row>
 
-<br></br>
+
 
 <hr className='hr'></hr>
 
@@ -558,27 +537,15 @@ treatment strategies.
 
 <br></br>
 
-<Row className='drrev drfatimarev doctorreview'>
-  <Col>
+<Row className='drrev drfatimarev flex-reverse doctorreview'>
 
-  <div className='doctitle'>
-    <h4>Dr. Fatima Anwer From King Edward Medical University, Lahore Pakistan</h4>
-
-  </div>
 
   <br></br>
 
-<div>
-<img className='drfatima' src={DrFatima}></img>
-</div>
-  </Col>
+  <Col className='padleft'>
 
   <br></br>
-
-  <Col>
-
-  <br></br>
-<h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+<h4 className='review'>Graduated From King Edward Medical University, Lahore Pakistan</h4>
 <br></br>
 <br></br>
 <div className='studrev'>
@@ -608,6 +575,15 @@ I have never seen patients with migraine being so satisfied with their treatment
 
   </Col>
 
+  <Col>
+
+<br></br>
+
+<div>
+<img className='drfatima' src={DrFatima}></img>
+</div>
+</Col>
+
 </Row>
 
 <br></br>
@@ -629,10 +605,6 @@ I have never seen patients with migraine being so satisfied with their treatment
           <Row className='fame drkimrev doctorreview'>
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr. Kim Abbegail Aldecoa From Far Eastern University- Nicanor Reyes Medical Foundation</h4>
-          
-            </div>
 
             <br></br>
 
@@ -643,9 +615,9 @@ I have never seen patients with migraine being so satisfied with their treatment
 
             <br></br>
 
-            <Col className='reviewtitle'>
+            <Col className=''>
 
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From Far Eastern University- Nicanor Reyes Medical Foundation</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -681,28 +653,14 @@ I have never seen patients with migraine being so satisfied with their treatment
 
 <br></br>
 
-<Row className='drrev drcesarrev doctorreview'>
-  <Col>
+<Row className='drrev drcesarrev flex-reverse doctorreview'>
 
-  <div className='doctitle'>
-
-    <h4>Dr. Cesar Anthony Calvo From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine.</h4>
-
-
-  </div>
-
-  <br></br>
-
-<div>
-<img className='drcesar' src={DrCesar}></img>
-</div>
-  </Col>
 
 <br></br>
 
-  <Col className='reviewtitle'>
+  <Col className=' padleft'>
 
-<h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+<h4 className='review'>Graduated From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine</h4>
 <br></br>
 <br></br>
 <div className='studrev'>
@@ -729,6 +687,16 @@ and practice whenever it was available.
 
   </Col>
 
+  <Col>
+
+
+<br></br>
+
+<div>
+<img className='drcesar' src={DrCesar}></img>
+</div>
+</Col>
+
 </Row>
 
 <br></br>
@@ -748,72 +716,12 @@ and practice whenever it was available.
 
 
 <Container>
-          <Row className='drmonicarev doctorreview'>
-            <Col>
-
-            <div className='doctitle'>
-              <h4>Dr. Monica Kaitlyn Musni From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine.</h4>
-          
-            </div>
-
-            <br></br>
-
-        <div>
-        <img className='drmonica' src={DrMonica}></img>
-       </div>
-            </Col>
-
-            <Col className='reviewtitle'>
-
-            <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
-          <br></br>
-          <br></br>
-          <div className='studrev'>
-            <p>
-            Dr. Calimag did a great job in capturing my interest in neurology through his work. 
-            I appreciated the way he guided case discussions and answered any questions I had. 
-            His funny and laid-back personality was unlike any physician I had rotated under before, 
-            which made it easier for me to be more involved in discussions and patient interactions. 
-            I was intrigued by the tests he conducted, and, to my surprise, after observing, 
-            he allowed me to conduct a nerve stimulation test, which I had never seen or done in person. 
-        </p>
-        <p>
-        All in all, I believe my time under Dr. Calimag was beneficial, to say the least. He allowed 
-        me to assist in many procedures whenever the opportunity arose. He never exhibited an 
-        intimidating tone and created a relaxed environment where it was easy to ask questions without fear of belittlement.   
-        </p>
 
 
-        </div>
 
-            </Col>
-
-          </Row>
-          <hr className='hr'></hr>
-
-          </Container>
-
-          {/*
-          *********** 
-          *********** 
-          NEXT REVIEW
-          *********** 
-          *********** 
-            */}
-
-<Container>
-
-
-<br></br>
-
-<Row className='drrev drronrev doctorreview'>
+<Row className='drronrev doctorreview'>
   <Col>
 
-  <div className='doctitle'>
-    <h4>Dr. Ronald Roque From Angeles University Foundation - School of Medicine</h4>
-
-  </div>
 
   <br></br>
 
@@ -822,11 +730,10 @@ and practice whenever it was available.
 </div>
   </Col>
 
-  <Col className='reviewtitle'>
+  <Col className=''>
 
 
-  <br></br>
-<h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+<h4 className='review'>Graduated From Angeles University Foundation - School of Medicine</h4>
 <br></br>
 <br></br>
 <div className='studrev'>
@@ -858,6 +765,62 @@ and knows when to refer to a specialist.
 
 </Container>
 
+
+
+<Container>
+          <Row className='drrev flex-reverse drmonicarev doctorreview'>
+      
+
+            <Col className='padleft'>
+
+            <br></br>
+          <h4 className='review'>Graduated From the University of the East Ramon Magsaysay Memorial Medical Center, College of Medicine</h4>
+          <br></br>
+          <br></br>
+          <div className='studrev'>
+            <p>
+            Dr. Calimag did a great job in capturing my interest in neurology through his work. 
+            I appreciated the way he guided case discussions and answered any questions I had. 
+            His funny and laid-back personality was unlike any physician I had rotated under before, 
+            which made it easier for me to be more involved in discussions and patient interactions. 
+            I was intrigued by the tests he conducted, and, to my surprise, after observing, 
+            he allowed me to conduct a nerve stimulation test, which I had never seen or done in person. 
+        </p>
+        <p>
+        All in all, I believe my time under Dr. Calimag was beneficial, to say the least. He allowed 
+        me to assist in many procedures whenever the opportunity arose. He never exhibited an 
+        intimidating tone and created a relaxed environment where it was easy to ask questions without fear of belittlement.   
+        </p>
+
+
+        </div>
+
+            </Col>
+
+            <Col>
+
+<br></br>
+
+<div>
+<img className='drmonica' src={DrMonica}></img>
+</div>
+</Col>
+
+          </Row>
+          <hr className='hr'></hr>
+
+          </Container>
+
+          {/*
+          *********** 
+          *********** 
+          NEXT REVIEW
+          *********** 
+          *********** 
+            */}
+
+
+
  {/*
           *********** 
           *********** 
@@ -870,11 +833,6 @@ and knows when to refer to a specialist.
           <Row className='fame doctorreview drbavrev'>
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr. Bavithra Pari From Government Mohan Kumaramangalam Medical College</h4>
-          
-            </div>
-
             <br></br>
 
         <div>
@@ -884,10 +842,9 @@ and knows when to refer to a specialist.
 
             <br></br>
 
-            <Col className='reviewtitle'>
+            <Col className='padright'>
 
-            <br></br>
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From Government Mohan Kumaramangalam Medical College</h4>
           <br></br>
           <br></br>
           <div className='studrev'>
@@ -929,27 +886,15 @@ and knows when to refer to a specialist.
 
 <br></br>
 
-<Row className='drrev drharprev doctorreview'>
-  <Col>
+<Row className='drrev flex-reverse drharprev doctorreview'>
 
-  <div className='doctitle'>
-    <h4>Dr. Harpreet Virk From the Caribbean Medical University School of Medicine </h4>
-
-  </div>
 
   <br></br>
 
-<div>
-<img className='drharpreet' src={DrHarpreet}></img>
-</div>
-  </Col>
+  <Col className='padleft'>
 
   <br></br>
-
-  <Col className='reviewtitle'>
-
-  <br></br>
-<h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+<h4 className='review'>Graduated From the Caribbean Medical University School of Medicine</h4>
 <br></br>
 <br></br>
 <div className='studrev'>
@@ -974,6 +919,16 @@ If you are interested in Neurology, as I was, you will thrive under Dr. Calimag'
 
   </Col>
 
+  <Col>
+
+
+<br></br>
+
+<div>
+<img className='drharpreet' src={DrHarpreet}></img>
+</div>
+</Col>
+
 </Row>
 
 <br></br>
@@ -997,13 +952,9 @@ If you are interested in Neurology, as I was, you will thrive under Dr. Calimag'
 
 
 <Container>
-          <Row className='fame drkimrev doctorreview'>
+          <Row className='fame drclintrev doctorreview'>
             <Col>
 
-            <div className='doctitle'>
-              <h4>Dr Clint Christian Garbanzos is from St. Luke's College of Medicine-William H. Quasha Memoria</h4>
-          
-            </div>
 
             <br></br>
 
@@ -1014,9 +965,9 @@ If you are interested in Neurology, as I was, you will thrive under Dr. Calimag'
 
             <br></br>
 
-            <Col className='reviewtitle'>
+            <Col className=''>
 
-          <h2 className='review'>Review</h2><h2 className='inline'>:</h2>
+          <h4 className='review'>Graduated From St. Luke's College of Medicine-William H. Quasha Memoria</h4>
           <br></br>
           <br></br>
           <div className='studrev'>

@@ -60,9 +60,6 @@ export default function Home() {
               to elevate the best chances for you to match and become your best version.
             </p>
             <br></br>
-            <h2>The Leadership Team</h2>
-            <p className='p-3'>Imperdiet dui accumsan sit amet. Sed cras ornare arcu dui. Ullamcorper eget nulla facilisi etiam dignissim diam. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Justo nec ultrices dui sapien eget mi. Faucibus et molestie ac feugiat. Suspendisse sed nisi lacus sed viverra tellus in hac. Dolor sit amet consectetur adipiscing elit ut. Viverra adipiscing at in tellus integer feugiat scelerisque. Ac tortor dignissim convallis aenean et tortor at risus.</p>
-
           </div>
           <Footer></Footer>
       </div>
@@ -73,11 +70,11 @@ export default function Home() {
     <Header></Header>
     <div className='socials'>
     <ul className='list'>
-      <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
-      <li><a href='tel:+12248884000'><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
-      <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
-      <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
-      <li><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></li>         
+      <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon className='fa-lg' icon={faEnvelope}></FontAwesomeIcon></a></li>
+      <li><a href='tel:+12248884000'><FontAwesomeIcon className='fa-lg' icon={faPhone}></FontAwesomeIcon></a></li>
+      <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon className='fa-lg' icon={faInstagram}></FontAwesomeIcon></a></li>
+      <li><FontAwesomeIcon className='fa-lg' icon={faFacebook}></FontAwesomeIcon></li>
+      <li><FontAwesomeIcon className='fa-lg' icon={faWhatsapp}></FontAwesomeIcon></li>         
     </ul>
     </div>
     <Slider></Slider>
@@ -86,6 +83,8 @@ export default function Home() {
     <p className='log'>
       <Link to='/loginsign'>Log in</Link> to view the trade in secrets
     </p>
+
+    <div className='homecontainer'>
 
     <h1>What Is USCE Match?</h1>
     <div className='about'>
@@ -105,7 +104,7 @@ export default function Home() {
 
       <div className='team'>            
       <br></br>
-        <h2>OUR VISION and MISSION</h2>
+        <h1>OUR VISION and MISSION</h1>
         <p className='p-3'>
           Our objective is to find exceptional medical professionals and create a pathway that will connect them directly to a residency program.
         </p>
@@ -114,10 +113,10 @@ export default function Home() {
           We consistently redefine and pursue excellence through our structured USCE, and mentorship services 
           to elevate the best chances for you to match and become your best version.
         </p>
-        <br></br>
-        <h2>The Leadership Team</h2>
-        <p className='p-3'>Imperdiet dui accumsan sit amet. Sed cras ornare arcu dui. Ullamcorper eget nulla facilisi etiam dignissim diam. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Justo nec ultrices dui sapien eget mi. Faucibus et molestie ac feugiat. Suspendisse sed nisi lacus sed viverra tellus in hac. Dolor sit amet consectetur adipiscing elit ut. Viverra adipiscing at in tellus integer feugiat scelerisque. Ac tortor dignissim convallis aenean et tortor at risus.</p>
 
+        </div>
+
+        <br></br>
       </div>
       <Footer></Footer>
   </div>

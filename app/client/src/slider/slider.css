@@ -10,6 +10,16 @@
   .text {
     font-size: 50px;  
   }
+
+  .text2 {
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+
+  .text3 {
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
   
   .slide {
     width: 100%;
@@ -24,7 +34,7 @@
 }
 
 .video2 {
-  height: 1000px;
+  margin-top: -10%
 }
 
   /* @media screen and (max-width: 1200px){ */
@@ -68,12 +78,6 @@
 
   }
 
-  .image3 {
-    position: relative;
-    top: -1200px;
-
-  }
-  
   .active-anim {
     opacity: 1;
   }

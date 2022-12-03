@@ -3,6 +3,9 @@ import Axios from 'axios';
 import Header from '../header/header'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 export default function Register() {
@@ -113,6 +116,7 @@ export default function Register() {
       }
       const handleVisaChange = (e) => {
             setVisaReg(e.target.value);
+            console.log(e.target.value);
             const {name, value} = e.target;
             setFormValues({...formValues, [name]: value});
       }
@@ -132,12 +136,7 @@ export default function Register() {
       const handleSubmit = (e) => {
             setFormErrors(validate(formValues));
             setIsSubmit(true)
-            // if (Object.keys(formErrors).length !== 0) {
-            //       console.log(Object.keys(formErrors).length)
-            //     e.preventDefault()
-            // } else if (Object.keys(formErrors).length === 0) {
-            //       console.log(Object.keys(formErrors).length)
-            //   }
+           
       };
 
 
@@ -191,9 +190,9 @@ export default function Register() {
             if (!values.address) {
                   errors.address = 'Address is required'
             }
-            if (!values.visa) {
-                  errors.visa = 'Visa status is required'
-            }
+            // if (!values.visa) {
+            //       errors.visa = 'Visa status is required'
+            // }
             if (Object.keys(errors).length === 0) {
                   console.log(errors)
             }
@@ -201,8 +200,6 @@ export default function Register() {
             //       window.location.assign('/loginsign');
 
             // }
-            console.log("validate errors:");
-            console.log(errors);
             return errors;
       };
 
@@ -215,12 +212,11 @@ export default function Register() {
 
         <div className='registertitle'>
 
-        <h3>Registration</h3>
+        <p>Registration</p>
 
         </div>
         <div className='registration'>
 
-      <br></br>
       <br></br>
       <div className='mainform'>
       <Form 
@@ -288,12 +284,17 @@ export default function Register() {
                 >
           </Form.Control>
           <p className='errortext'>{formErrors.address}</p>
-          <br></br>
-          <Form.Control aria-autocomplete='list' name='visa' type='list' placeholder='Visa Status'
-                onChange={handleVisaChange}
-                >
-          </Form.Control>
-          <p className='errortext'>{formErrors.visa}</p>
+      
+           <form className='visaform'>
+            <label className='visastat' for='visa'>Visa Status:</label>
+            <select name='visa' className='visadropdown' onClick={handleVisaChange}>
+                  <option value='Citizen'>Citizen</option>
+                  <option value='Green Card Holder'>Green Card Holder</option>
+                  <option value='Tourist Visa'>Tourist Visa</option>
+                  <option value='No Visa'>No Visa</option>
+            </select>
+           </form>
+          
      
         </Form.Group>
       </Form>
@@ -302,7 +303,7 @@ export default function Register() {
       
       <div className='regbut'>
 
-      <Button className='regbutton' variant='outline-success' onClick={handleSubmit}>Register</Button>
+      <Button className='regbutton' variant='success' onClick={handleSubmit}>Register</Button>
 
       </div>
       

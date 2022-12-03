@@ -39,21 +39,13 @@ h6 {
     font-weight: bold;
 }
 
-
-
-
-
 .hoftitle {
-    background-color: #008037;
     margin: auto;
     width: 30%;
-    padding: .2%;
-    box-shadow: 5px 5px #003f1b;
-
+    color: #008037;
 }
 
 .hoftitle > h1 {
-    color: white;
     font-family: 'Abyssinica SIL', serif;
     font-weight: bold;
     font-size: 50px;
@@ -63,7 +55,6 @@ h6 {
     display: inline-block;
     color: #008037;
     font-size: 40px;
-    text-decoration: underline;
 }
 
 .inline {
@@ -75,16 +66,23 @@ h6 {
 .studrev {
     text-align: justify;
     line-height: 1.7em;
+    margin-right: 5%;
+    
 }
+
+.padleft {
+    padding-left: 5%;
+}
+
 
 .drrev {
     background-color: #c2dcc8;
 }
 
 .drjash {
-    margin: 10% 5% 5% 5%;
+    margin: 20% 10% 5% 5%;
     width: auto;
-    height: 500px;
+    height: 600px;
 }
 
 .drjashrev {
@@ -94,49 +92,59 @@ h6 {
 
 .drshik {
     margin: auto;
-    width: 70%;
-    height: 70%;
+    margin-top: 13%;
+    width: 80%;
+    height: 80%;
 }
 
 .drkat {
     margin: auto;
+    margin-top: 15%;
     width: auto;
-    height: 500px;
+    height: 600px;
 }
 
 .drchef {
     margin: auto;
+    margin-top: 14%;
+    margin-right: 8%;
     width: auto;
-    height: 420px;
+    height: 600px;
 }
 
 .drjuan {
-    margin: 14% 5% 5% 5%;
+    margin: 4% 5% 5% 5%;
     width: auto;
-    height: 450px;
+    height: 550px;
 }
 
 .drparo {
     margin: auto;
+    margin-top: 19%;
     width: auto;
-    height: 500px;
+    height: 650px;
 }
 
 .drprad {
     margin: auto;
+    margin-top: 10%;
+    margin-right: 5%;
     width: auto;
-    height: 480px;
+    height: 600px;
 }
 
 .drpradrev {
     background-color: #c2dcc8;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .drfatima {
     margin: auto;
+    margin-top: 7%;
+    margin-right: 3%;
     width: auto;
-    height: 430px;
+    height: 540px;
 }
 
 .drfatimarev {
@@ -147,7 +155,7 @@ h6 {
 .drkim {
     margin: auto;
     width: auto;
-    height: 400px;
+    height: 500px;
 }
 
 .drkimrev {
@@ -156,34 +164,36 @@ h6 {
 
 .drcesar {
     margin: auto;
+    margin-top: 10%;
     width: auto;
-    height: 450px;
+    height: 540px;
 }
 
 .drcesarrev {
-    padding-top: 2%;
-    padding-bottom: 4%;
+    padding-bottom: 1%;
 }
 
 .reviewtitle {
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 .drmonica {
     margin: auto;
+    margin-bottom: 8%;
     width: auto;
-    height: 450px;
+    height: 560px;
 }
 
 .drmonicarev {
-    margin-top: 3%;
     margin-bottom: 5%;
+    margin-top: 5%;
+    padding-top: 2%;
 }
 
 .drronald {
     margin: auto;
     width: auto;
-    height: 450px;
+    height: 540px;
 }
 
 .drronrev {
@@ -194,7 +204,7 @@ h6 {
 .drpari {
     margin: auto;
     width: auto;
-    height: 450px; 
+    height: 540px; 
 }
 
 .drbavrev {
@@ -204,46 +214,44 @@ h6 {
 .drharpreet {
     margin: auto;
     width: auto;
-    height: 450px;
+    height: 540px;
 }
 .drharprev {
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 .drclint {
     margin: auto;
+    margin-top: 15%;
     width: auto;
-    height: 420px;
+    height: 540px;
 }
 
+.drclintrev {
+    padding-bottom: 5%;
+}
 
+.rotationcontent {
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.collapsible {
+    background-color: #008037;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  } 
 
+  .active, .collapsible:hover {
+    opacity: 0.8;
+  }
 
-
-
-/* .titlecont {
-    display: block;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .infohead {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    background-color:#008037;
-    z-index: 2;
-    width: 37%;
-    height: 25%;
-    margin-top: 5%;
-    margin-left: 18.7%;
-} */
-
-
-/* .rotatetitle {
-
-} */
 
 .infohead {
     display: flex;
@@ -268,27 +276,34 @@ h6 {
     margin-right: 18%;
 }
 
+.drdavidimg {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+.dctitle > div > div {
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
 .dctitle {
-    background-color: #008037;
-    width: 60%;
-    box-shadow: 5px 5px #003f1b;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    margin: auto;
 }
 
 .dcwho {
-    padding: 0.7%;
+    text-align: center;
 }
 
 .dccontent {
-    width: 70%;
+    width: 100%;
     background-color: #c2dcc8;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2%;
+    padding-top: 1%;
     padding: 1% 0 0.5% 1%;
     text-align: left;
-    line-height: 0.5;
+    line-height: 1;
 }
 
 .drtitle {
@@ -317,22 +332,30 @@ h6 {
 }
 
 .atn > p {
-    padding: .7% 0 0 .8%;
+    padding: .4% 1%;
 }
+
+.consult {
+    display: flex;
+}
+
+.consult > p {
+    padding: .4% 1%;
+}
+
 
 .stafflist {
     margin-left: 1.5%;
 }
 
 .titleof {
-    background-color: #008037;
-    width: 60%;
-    margin-left: auto;
-    box-shadow: 5px 5px #003f1b;
+    width: 70%;
+    margin: auto;
+    
 }
 
 .backrotate {
-    padding: 0.9%;
+    text-align: center;
 }
 
 .privateprac {
@@ -371,56 +394,61 @@ h6 {
 
 .schedulecont {
     background-color: #c2dcc8;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1% 1% 1% 1%;
+    padding: 2% 1% 0% 2%;
 }
-
 
 .sched {
-    background: radial-gradient(circle at left, rgb(64, 207, 100) 0%, rgb(3, 61, 19) 100%);;
     padding: 0.3%;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    text-align: center;
 }
 
-.schedule > div > div {
-    display: flex;
+.schedule > div {
     text-align: left;
 }
 
+.schedulecont > div {
+    margin-top: 2%;
+}
 
 .mondaycont {
-    padding-left: 5.8em;
+    padding-left: 4.3em;
+    margin-right: 1%;
 }
 
 .tuesdaycont {
-    padding-left: 6em;
+    padding-left: 4.5em;
+    margin-right: 1%;
 }
 
 .wednesdaycont {
-    padding-left: 3em;
+    padding-left: 1.5em;
+    margin-right: 1%;
 }
 
 .thursdaycont {
-    padding-left: 4.5em;
+    padding-left: 3.1em;
+    margin-right: 1%;
 }
 
 .fridaycont {
-    padding-left: 7.6em;
+    padding-left: 6.2em;
+    margin-right: 1%;
 }
+
 
 .saturdaycont {
-    padding-left: 4.8em;
+    padding-left: 3.4em;
+    margin-right: 1%;
 }
 
+
 .addresscont {
-    display: block;
-    width: 50%;
     text-align: left;
-    margin-left: 15%;
+    margin-top: 3%;
 }
 
 .outpat {
@@ -446,21 +474,22 @@ h6 {
 
 
 .backgroundcont {
-    text-align: left;
-    width: 70%;
-    margin: 2% auto;
+    width: 100%;
+    margin: 0 0 0 0;
 }
 
 .backofrotate {
-    padding: 1% 0 0 1%;
+    padding: 2% 2% 0 2%;
+    text-align: left;
 }
+
+
 
 .backgroundcont > div > h2 {
     text-align: center;
 }
 
 .evalsection {
-    background-color: #c2dcc8;
     width: 70%;
     margin: auto;
     
@@ -481,7 +510,7 @@ h6 {
 .responsetitle > h2 {
     color: white;
     padding: 0.9%;
-    box-shadow: 5px 5px #003f1b;
+    
 }
 
 .backexpectcont {
@@ -494,22 +523,14 @@ h6 {
     padding: 1% 0 0 1%;
 }
 
-.evaltitle {
-    background-color: #008037;
-    margin-left: -4.5%;
-    padding-left: 1%;
-    width: 95%;
-    box-shadow: 5px 5px #003f1b;
-}
-
 .posteval {
-    color: white;
     font-size: 31px;
-    padding: 0.9%;
+    text-align: center;
 }
 
 .evaluate {
-    padding: 0 1% 0 1%;
+    padding: 2% 0% 1% 2%;
+    background-color: #c2dcc8
 }
 
 .listtitle {
@@ -519,32 +540,40 @@ h6 {
 .evallist {
     display: flex;
     text-align: left;
+
+    
 }
 
 .evalinfo {
     text-align: left;
 }
 
-
+.evaltitle {
+    justify-content: center;
+    align-items: center;
+}
 
 
 .afaq {
     color: white;
     font-size: 200%;
-    padding: 0.5%;
-    box-shadow: 5px 5px #003f1b;
+    
+}
+
+.adfaqstitle {
+    width: 70%;
+    margin: auto;
 }
 
 .addit {
     background-color: #008037;
-    width: 40%;
-    margin: auto;
+    text-align: center;
 }
 
 .faqcont {
     background-color: #c2dcc8;
     width: 70%;
-    margin: 2% auto;
+    margin: auto;
     text-align: left;
     padding-left: 1%;
     padding-top: 1%;
@@ -560,25 +589,21 @@ h6 {
 }
 
 
-
-
 .steps {
-    color: white;
-    background-color: #008037;
-    box-shadow: 5px 5px #003f1b;
     width: 70%;
     margin: auto;
 }
 
 .appsteps {
-    padding: 0.6%;
+    color: white;
+    text-align: center;
 }
 
 .stepscont {
     background-color: #c2dcc8;
-    width: 70%;
+    width: 100%;
     margin: auto;
-    padding-top: 0.5%;
+    padding-top: 2%;
     padding-bottom: 0.1%;
 }
 
@@ -596,7 +621,7 @@ h6 {
 }
 
 .gridspots {
-    display: grid;
+    display: none;
     overflow: hidden;
     grid-template-columns: 25% 25% 25% 25%;
     gap: 10px;
@@ -609,21 +634,11 @@ h6 {
     background-color: #c2dcc8;
  }
 
-
-
-
-
-
-table {
+/* table {
     width: 100%;
     line-height: 3em;
     border: 2px solid black;
-}
-
-
-.tablehead {
-    border: 2px solid black;
-}
+} */
 
 .silverdet {
     margin-left: 10%;
@@ -649,23 +664,38 @@ table {
     width: 25%;
 }
 
+.packagetable {
+    line-height: 3em;
+}
+
+.packagetable > tr > td {
+    border-width: thin;
+    border-color: black;
+}
+
+.packagetable > tr > th {
+    border-width: thin;
+    border-color: black;
+}
 
 .packagesummary {
-    text-align: left;
+    margin-bottom: 3%;
 }
+
+.packagesummary > p {
+    text-align: left;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .packagesummary > h5 {
     background-color: #4cc681;
-    width: 12%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 2%;
 }
-
-
-.bronzest {
-    background-color: #4cc681;
-    width: 12.7%;
-
-}
-
 
 .instalink {
     color: black;
@@ -721,7 +751,7 @@ table {
 
 .stepcontent {
     background-color: #c2dcc8;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 1% 1% 0.5% 1%;
@@ -738,7 +768,11 @@ table {
 }
 
 .secondstep {
-    margin-top: -0.2%;
+    margin-top: -.1%;
+}
+
+.secondsteptitle {
+    padding-top: 2%;
 }
 
 .requiredlist {
@@ -764,13 +798,17 @@ table {
     line-height: 2;
 }
 
+.thirdsteptitle {
+    padding-top: 2%;
+}
+
 .fourthlist {
     margin-top: 2.8%;
     padding: 0 1% .5% 6%;
 }
 
 .fifthstep {
-    padding-top: -1%;
+    padding-top: 3%;
 }
 
 .fifthalign {
@@ -779,13 +817,13 @@ table {
     line-height: 1;
 }
 
+.userform {
+    width: 25%;
+  }
 
-
-
-
-
-
-
+.regbutton {
+    box-sizing: content-box;
+}
 
 .grid-container {
     width: 1296px;
@@ -1010,21 +1048,16 @@ table {
     height: 174%;
 }
 
-
-
-
-
-
-.cart {
-position: absolute;
-font-size: 2.3rem;
-top: 8.3rem;
-right: .5rem;
-overflow: auto;
+.bronzest {
+    width: 13.5%;
 }
 
-.cart:hover {
-    transform: rotate(8deg);
+.silverboost {
+    width: 12.8%;
+}
+
+.goldopt {
+    width: 12.8%;
 }
 
 .aboutmatch {
@@ -1076,6 +1109,12 @@ overflow: auto;
     
 }
 
+.services {
+    font-family: 'Abyssinica SIL', serif;
+    font-size: 45px;
+    font-weight: bold;
+}
+
 .here {
     color: black;
 }
@@ -1093,37 +1132,71 @@ overflow: auto;
     color: #008037;
 }
 
+.scheduletable {
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  line-height: 3em;
+  width: 70%;
+}
+
+
+.sumsched {
+    width: 70%;
+    margin: auto;
+}
+
+.schedtitle {
+    text-align: center;
+}
+
+
+.scheduleheader {
+    width: 10%;
+    border: 2px solid black;
+}
+
+.r2t2 {
+    width: 11%;
+    border: 2px solid black;
+    line-height: 1.5em;
+}
+
+.r2black {
+    width: 11%;
+    border: 2px solid black;
+    background-color: black;
+    line-height: 1.5em;
+}
+
+.r3t1 {
+    width: 11%;
+    border: 2px solid black;
+    line-height: 1.5em;
+}
+
+
+.visastat {
+    font-size: 20px;
+    margin-right: 2%;
+}
+
+.visaform {
+    text-align: left;
+    margin-left: 1%;
+    margin-top: 9%;
+}
+
 
 
  /* MEDIA QUERIES */
 
-@media screen and (max-width: 1400px) {
-    .profback {
-      width: auto;
-  
+
+@media screen and (max-width: 1499px) {
+    .footerabout {
+        width: 90%;
     }
-  }
-
-@media screen and (max-width: 1000px) {
-    .profback {
-      font-size: 15px;
-      width: auto;
-  
-    }
-  }
-
-  @media screen and (max-width: 760px) {
-    .profback {
-      font-size: 13px;
-      width: auto;
-    }
-  }
-
-
-
-  /* GRID SCHEDULE MEDIA QUERIES */
-
-
+}
 
   @media screen and (max-width: 1400px) {
     .grid-container {
@@ -1135,38 +1208,58 @@ overflow: auto;
     }
   }
 
+  @media screen and (max-width: 1400px) {
+    .profback {
+      width: auto;
   
-  @media screen and (max-width: 1200px) {
-    .grid-container {
-        width: 796px;
-        margin-left: -2.5%;
-    }
-    .grid {
-        grid-template-columns: 27% 27% 27% 27% 27% 24%;
     }
   }
 
-  @media screen and (max-width: 1000px) {
-    .grid-container {
-        width: 396px;
-        margin-left: -17%;
+
+@media screen and (max-width: 1399px) {
+    .evalsection {
+        width: 80%;    
     }
-    .grid {
-        grid-template-columns: 53% 53% 53% 53% 53% 35%;
-  }
+    .evaltitle {
+        width: 80%;
+        margin: auto;
+    }
+      .faqcont {
+        width: 80%;    
+    } 
+    .scheduletable {
+        width: 80%;
+    }
+    .contactcol {
+        margin-left: 5%;
+        width: 100%;
+    }
+    .footerabout {
+        width: auto;
+    }
+    .bronzest {
+        width: 8%;
+    }
+    .silverboost {
+        width: 8.5%;
+    }
+    .goldopt {
+        width: 9%;
+    }
+
 }
 
-@media screen and (max-width: 800px) {
-    .grid-container {
-        width: 50%;
-        margin-left: -17%;
+@media screen and (max-width: 1399px) {
+    .consult {
+        display: block;
     }
-    .grid {
-        grid-template-columns: 71% 71% 71% 71% 70% 70%;
-  }
+    /* .userform {
+        width: 30%;
+    }
+    .infoform {
+        width: 0%;
+    } */
 }
-
-
 
 /* HALL OF FAME MEDIA QUERIES */
 
@@ -1216,11 +1309,92 @@ overflow: auto;
         width: auto;
         height: 420px;
     }
+   
+}
+
+@media screen and (max-width: 1399px) {
+
+    .dccontent {
+        width: auto;
+    }
+    .backgroundcont {
+        width: auto;
+    }
+    .schedulecont {
+        width: auto;
+    }
+    .evalsection {
+        width: auto;
+    }
+    .faqcont {
+        width: auto;
+    }
+    .stepscont {
+        width: auto;
+    }
+    .stepcontent {
+        width: auto;
+    }
     .addresscont {
         width: auto;
     }
+    .rotationcontent > div > div > h2 {
+        font-size: 30px;
+    }
+    .textinput {
+        width: 27%;
+    }
+    .dctitle {
+        width: 80%;
+    }
+    .titleof {
+        width: 80%;
+    }
+    .sumsched {
+        width: 80%;
+    }
     .hrblock {
-        width: 70%;
+        width: 80%;
+    }
+    .adfaqstitle {
+        width: 80%;
+    }
+    .steps {
+        width: 80%;
+    }
+   
+}
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        width: 796px;
+        margin-left: -2.5%;
+    }
+    .grid {
+        grid-template-columns: 27% 27% 27% 27% 27% 24%;
+    }
+  }
+
+
+@media screen and (max-width: 1199px) {
+    .drdavidimg {
+        width: 90%;
+    }
+    .footerrow {
+        display: flex;
+        align-items: center;
+    }
+    .packagetable {
+        line-height: 2em;
+    }
+    .bronzest {
+        width: 9%;
+    }
+    .silverboost {
+        width: 10%;
+    }
+    .goldopt {
+        width: 10.5%;
     }
 }
     
@@ -1234,7 +1408,7 @@ overflow: auto;
     }
     .drjash {
         height: auto;
-        width: 80%;
+        width: 60%;
     }
     .drkat {
         height: 450px;
@@ -1244,8 +1418,52 @@ overflow: auto;
     .hrblock {
         width: auto;
     }
+    .addresscont {
+        width: auto;
+    }
+    .posteval {
+        font-size: 29px;
+    }
+    .evalsection {
+        width: auto;
+    }
+    .usce {
+        margin-left: 20%;
+    }
+    .hrblock {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    .mainform {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
     
 }
+
+@media screen and (max-width: 1000px) {
+    .grid-container {
+        width: 396px;
+        margin-left: -17%;
+    }
+    .grid {
+        grid-template-columns: 53% 53% 53% 53% 53% 35%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .profback {
+      font-size: 15px;
+      width: auto;
+  
+    }
+    .userform {
+        width: auto;
+    }
+  }
 
 @media screen and (max-width: 991px) {
 
@@ -1285,6 +1503,7 @@ overflow: auto;
     .drparo {
         height: auto;
         width: 65%;
+        margin-top: 5%;
     }
     .drfatima {
         height: auto;
@@ -1301,10 +1520,16 @@ overflow: auto;
     .drmonica {
         height: auto;
         width: 60%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .drmonicarev {
+        margin-top: 7%;
     }
     .drronald {
         height: auto;
         width: 55%;
+        margin-bottom: 5%;
     }
     .drpari {
         height: auto;
@@ -1315,77 +1540,29 @@ overflow: auto;
         width: 55%;
     }
     .drclint {
+        margin-top: 1%;
         height: auto;
         width: 60%;
     }
-}
-
-@media screen and (max-width: 1199px) {
-    .dccontent {
-        width: auto;
-    }
-    .backgroundcont {
-        width: auto;
-    }
-    .schedulecont {
-        width: auto;
-    }
-    .evalsection {
-        width: auto;
-    }
-    .faqcont {
-        width: auto;
-    }
-    .stepscont {
-        width: auto;
-    }
-    .stepcontent {
-        width: auto;
-    }
-    .addresscont {
-        width: auto;
-    }
-    .rotationcontent > div > div > h2 {
-        font-size: 30px;
-    }
-    .textinput {
-        width: 27%;
+    .flex-reverse {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
-
-@media screen and (max-width: 1399px) {
-    .dccontent {
-        width: 80%;
-    }
-    .backgroundcont {
-        width: 80%;
-    }
-    .schedulecont {
-        width: 80%;    
-    }
-    .evalsection {
-        width: 80%;    
-    }
-    .faqcont {
-        width: 80%;    
-    }
-    .stepscont {
-        width: 80%;    
-    }
-    .stepcontent {
-        width: 80%;    
-    }
-    .addresscont {
-        width: 80%;    
-    }
-}
 
 @media screen and (max-width: 991px) {
     .dccontent {
         width: auto;
+        line-height: 1.5;
     }
-
+    .drdavidimg {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .atn {
+        display: block;
+    }
     .backgroundcont {
         width: auto;   
      }
@@ -1393,7 +1570,7 @@ overflow: auto;
         width: auto;   
      }
     .evalsection {
-        width: auto;    
+        width: 80%;   
     }
     .faqcont {
         width: auto;  
@@ -1410,40 +1587,256 @@ overflow: auto;
     .textinput {
         width: 33%;
     }
+    .packagetable {
+        line-height: 1.5em;
+    }
+    .bronzest {
+        width: 12.5%;
+    }
+    .silverboost {
+        width: 13.5%;
+    }
+    .goldopt {
+        width: 14.5%;
+    }
+    .packagesummary > p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .dctitle {
+        width: 100%;
+    }
+    .titleof {
+        width: 100%;
+    }
+    .sumsched {
+        width: 100%;
+    }
+    .evalsection {
+        width: 100%;
+    }
+    .evaltitle {
+        width: 100%;
+    }
+    .adfaqstitle {
+        width: 100%;
+    }
+    .steps {
+        width: 100%;
+    }
+    .hrblock {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 899px) {
+    .items {
+        width: 500px;
+    }
+    .mainform {
+        display: block;
+        margin-left: 37%;
+    }
+    .userform {
+        width: 53%;
+        margin-left: -5.3%;
+    }
+    .infoform {
+        margin-top: 8%;
+        width: 42.7%;
+    }
+    .regbutton {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        min-width: 13%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        width: 50%;
+        margin-left: -17%;
+    }
+    .grid {
+        grid-template-columns: 71% 71% 71% 71% 70% 70%;
+  }
+}
+
+@media screen and (max-width: 784px) {
+    .items {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 767px) {
+    .socialinsta {
+        margin: auto;
+    }
+    .contactus {
+        margin: auto;
+    }
     .textinput {
         width: 40%;
     }
-}
-
-@media screen and (max-width: 1513px) {
-    .userform {
-        margin-right: 5%;
+    .evalsection {
+        width: 100%;   
     }
-}
-
-@media screen and (max-width: 1399px) {
-    .userform {
+    .scheduletable {
         width: auto;
     }
-    .infoform {
-        width: auto;
+    .dctitle {
+        width: 100%;
+    }
+    .titleof {
+        width: 100%;
+    }
+    .hrblock {
+        width: 100%;
+    }
+    .sumsched {
+        width: 100%;
+    }
+    .adfaqstitle {
+        width: 100%;
+    }
+    .steps {
+        width: 100%;
+    }
+    .footerrow {
+        flex-direction: column;
+    }
+    .contactcol {
+        margin: auto;
+        margin-top: 5%;
+    }
+    .footerabout {
+        margin-top: 10%;
+    }
+    .uscefooter {
+        margin-top: 5%;
+    }
+    .scheduletable {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    /* table, tr, th {
+        width: 20%;    
+        height: 20%;
+        white-space: wrap;
+    } */
+    .packagetable {
+        width: 120%;
+        margin-left: -10%;
+    }
+    .bronzest {
+        width: 16.5%;
+    }
+    .silverboost {
+        width: 18%;
+    }
+    .goldopt {
+        width: 19%;
+    }
+    .packagesummary > p {
+        width: 80%;
+    }
+    .packagesummary > h5 {
+        margin-top: 7%;
+        margin-bottom: 3%;
+    }
+    .packagesummary {
+        margin-bottom: 5%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .responsivetable {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
     }
 }
 
-@media screen and (max-width: 558px) {
-    .mainform {
-        display: flex;
-        align-items: center;
+@media screen and (max-width: 760px) {
+    .profback {
+      font-size: 13px;
+      width: auto;
     }
     .infoform {
-        margin: auto;
+        width: 45%;
     }
     .userform {
-        margin: auto;
+        width: 56%;
+        
     }
+  }
+
+
+@media screen and (max-width: 668px) {
+    .homecontainer > h1 {
+        font-size: 25px;
+    }
+    .team > h1 {
+        font-size: 25px;
+    }
+    .packagetable {
+        width: 100%;
+        margin: auto;
+        line-height: 1.3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .userform {
+        width: 70%;
+        margin-left: -6.8%;
+    }
+    .infoform {
+        width: 57.3%;
+    }
+    
+}
+
+
+@media screen and (max-width: 575px) {
+    .scheduletable {
+        width: 40%;
+    }
+    .bronzest {
+        width: 21%;
+    }
+    .silverboost {
+        width: 22%;
+    }
+    .goldopt {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .regbutton {
+        padding-right: 5%;
+    }
+    .bronzest {
+        width: 24%;
+    }
+    .silverboost {
+        width: 26%;
+    }
+    .goldopt {
+        width: 27%;
+    }
+    
 }
 
 

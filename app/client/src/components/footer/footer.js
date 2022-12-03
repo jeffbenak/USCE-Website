@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import usce from '../../images/Logo.png'
 
 
 export default function Footer() {
@@ -10,11 +11,20 @@ export default function Footer() {
 
             <Row className='footerrow'>
 
+                <Col>
+
+                <div>
+            <img className='uscefooter' src={usce}></img>
+
+            </div>
+                
+                </Col>
+
 
             <Col>
 
 
-            <div className='footerabout col-md-9'>
+            <div className='footerabout col-md-10'>
             
                 <h5>ABOUT US</h5>
        

@@ -20,7 +20,17 @@ const app = express();
 
 const PORT = process.env.PORT || 3001;
 
+const endpointSecret = process.env.ENDPOINT_SECRET;
 
+
+
+// async function stripeCust() {
+//   const customers = await stripe.customers.list();
+//   console.log(customers);
+// }
+
+
+app.use('/webhook', express.raw({type: "*/*"}));
 app.use(express.json());
 app.use(cors({
   origin: ["http://localhost:3000"],
@@ -30,7 +40,12 @@ app.use(cors({
 );
 
 
-const stripe = require('stripe')(process.env.STRIPE_KEY)
+const stripe = require('stripe')(process.env.STRIPE_KEY);
+
+
+
+
+// const intent = stripe.paymentIntents.capture('pi_ANipwO3zNfjeWODtRPIg')
 
 async function startServer() {
   const server = new ApolloServer({
@@ -45,10 +60,14 @@ async function startServer() {
   
   startServer();
 
+
+ 
+
+
   // PROFESSIONAL SERVICES CHECKOUT PAGE
 
   const storeItems = new Map ([
-    [1, { priceInCents: 299, name: 'Our Services' }],
+    [1, { priceInCents: 099, name: 'Our Services' }],
   ])
 
   app.post('/create-checkout-session', async (req, res) => {
@@ -56,6 +75,8 @@ async function startServer() {
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         mode: 'payment',
+        
+        
         line_items: req.body.items.map(item => {
           const storeItem = storeItems.get(item.id)
           return {
@@ -77,51 +98,17 @@ async function startServer() {
     } catch (e) {
       res.status(500).json({ error: e.message })
     }
-  })
+  });
 
-
-
-  // $0.99 MEMBERSHIP FEE CHECKOUT PAGE
-
-
-  const storeCharge = new Map ([
-    [1, { priceInCents: 299, name: 'One Time Membership Fee' }]
-  ])
-
-  app.post('/create-checkout-sess', async (req, res) => {
-    try {
-      const session = await stripe.checkout.sessions.create({
-        payment_method_types: ['card'],
-        mode: 'payment',
-        line_items: req.body.items.map(item => {
-          const storeFee = storeCharge.get(item.id)
-          return {
-            price_data: {
-              currency: 'usd',
-              product_data: {
-                name: storeFee.name
-              },
-              unit_amount: storeFee.priceInCents
-            },
-            quantity: item.quantity
-          }
-        }),
-        success_url: `${process.env.CLIENT_URL}/loginsign`,
-        cancel_url: `${process.env.CLIENT_URL}/`,
-      })
-  
-      res.json({ url: session.url })
-    } catch (e) {
-      res.status(500).json({ error: e.message })
-    }
-  })
 
 
 let refreshTokens = []
 const users = []
 
 app.use(cookieParser())
-app.use(bodyParser.urlencoded({ extended:true }));
+
+
+
 
 app.use(session({
   key: 'UserId',
@@ -155,6 +142,7 @@ app.post('/register', async (req, res) => {
   const zip = req.body.zip;
   const address = req.body.address;
   const visa = req.body.visa;
+  const verify = req.body.verify;
 
 
   bcrypt.hash(password, saltRounds, (err, hash) => {
@@ -162,15 +150,92 @@ app.post('/register', async (req, res) => {
       console.log(err);
     }
 
-    db.query("INSERT INTO userdata (email, password, name, phone, country, city, state, zip, address, visa) VALUES (?,?,?,?,?,?,?,?,?,?)",
-    [email, hash, name, phone, country, state, city, zip, address, visa],
+    db.query("INSERT INTO userdata (email, password, name, phone, country, city, state, zip, address, visa, verify) VALUES (?,?,?,?,?,?,?,?,?,?,0)",
+    [email, hash, name, phone, country, state, city, zip, address, visa, verify],
     (err, result) => {
-     console.log(err);
+     
+      console.log(err);
     }
+    
    );
   })
   });
 
+
+  app.post('/webhook', express.raw({type: 'application/json'}), (request, response) => {
+    let event = request.body;
+    // console.log(response);
+
+    
+// (async () => {
+//   const customers = await stripe.customers.list({
+//     limit: 3,
+//   })
+//   console.log(customers);
+
+// });
+
+  
+
+    if (endpointSecret) {
+      const signature = request.headers['stripe-signature'];
+      try {
+        event = stripe.webhooks.constructEvent(
+          request.body,
+          signature,
+          endpointSecret
+          
+        );
+      } catch (err) {
+        console.log(`⚠️  Webhook signature verification failed.`, err.message);
+        return response.sendStatus(400);
+      }
+    }
+
+
+
+    switch (event.type) {
+
+
+      
+      case 'payment_intent.succeeded': 
+
+        const paymentIntent = event.data.object;
+        
+        console.log(`PaymentIntent for ${paymentIntent.amount} was successful!`);
+
+          db.query('UPDATE userdata SET verify = 1'),
+          (err, result) => {
+            console.log(err);
+          }
+  
+        break;
+
+      
+      
+  
+      case 'payment_method.attached':
+        const paymentMethod = event.data.object;
+  
+
+        break;
+      
+  
+      case 'checkout.session.async_payment_failed': 
+        const session = event.data.object;
+  
+        emailCustomerAboutFailedPayment(session);
+  
+        break;
+
+        default:
+      console.log(`Unhandled event type ${event.type}.`);
+      
+    }
+  
+    response.send();
+  });
+  
 
 const verifyJWT = (req, res, next) => {
   const token = req.headers['x-access-token']
@@ -197,6 +262,7 @@ app.get('/login', (req, res) => {
   if (req.session.user) {
     res.send({ loggedIn: true, user: req.session.user });
   } else {
+    // console.log('no user found')
     res.send({ loggedIn: false });
   }
 });
@@ -224,17 +290,18 @@ app.post('/login', (req, res) => {
             
             const username = req.body.username
             const user = { name: username }
-            console.log(user)
+            // console.log(user)
             // const id = result[0].id;
             const accessToken = generateAccessToken(user)
             const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET)
             refreshTokens.push(refreshToken)
             req.session.user = result;
 
-            console.log(req.session.user);
+            // console.log(result[0].id);
             res.json({auth: true, accessToken: accessToken, refreshToken: refreshToken, result: result});
           } else {
             res.json({ auth: false, message: 'Wrong email/password combination' });
+            
           }
         });
       } else {
