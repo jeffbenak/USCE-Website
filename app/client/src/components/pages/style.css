@@ -27,6 +27,14 @@ h2 {
     display: flex;
 }
 
+.italics {
+    font-family: 'Roboto', sans-serif;
+}
+
+.upper-alpha {
+    list-style-type: upper-alpha;
+}
+
 .imgflex {
     display: flex;
 }
@@ -39,10 +47,18 @@ h6 {
     font-weight: bold;
 }
 
+.team {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 4%;
+}
+
 .hoftitle {
     margin: auto;
     width: 30%;
     color: #008037;
+    padding-top: 15%;
 }
 
 .hoftitle > h1 {
@@ -170,7 +186,8 @@ h6 {
 }
 
 .drcesarrev {
-    padding-bottom: 1%;
+    padding-bottom: 3.5%;
+    padding-top: 3%;
 }
 
 .reviewtitle {
@@ -255,7 +272,7 @@ h6 {
 
 .infohead {
     display: flex;
-    justify-content: space-between;
+    justify-content:    -between;
     align-items: center;
 }
 
@@ -466,13 +483,6 @@ h6 {
     margin-left: 1%;
 }
 
-.neurodiag {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
-
 .backgroundcont {
     width: 100%;
     margin: 0 0 0 0;
@@ -634,12 +644,6 @@ h6 {
     background-color: #c2dcc8;
  }
 
-/* table {
-    width: 100%;
-    line-height: 3em;
-    border: 2px solid black;
-} */
-
 .silverdet {
     margin-left: 10%;
 }
@@ -664,8 +668,67 @@ h6 {
     width: 25%;
 }
 
+.servicescontainer {
+    margin: auto;
+}
+
+.neurotitle {
+    margin-bottom: 2%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.neurotitle > h5 {
+    font-weight: 400;
+}
+
+.rulestitle {
+    margin-bottom: 1%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.rulestitle > h5 {
+    font-weight: 400;
+}
+
+.packagepay {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+.neuropackslist {
+    list-style-type: decimal;
+}
+
+.neuropackslist > li {
+    margin-bottom: 3%;
+}
+
+.installments {
+    margin-left: 10%;
+}
+
+.installments > h5 {
+    font-weight: 400;
+}
+
 .packagetable {
+    margin-top: 3%;
     line-height: 3em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableheader {
+    font-size: 25px;
+    font-weight: 400;
 }
 
 .packagetable > tr > td {
@@ -678,13 +741,19 @@ h6 {
     border-color: black;
 }
 
+.summarytitle > h2 {
+    font-size: 45px;
+    font-family: 'Playfair Display', serif;
+}
+
 .packagesummary {
+    margin-top: 5%;
     margin-bottom: 3%;
 }
 
 .packagesummary > p {
     text-align: left;
-    width: 60%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -698,11 +767,11 @@ h6 {
 }
 
 .instalink {
-    color: black;
+    color: blue;
 }
 
 .instalink:hover {
-    color: blue;
+    color: rgb(121, 199, 255);
 }
 
 .mandatory {
@@ -1048,16 +1117,73 @@ h6 {
     height: 174%;
 }
 
-.bronzest {
-    width: 13.5%;
+.optimumpack {
+    background-color: #E3EFD9;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
-.silverboost {
-    width: 12.8%;
+.optimumpack > div {
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.goldopt {
-    width: 12.8%;
+.packagetitle {
+    color: black;
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+.boosterpack > div > h2 {
+    color: rgb(175, 175, 175);
+}
+
+.boosterpack {
+    background-color: #5B8F3C;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.boosterpack > div {
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+}
+
+.clothelink > a {
+    color: rgb(154, 196, 255);
+}
+
+.clothelink > a:hover {
+    color: white;
+}
+
+.sovereignpack {
+    background-color: #9DF666;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.sovereignpack > div {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+.lodging > p {
+    margin-bottom: 0;
 }
 
 .aboutmatch {
@@ -1111,8 +1237,9 @@ h6 {
 
 .services {
     font-family: 'Abyssinica SIL', serif;
-    font-size: 45px;
-    font-weight: bold;
+    font-size: 50px;
+    font-weight: 800;
+    margin-top: 13.5%;
 }
 
 .here {
@@ -1197,6 +1324,7 @@ h6 {
         width: 90%;
     }
 }
+
 
   @media screen and (max-width: 1400px) {
     .grid-container {
@@ -1396,6 +1524,10 @@ h6 {
     .goldopt {
         width: 10.5%;
     }
+    .image3 {
+        width: 1000px;
+        height: 100px;
+    }
 }
     
 
@@ -1434,6 +1566,7 @@ h6 {
         width: 80%;
     }
 }
+    
 
 @media screen and (max-width: 1099px) {
     .mainform {
@@ -1443,6 +1576,7 @@ h6 {
   
     
 }
+
 
 @media screen and (max-width: 1000px) {
     .grid-container {
@@ -1726,11 +1860,6 @@ h6 {
         overflow-x: auto;
         overflow-y: auto;
     }
-    /* table, tr, th {
-        width: 20%;    
-        height: 20%;
-        white-space: wrap;
-    } */
     .packagetable {
         width: 120%;
         margin-left: -10%;

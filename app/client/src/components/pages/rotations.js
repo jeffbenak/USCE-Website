@@ -50,42 +50,6 @@ export default function Rotations() {
           <br></br>
           <br></br>
 
-        <div className='infohead'>
-
-          <div className='contactus'>
-
-            <p className='contus'>
-              CONTACT US:
-            </p>
-
-            <p>
-            847-299-1960
-            </p>
-
-            <p>
-            847-299-1961
-            </p>
-
-            <p>
-            847-881-7474 (mobile)
-            </p>
-
-          </div>
-
-          <div className='socialinsta'>
-
-            <p>
-            USCEMatch on <a className='instalink' href='https://www.instagram.com/uscematch/?hl=en'>Instagram</a>
-            </p>
-
-            <p className='underline'>
-            <a href="mailto:andrewgulde@uscematch.com">andrewgulde@uscematch.com</a>
-            </p>
-
-          </div>
-
-        </div>
-
       <br></br>
 
   
@@ -706,7 +670,7 @@ export default function Rotations() {
 
         
         <div className='underline'>
-            <p className='neurodiag'>Neurology and Neurodiagnostics</p> 
+            <p className='italics'>Neurology and Neurodiagnostics</p> 
         </div>
 
         <div className='addcont'>
@@ -1150,21 +1114,20 @@ HOW MUCH WILL THIS ROTATION COST?
             <div className='steps'>
 
               
-        <button type='button' className='collapsible' onClick={() => {
+            <a id='steps_list'><button type='button' className='collapsible' onClick={() => {
               setVisibleSix(!visiblesix)
               }}>
             <h3 className='appsteps'>
             STEPS IN THE APPLICATION
             </h3>
             </button>
+            </a>
             <CCollapse visible={visiblesix}>
 
             <div className='stepscont'>
-
 <h4>
 FIRST STEP:
 </h4>
-
 
 
 <div>

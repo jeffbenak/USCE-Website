@@ -19,15 +19,20 @@ export default function Slider() {
         console.log('prev');
       };
 
-    //   useEffect(() => {
-    //     setCurrentSlide(0);
-    //   }, []);
 
     const moveDot = index => {
         setCurrentSlide(index)
     }
 
+    // useEffect(()=>{
+    //     const interval = setInterval(()=>{
+    //         nextSlide();        
+    //     },6000);
+    //     return () => clearInterval(interval);
+    // });
+
     return (
+        <>
         <div className='slider'>
             {dataSlider.map((slide, index) => {
                 return (
@@ -39,10 +44,8 @@ export default function Slider() {
                     >
                     {index === currentSlide && (
                         <div>
-                            {/* <div className='image'><img src={slide.image} alt='slide'/></div> */}
                             {slide.image}
                             <div className='content'>
-                            <h2>{slide.title}</h2>
                             <p className='text'>{slide.desc}</p>
                             <div>{slide.button}</div>
                             </div>
@@ -58,11 +61,12 @@ export default function Slider() {
             <div className="container-dots">
                 {Array.from({length: 2}).map((item, index) => (
                     <div 
-                    onClick={() => moveDot(index + 1)}
+                    onClick={() => moveDot(index)}
                     className={currentSlide === index ? "dot active" : "dot"}
                     ></div>
                 ))}
             </div>
         </div>
+        </>
     )
 }

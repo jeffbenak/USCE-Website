@@ -4,9 +4,6 @@ import Header from '../header/header';
 import Footer from '../footer/footer'
 import Auth from '../../utils/auth'
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faWhatsapp, faInstagram } from '@fortawesome/fontawesome-free-brands';
 
 
 
@@ -19,21 +16,17 @@ export default function Home() {
     return (
       <div>
         <Header></Header>
-        <div className='socials'>
-        <ul className='list'>
-          <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
-          <li><a href='tel:+12248884000'><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
-          <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
-          <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
-          <li><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></li>         
-        </ul>
-        </div>
+        <div className='space'></div>
         <Slider></Slider>
         <br></br>
         <br></br>
+        
+        <div className='homepageinfo'>
+
+        <div className='about'>
 
         <h1>What Is USCE Match?</h1>
-        <div className='about'>
+
         <p>
           USCE Match is composed of united professionals from Chicago who are result-driven, trustworthy, and fun people who
           will gladly welcome you to our community. We have assisted numerously satisfied medical professionals in the past years.
@@ -43,13 +36,11 @@ export default function Home() {
             In March 2022, 29 out of 35 residency applicants for the cycle successfully matched to a residency program. 
             Now our goal is to create more success stories by opening more USCE rotations, and reinventing our best practices.
           </p>
+
           </div>
 
-          <br></br>
-          <br></br>
 
           <div className='team'>            
-          <br></br>
             <h2>OUR VISION and MISSION</h2>
             <p className='p-3'>
               Our objective is to find exceptional medical professionals and create a pathway that will connect them directly to a residency program.
@@ -59,8 +50,10 @@ export default function Home() {
               We consistently redefine and pursue excellence through our structured USCE, and mentorship services 
               to elevate the best chances for you to match and become your best version.
             </p>
-            <br></br>
-          </div>
+            </div>
+            </div>
+
+
           <Footer></Footer>
       </div>
     );
@@ -68,15 +61,7 @@ export default function Home() {
     return (
     <div>
     <Header></Header>
-    <div className='socials'>
-    <ul className='list'>
-      <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon className='fa-lg' icon={faEnvelope}></FontAwesomeIcon></a></li>
-      <li><a href='tel:+12248884000'><FontAwesomeIcon className='fa-lg' icon={faPhone}></FontAwesomeIcon></a></li>
-      <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon className='fa-lg' icon={faInstagram}></FontAwesomeIcon></a></li>
-      <li><FontAwesomeIcon className='fa-lg' icon={faFacebook}></FontAwesomeIcon></li>
-      <li><FontAwesomeIcon className='fa-lg' icon={faWhatsapp}></FontAwesomeIcon></li>         
-    </ul>
-    </div>
+    <div className='space'></div>
     <Slider></Slider>
     <br></br>
     <br></br>

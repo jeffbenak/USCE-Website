@@ -33,7 +33,7 @@ export default function Hof() {
         <Container>
 
           <div className='hoftitle'>
-          <h1>Hall Of Fame</h1>
+          <h1>HALL OF FAME</h1>
           </div>
 
           <Row className='fame doctorreview'>

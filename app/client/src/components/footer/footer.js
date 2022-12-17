@@ -60,11 +60,13 @@ export default function Footer() {
             <div className='footeremail'>
             <h5>EMAIL:</h5><p><a href='mailto:info@uscematch.com'>info@uscematch.com</a></p>
             </div>
+            <p>
+            USCEMatch on <a className='instalink' href='https://www.instagram.com/uscematch/?hl=en'>Instagram</a>
+            </p>
             <div className='footerphone'>
                 <h5>PHONE:</h5>
             </div>
-            <div className='footerphone'><p>+1 (847) 299-1960</p></div>
-            <div className='footerphone'><p>+1 (224) 888-4000</p></div>
+            <div className='footerphone'><p>+1 (224) 888-5000</p></div>
             </div>
 
    

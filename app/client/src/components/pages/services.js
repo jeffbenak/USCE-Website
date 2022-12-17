@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../header/header';
+import Footer from '../footer/footer';
 import Checkout from './checkout'
 import Auth from '../../utils/auth'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -46,27 +47,66 @@ export default function Services() {
 
         <br></br>
 
-<Container>
+<Container className='servicescontainer'>
 
-<h1 className='services'>Services</h1>
+<h1 className='services'>SERVICES</h1>
 
 <br></br>
+
+<div className='neurotitle'>
+
+<h5>NEUROLOGY PACKAGES</h5>
+
+</div>
+
+<div className='rulestitle'>
+<h5>RULES FOR PAYMENT:</h5>
+</div>
+
+<div className='packagepay'>
+
+
+<ul className='neuropackslist'>
+
+    <li>
+      As soon as all ESSENTIAL REQUIREMENTS and the SPOT's availability are confirmed, you can proceed 
+      in making the payment to secure your spot.
+    </li>
+    <li>
+      A downpayment of $1,050 (inclusive of the $50 installment fee) in any package is necessary to secure placement
+      in the rotation; you also have the option to make the full payment without the $50 installment fee.
+      <div className='installments'><h5>FOR INSTALLMENTS:</h5>
+      The remaining balance and the SECONDARY REQUIREMENTS need to be submitted 5 days before the start of the rotation;
+      otherwise, there is an additional fee of $100.
+        </div>
+    </li>
+    <li>
+      Once payments are confirmed, and the students need to reschedule previously confirmed SPOT, rescheduling is likely based
+      on the availability of spots and is not guaranteed.
+    </li>
+    <li>
+      ALL PAYMENTS ARE NON-REFUNDABLE and NON-TRANSFERRABLE ONCE PROCESSED.
+    </li>
+
+</ul>
+
+</div>
 
 <table className='packagetable'>
 
 <tr>
   <th></th>
-  <th className='tr1 tablehead'>BRONZE STARTER</th>
-  <th className='tr2 tablehead'>SILVER BOOSTER</th>
-  <th className='tr3 tablehead'>GOLD OPTIMUM</th>
+  <th className='tr1 tablehead tableheader'>OPTIMUM</th>
+  <th className='tr2 tablehead tableheader'>BOOSTER</th>
+  <th className='tr3 tablehead tableheader'>SOVEREIGN</th>
 </tr>
 
 <tr>
   
   <td></td>
   <td className='tr1 tablehead'>$2,399.00</td>
-  <td className='tr2 tablehead'>$3,799.00</td>
-  <td className='tr3 tablehead'>$4,499.00</td>
+  <td className='tr2 tablehead'>$3,099.00</td>
+  <td className='tr3 tablehead'>$4,399.00</td>
 </tr>
 
 <tr>
@@ -109,7 +149,7 @@ export default function Services() {
 </tr>
 
 <tr>
-  <td className='taleft'>Individual Case Presentation</td>
+  <td className='taleft'>Individual Case/Research Presentation</td>
   <td className='tr1'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
   <td className='tr2'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
   <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
@@ -117,7 +157,15 @@ export default function Services() {
 </tr>
 
 <tr>
-  <td className='taleft'>One Hour Group Discussion on the Matching Process</td>
+  <td className='taleft'>Group Discussion on the Matching Process</td>
+  <td className='tr1'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
+  <td className='tr2'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
+  <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
+
+</tr>
+
+<tr>
+  <td className='taleft'>One on One Post-Evaluation Discussion</td>
   <td className='tr1'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
   <td className='tr2'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
   <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
@@ -141,7 +189,7 @@ export default function Services() {
 </tr>
 
 <tr>
-  <td className='taleft'>Lodging for 30 days without boarding</td>
+  <td className='taleft'>White Lab Coat from FIGS</td>
   <td className='tr1'></td>
   <td className='tr2'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
   <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
@@ -149,7 +197,7 @@ export default function Services() {
 </tr>
 
 <tr>
-  <td className='taleft'>Complimentary Professional ERAS Photography</td>
+  <td className='taleft'>ERAS Medical Residency Professional Photo</td>
   <td className='tr1'></td>
   <td className='tr2'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
   <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
@@ -157,7 +205,15 @@ export default function Services() {
 </tr>
 
 <tr>
-  <td className='taleft'>Virtual Mock Interview PREP One on One</td>
+  <td className='taleft'>Group Interview Prep Session</td>
+  <td className='tr1'></td>
+  <td className='tr2'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
+  <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
+
+</tr>
+
+<tr>
+  <td className='taleft'>Lodging for 30 days</td>
   <td className='tr1'></td>
   <td className='tr2'></td>
   <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
@@ -165,7 +221,15 @@ export default function Services() {
 </tr>
 
 <tr>
-  <td className='taleft'>Mentorship with Two Matched Residents</td>
+  <td className='taleft'>Review on Personal Statement</td>
+  <td className='tr1'></td>
+  <td className='tr2'></td>
+  <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
+
+</tr>
+
+<tr>
+  <td className='taleft'>Mentor-Mentee with Matched Residents</td>
   <td className='tr1'></td>
   <td className='tr2'></td>
   <td className='tr3'><FontAwesomeIcon icon={faCheck}></FontAwesomeIcon></td>
@@ -180,92 +244,175 @@ export default function Services() {
 <br></br>
 
 
+<div className='summarytitle'>
 <h2>SUMMARY</h2>
+</div>
 
 
 <div className='packagesummary'>
+
+
+<div className='optimumpack'>
   
+  <div>
 
-<h5 className='bronzest'>BRONZE STARTER</h5>
+<h1 className='packagetitle'>OPTIMUM</h1>
 
-
-
-
-<p>This package covers hands-on rotation to all four 
-  locations including St Anthony and Thorek Andersonville Hospital. 
-  The students will have hands-on access to St Anthony's EMR.
-</p>
 <p>
-The student will have 50 hours a week of hands-on rotation and will learn in performing assisted EMG-NCV as well 
-as complete neuro examination, anti-CGRP injections for migraine, MMSE and MoCA, and more… We also have pharmaceutical 
-lunches mostly on Mondays and Wednesdays, so on these days, there will be free lunches and presentations for present 
-and upcoming neurology treatments and advancements.
-</p>
-
-  <p>
-   This package is for students who drive and will not need transportation assistance. (You can purchase a la carte for $300 for 4 weeks).
-  </p>
-
-
-  <h5 className='silverboost'>SILVER BOOSTER</h5>
-
-  <p>This package has all the inclusions of the latter one, with the provision of a VISA letter that you can use upon entry to the US 
-    or when you apply for a US VISA. VISA Letters are provided as soon as your requirements are submitted and when you successfully processed
-    the payment/ down payment for any of the packages.
-  </p>
-
-  <p>
-    Lodging with Wawa for 30 days, a well-loved host of all our students for the past few years. She lives just about 10 minute's walk from 
-    the Park Ridge clinic. On some occasions, Wawa can pick you up at the O'Hare Airport when you arrive for free. Please coordinate with her 
-    because she also has a very busy schedule. 
-  </p>
-  <p>
-    She can only accomodate up to three students per rotation, with the SILVER BOOSTER you will share a room with another student (same gender).
-    This service is only for lodging and no food.
-  </p>
-
-  <p>
-    Details for the host:
-  </p>
-
-
-
-
-  <p>Name: Ms. Wartini Squire</p>
-
-
-  <p>Nickname: Wawa</p>
-
-
-  <p>Home Address: 8930 Robin Drive Des Plaines, IL 60016</p>
-
-
-<p>The complimentary Professional ERAS Photography is scheduled once a month on a Sunday and will take place in Morton
-  Grove (less than 5 minutes away from Park Ridge). You will be responsible for your own outfit, hair, and make-up if 
-  needed. You will spend 30 minutes with the photographer, and he will take multiple shots. You can select your top three
-  photos to be edited and enhanced.
-</p>
-
-
-<h5 className='goldopt'>GOLD OPTIMUM</h5>
-
-<p>On top of the services in the Silver Booster, this includes a 90 minute mock interview prep with an experienced colleague. 
-  There will be three mock interview sessions.
+  This is the core bronze starter package for $2,399.
+  <div className='italics'>This is the package of choice if you are working on a tight budget and 
+  will not need any assistance with the interview prep, transportation, or accommodation.
+  </div>
 </p>
 
 <p>
-  Each session will be virtual and one on one. We will do a spontaneous 10-15 minute interview followed by 10-15 minutes of honest
-  feedback and coaching.
+This package includes four weeks, hands-on rotation for approximately 40-50 hours per week. The students 
+wil have hands-on access to St Anthony's EMR (Paragon). Performing assisted EMG-NCV as well as performing 
+neuro exam, migraine injections, MMSE and MoCA and more. You are expected to verify the patient's prescriptions
+after their session with Dr Calimag and you are expected to provide some applicable health-teachings.
 </p>
 
-<p>An experienced mentor will review your Personal Statement and give you feedback and recommendations. After you rewrite your PS,
-  your mentor will review it again. This service does not include any assistance in editing and writing on the PS.
+  <p>
+   Help is abundantly provided and it is a safe environment to learn and be guided accordingly. Do not 
+   be afraid to ask for help.
+  </p>
+
+  <p>
+    The Park Ridge clinic also provides snacks, juice, water, coffee and pharmaceutical lunches mostly on 
+    Mondays and Wednesdays, so please make it sure you communicate any food restrictions.
+  </p>
+
+  <p className='bold'>
+    Free transportation for 4 weeks is included in this package for students who meet all the criteria below:
+  </p>
+
+  <div>
+  <ul className='upper-alpha'>
+    <li>
+      STEP 1 SCORE is 240+ or PASS only on the first take.
+    </li>
+    <li>
+      STEP 2 SCORE is 240+.
+    </li>
+    <li>
+      Year of graduation is less than 3 years upon application.
+    </li>
+
+  </ul>
+  </div>
+
+  </div>
+
+  </div>
+
+  <div className='boosterpack'>
+  
+  <div>
+
+<h1 className='packagetitle'>BOOSTER</h1>
+
+<p>
+  This is the Silver Booster for $3,099. This is the mid-range package which provides great value to 
+  your hard-earned money. If you are needing a VISA letter for entry to the U.S, or to strengthen your 
+  VISA application, then you can benefit on this package.
 </p>
 
-<p>Mentorship with two matched residents. You will select two current residents, based on their schedule, and participate in a group
-  zoom discussion for one hour for each resident. This is a great opportunity to learn best practices about the matching process, 
-  demystify information based on the resident's experience as well as trade-in secrets to optimize your best chances to match.
+<p>
+This package includes transportation assistance for 4 weeks, where Dr Calimag, when going to other locations,
+will pick up the students in the Park Ridge clinic and drop you off to Park Ridge after.
 </p>
+
+  <p>
+   This also includes a one-time 3-4 hour group interview prep where students will be randomly asked to perform
+   through a simulated 15-20 minute interview session and will be given honest feedback. Fulfillment is from September 
+   to December during the interview season.
+  </p>
+
+  <p>
+    This package includes one item of short lab coat from FIGS with USCE MATCH embroidery (SRP $125).
+  </p>
+
+  <p className='clothelink'>
+    For <a href='https://www.wearfigs.com/products/womens-bellevue-short-slim-lab-coat?color=White'>WOMEN</a>
+  </p>
+
+  <p className='clothelink'>
+    For <a href='https://www.wearfigs.com/products/mens-harlem-short-slim-lab-coat?color=White'>MEN</a>
+  </p>
+
+  <p>
+    Complimentary ERAS Photo shoots are scheduled once a month and you will be responsible for your outfit
+    and make-up. You spend 30 mins with a seasoned photographer and get to pick 3 photos to be enhanced and 
+    edited.
+  </p>
+
+  </div>
+
+  </div>
+
+
+  <div className='sovereignpack'>
+  
+  <div>
+
+<h1 className='packagetitle'>SOVEREIGN</h1>
+
+<p>
+  This is best value comprehensive package for $4,399. There is a limit of only 3 students per rotations
+  for this package.
+</p>
+
+<p>
+We say during the matching process your network is your networth, thus the more information you know, the more
+you will be confident. A matched  resident will share best practices, personal trade-in secrets through a lively
+Q&A.
+</p>
+
+  <p>
+   You get to participate on 4 group sessions with 4 different matched residents. This is a virtual session, each
+   session is at least one hour long (Fulfillment is August to December).
+  </p>
+
+  <p>
+    Review on the personal statement: This service does not include any editorial assistance or a ghostwriter.
+  </p>
+
+  <h5>STEPS</h5>
+
+  <ul className='upper-alpha'>
+    <li>
+      Complete your Personal Statement and submit for review.
+    </li>
+    <li>
+      You will be assigned to a matched resident or a senior consultant to review your work focusing on the structure,
+      form, content, and some suggestions.
+    </li>
+    <li>
+      This review is ONE TIME only. The review can be given virtually, in person, or through e-mail.
+    </li>
+  </ul>
+
+  <div className='lodging'>
+
+  <p>
+    Lodging is inclusive for 30 days without meals. Our previous students since 2020 highly recommends Ms. Squire, 
+    the host for AirBnB.
+  </p>
+
+  <p>
+    She can offer a free airport pick-up in O'Hare Airport depending on her schedule, and is not guaranteed.
+  </p>
+
+  <p>
+    She lives about 10 mins walking distance to the clinic in Park Ridge. You will share the room with another
+    student (same gender). For an additional $100 you can have your own room, subject to availability.
+  </p>
+
+  </div>
+
+  </div>
+
+  </div>
 
 
 
@@ -274,7 +421,7 @@ and upcoming neurology treatments and advancements.
 
 </Container>
 
-       
+       <Footer></Footer>
 
       </div>
     );
@@ -297,6 +444,8 @@ and upcoming neurology treatments and advancements.
         <Link to='/register'>Sign up</Link> if you haven't registered.
         </h4>
       </div>
+
+      <Footer></Footer>
 
       </>
 

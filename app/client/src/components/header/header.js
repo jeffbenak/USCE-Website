@@ -7,7 +7,10 @@ import { Link } from 'react-router-dom';
 import { NavItem } from 'react-bootstrap';
 import usce from '../../images/Logo.png'
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Auth from '../../utils/auth'
+import Auth from '../../utils/auth';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faWhatsapp, faInstagram } from '@fortawesome/fontawesome-free-brands';
 
 export default function Header() {
 
@@ -35,7 +38,7 @@ export default function Header() {
               <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/logout" onClick={logout}>Logout</NavLink>  
+              <NavLink style={{color: 'white'}} className='nav-link' to="/" onClick={logout}>Logout</NavLink>  
             </NavItem>
             
             </div>
@@ -64,8 +67,7 @@ export default function Header() {
             </NavItem>
             <NavItem>
               <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">Login | Signup</NavLink>  
-            </NavItem>
-            
+            </NavItem>           
             </div>
             </Navbar.Collapse>
         </Nav>
@@ -88,6 +90,18 @@ export default function Header() {
             </div>
 
           {navigationBar()}
+
+          <NavItem>
+          <div className='socials'>
+            <ul className='list'>
+            <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
+            <li><a href='tel:+12248884000'><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
+            <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
+            <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li>
+            <li><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></li>         
+            </ul>
+          </div>
+          </NavItem>
 
           <div className='pull-right hidden-lg'>
           <Navbar.Toggle />

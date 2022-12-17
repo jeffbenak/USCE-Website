@@ -7,6 +7,13 @@ body {
   border-bottom: none !important;
 }
 
+.navbar {
+  position: fixed !important;
+  background-color: #008037;
+  width: 100%;
+  z-index: 1;
+}
+
 .navbar-toggler {
   border-radius: transparent !important;
   border-color: transparent !important;
@@ -22,12 +29,7 @@ body {
   text-align: left;
 }
 
-/* .navbar-toggler.collapsed {
-  display: block; 
-} */
-
 .container {
-  /* margin-left: 0 !important; */
   width: auto !important;
 }
 
@@ -46,13 +48,22 @@ a.nav-link.active {
 .socials {
   text-align: right;
   margin-right: auto;
+}
 
-  
+.socials > ul > li > a {
+  color: #212529;
+}
+
+.socials > ul > li > a:hover {
+  color: #a3b1c0;
 }
 
 .header {
   font-size: 20px;
-  background-color: #008037;
+}
+
+.homepageinfo > h1 {
+  margin-bottom: 1%;
 }
 
 .list li {
@@ -154,7 +165,6 @@ margin: auto;
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
-  margin-left: 120px
 }
 
 .loginerror {
@@ -166,13 +176,6 @@ margin: auto;
   height: 140%;
 }
 
-.text2 {
-  padding-left: 200px;
-}
-
-.text3 {
-  padding-left: 140px;
-}
 
 .vid1 {
   margin-top: -100px;
@@ -201,6 +204,10 @@ h4 {
   transform: translateY(4px);
 }
 
+.login {
+  padding-top: 6%;
+}
+
 .emailbox {
   width: 80%;
   margin: auto;
@@ -226,23 +233,31 @@ h4 {
   color: #008037;
   font-size: 38px;
   font-family: 'Open Sans', sans-serif;
+  padding-top: 9%;
 
 }
 
 .about {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 4%;
+}
+
+.about > p {
   text-align: justify;
-  width: 1000px;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2%;
   line-height: 1.5;
   font-size: 18px;
 }
 
 .p-3 {
   text-align: justify;
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 60%;
+  margin: auto;
   line-height: 1.5;
   font-size: 18px;
 }
@@ -265,11 +280,16 @@ h4 {
 }
 
 .viewlog {
-  margin-top: 5%;
+  padding-top: 13%;
 }
 
 .viewsign {
   margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.rotatetitle {
+  padding-top: 15%;
 }
 
 .status {
