@@ -11,15 +11,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { CCollapse } from '@coreui/react'
 
-
-
-
-
-
-
-
-
 export default function Rotations() {
+
+  const openWithStepsListExpanded = window.location.hash == '#steps_list';
 
   const [visible, setVisible] = useState(false)
   const [visibletwo, setVisibleTwo] = useState(false)
@@ -28,6 +22,16 @@ export default function Rotations() {
   const [visiblefive, setVisibleFive] = useState(false)
   const [visiblesix, setVisibleSix] = useState(false)
   const [visibleseven, setVisibleSeven] = useState(false)
+
+  setTimeout(function () {
+    if (openWithStepsListExpanded) {
+      setVisibleSix(true);
+      const stepsListPosition =  document.getElementsByClassName('appsteps')[0].getBoundingClientRect().top + window.scrollY;
+      const navbarHeight = document.getElementsByClassName('navbar')[0].offsetHeight;
+      const positionToScrollTo = stepsListPosition - navbarHeight - 25;
+      window.scrollTo(0, positionToScrollTo);
+    }
+  }, 500);
 
 
     return (
