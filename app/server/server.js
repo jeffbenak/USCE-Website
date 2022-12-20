@@ -3,13 +3,8 @@ const mysql = require('mysql2');
 const cors = require('cors');
 require("dotenv").config();
 
-
-const { typeDefs, resolvers } = require('./schemas');
-const { authMiddleware } = require('./utils/auth');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
 const session = require('express-session');
-const { ApolloServer } = require('apollo-server-express');  
 
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
@@ -23,13 +18,6 @@ const PORT = process.env.PORT || 3001;
 const endpointSecret = process.env.ENDPOINT_SECRET;
 
 
-
-// async function stripeCust() {
-//   const customers = await stripe.customers.list();
-//   console.log(customers);
-// }
-
-
 app.use('/webhook', express.raw({type: "*/*"}));
 app.use(express.json());
 app.use(cors({
@@ -39,30 +27,7 @@ app.use(cors({
 })
 );
 
-
 const stripe = require('stripe')(process.env.STRIPE_KEY);
-
-
-
-
-// const intent = stripe.paymentIntents.capture('pi_ANipwO3zNfjeWODtRPIg')
-
-async function startServer() {
-  const server = new ApolloServer({
-    typeDefs,
-    resolvers,
-    context: authMiddleware
-  });
-  await server.start();
-  server.applyMiddleware({ app });
-  }
-  
-  
-  startServer();
-
-
- 
-
 
   // PROFESSIONAL SERVICES CHECKOUT PAGE
 
@@ -103,7 +68,6 @@ async function startServer() {
 
 
 let refreshTokens = []
-const users = []
 
 app.use(cookieParser())
 
