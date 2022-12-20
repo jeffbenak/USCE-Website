@@ -39,7 +39,7 @@ import { Link } from 'react-router-dom';
 
 
 export default function Services() {
-  if (Auth.loggedIn()) {
+  if (!Auth.loggedIn()) {
     return (
       <div>
         <Header></Header>
