@@ -1402,47 +1402,63 @@ h6 {
 
     .drshik {
         height: auto;
-        width: 80%;
+        width: 100%;
     }
     .drjash {
         height: auto;
-        width: 70%;
+        width: 90%;
     }
     .drkat {
-        height: 450px;
+        margin-top: 10%;
+        height: 550px;
     }
     .drchef {
-        height: 450px;
+        height: 550px;
+        padding-top: 5%;
         width: auto;
         margin: auto;
     }
     .drjuan {
-        height: 450px;
+        height: 550px;
+        margin-left: -5%;
         width: auto;
     }
     .drprad {
-        height: 450px;
+        height: 550px;
         width: auto;
     }
     .drparo {
-        height: 500px;
+        height: 600px;
         width: auto;
     }
     .drfatima {
         width: auto;
-        height: 420px;
+        height: 550px;
+    }
+    .drkim {
+        height: 550px;
     }
     .drcesar {
         width: auto;
-        height: 420px;
+        height: 550px;
     }
     .drronald {
         width: auto;
-        height: 420px;
+        height: 600px;
+    }
+    .drmonica {
+        height: 600px;
+        padding-top: 1%;
     }
     .drpari {
         width: auto;
-        height: 420px;
+        height: 600px;
+    }
+    .drharpreet {
+        height: 600px;
+    }
+    .drclint {
+        height: 600px;
     }
    
 }
@@ -1462,7 +1478,7 @@ h6 {
         width: auto;
     }
     .faqcont {
-        width: auto;
+        width: 80%;
     }
     .stepscont {
         width: auto;
@@ -1498,6 +1514,13 @@ h6 {
         width: 80%;
     }
    
+}
+
+@media screen and (max-width: 1399px) {
+    .login > button {
+        width: 8%;
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -1542,17 +1565,40 @@ h6 {
 
     .drshik {
         height: auto;
-        width: 90%;
-        margin: auto;
+        width: 120%;
+        margin-left: -15%;
+        margin-top: 30%;
+
     }
     .drjash {
         height: auto;
-        width: 60%;
+        width: 100%;
+        margin-left: -3%;
+        padding-top: 10%;
     }
     .drkat {
-        height: 450px;
+        height: 500px;
         width: auto;
-        margin-left: -5%;
+        margin-left: -10%;
+    }
+    .drchef {
+        margin: auto;
+    }
+    .drronald {
+        height: 500px;
+    }
+    .drmonica {
+        height: 500px;
+        margin: auto;
+    }
+    .drpari {
+        height: 500px;
+    }
+    .drharpreet {
+        height: 500px;
+    }
+    .drclint {
+        height: 500px;
     }
     .hrblock {
         width: auto;
@@ -1794,6 +1840,14 @@ h6 {
 }
 
 
+@media screen and (max-width: 860px) {
+    .login > button {
+        width: 11%;
+    }
+    
+}
+
+
 @media screen and (max-width: 800px) {
     .grid-container {
         width: 50%;
@@ -1912,6 +1966,9 @@ h6 {
         width: 56%;
         
     }
+    .registertitle {
+        margin-left: 5%;
+    }
   }
 
 
@@ -1937,6 +1994,17 @@ h6 {
     .infoform {
         width: 57.3%;
     }
+    .registertitle {
+        margin-left: 10%;
+    }
+    
+}
+
+
+@media screen and (max-width: 579px) {
+    .login > button {
+        width: 15%;
+    }
     
 }
 
@@ -1956,6 +2024,23 @@ h6 {
     }
 }
 
+@media screen and (max-width: 464px) {
+    .registertitle {
+        margin-top: 30px;
+    }
+    .rotatetitle {
+        padding-top: 250px
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+    .login > button {
+        width: 20%;
+    }
+    
+}
+
 @media screen and (max-width: 400px) {
     .regbutton {
         padding-right: 5%;
@@ -1968,6 +2053,13 @@ h6 {
     }
     .goldopt {
         width: 27%;
+    }
+    
+}
+
+@media screen and (max-width: 398px) {
+    .registertitle {
+        margin-top: 50px;
     }
     
 }

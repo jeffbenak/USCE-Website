@@ -329,7 +329,7 @@
     height: 225px;
   }
   .button {
-    padding: 5px;
+    font-size: 15px;
   }
   .text2 {
     font-size: 17px;
@@ -364,7 +364,7 @@
     font-size: 15px;
   }
   .button {
-    padding: 0px;
+    padding: 3px;
   }
   .text3 {
     font-size: 15px;
