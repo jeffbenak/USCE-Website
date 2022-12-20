@@ -21,7 +21,7 @@ const endpointSecret = process.env.ENDPOINT_SECRET;
 app.use('/webhook', express.raw({type: "*/*"}));
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["https://usce-website.herokuapp.com:3000"],
   methods: ["GET", "POST"],
   credentials: true,
 })

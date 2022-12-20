@@ -25,7 +25,7 @@ export default function LoginSignup() {
          setFailedLogin('Please enter email and password')
          return;
      }
-    Axios.post('http://usce-website.herokuapp.com:3001/login', {
+    Axios.post('https://usce-website.herokuapp.com:3001/login', {
      email: email,
      password: password,
     }).then((response) => {
@@ -56,7 +56,7 @@ export default function LoginSignup() {
   };
 
   useEffect(()=> {
-    Axios.get('http://usce-website.herokuapp.com:3001/login').then((response) => {
+    Axios.get('https://usce-website.herokuapp.com:3001/login').then((response) => {
       if (response.data.loggedIn === true) {
         setLoginStatus(response.data.user[0].email);
       } 
