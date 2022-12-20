@@ -770,6 +770,11 @@ h6 {
     color: blue;
 }
 
+.instalinkfooter {
+    color: white;
+    font-weight: 700;
+}
+
 .instalink:hover {
     color: rgb(121, 199, 255);
 }

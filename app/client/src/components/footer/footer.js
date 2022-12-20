@@ -61,7 +61,7 @@ export default function Footer() {
             <h5>EMAIL:</h5><p><a href='mailto:info@uscematch.com'>info@uscematch.com</a></p>
             </div>
             <p>
-            USCEMatch on <a className='instalink' href='https://www.instagram.com/uscematch/?hl=en'>Instagram</a>
+            USCEMatch on <a className='instalinkfooter' href='https://www.instagram.com/uscematch/?hl=en'>Instagram</a>
             </p>
             <div className='footerphone'>
                 <h5>PHONE:</h5>
