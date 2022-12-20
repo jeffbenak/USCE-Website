@@ -1880,6 +1880,11 @@ h6 {
     .viewsign {
         margin-bottom: 400px;
     }
+
+    .login-heading {
+        padding-top: 100px;
+        margin-bottom: 375px;
+    }
 }
 
 @media screen and (max-width: 767px) {

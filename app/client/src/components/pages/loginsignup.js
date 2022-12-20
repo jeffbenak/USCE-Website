@@ -95,7 +95,7 @@ export default function LoginSignup() {
         
       
    
-      <div className='login'>
+      <div className='login-heading'>
       <Container fluid="md">
         <h2 className='login'>Login</h2>
         <br></br>
