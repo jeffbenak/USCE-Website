@@ -58,7 +58,7 @@ h6 {
     margin: auto;
     width: 30%;
     color: #008037;
-    padding-top: 15%;
+    padding-top: 190px;
 }
 
 .hoftitle > h1 {
@@ -1325,6 +1325,13 @@ h6 {
     }
 }
 
+@media screen and (max-width: 1431px) {
+    .usce {
+        margin-left: 20%;
+    }
+    
+}
+
 
   @media screen and (max-width: 1400px) {
     .grid-container {
@@ -1558,9 +1565,6 @@ h6 {
     }
     .evalsection {
         width: auto;
-    }
-    .usce {
-        margin-left: 20%;
     }
     .hrblock {
         width: 80%;

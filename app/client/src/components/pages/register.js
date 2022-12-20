@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import Header from '../header/header'
+import Footer from '../footer/footer';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -308,6 +309,8 @@ export default function Register() {
       </div>
       
         </div>
+        
+        <Footer></Footer>
 
     </div>
 

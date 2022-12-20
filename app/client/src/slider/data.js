@@ -7,7 +7,7 @@ import '../components/pages/style.css';
 
 const Slider = [
   {
-    image: <div><video  className='video2' controls muted autoPlay loop
+    image: <div><video  className='video2' playsInline muted autoPlay loop
     >
        <source src={Doctors}/>
        </video></div>,
@@ -16,8 +16,7 @@ const Slider = [
   },
   {
     image: <img className='image3' alt='doctor' src={Doc}></img>,
-    desc: <div className='slide2text'><Link to='/rotations#steps_list'><p className='text3'>Steps in Application</p></Link>
-    <p className='text4'>Start Application Now</p></div>
+    desc: <div className='slide2text'><Link to='/rotations#steps_list'><p className='text3'>Steps in Application</p></Link></div>
   },
 
 ];

@@ -100,6 +100,7 @@ margin: auto;
 .regbutton {
   display: block;
   width: 7%;
+  margin-bottom: 1.5%;
 }
 
 .regbutton:hover {
@@ -205,7 +206,7 @@ h4 {
 }
 
 .login {
-  padding-top: 6%;
+  padding-top: 100px;
 }
 
 .emailbox {
@@ -233,7 +234,7 @@ h4 {
   color: #008037;
   font-size: 38px;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 9%;
+  padding-top: 170px;
 
 }
 
@@ -268,6 +269,7 @@ h4 {
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 2%;
+  margin-bottom: 3%;
 }
 
 .items {
@@ -280,16 +282,16 @@ h4 {
 }
 
 .viewlog {
-  padding-top: 13%;
+  padding-top: 320px;
 }
 
 .viewsign {
-  margin-top: 1%;
-  margin-bottom: 10%;
+  margin-top: 20px;
+  margin-bottom: 200px;
 }
 
 .rotatetitle {
-  padding-top: 15%;
+  padding-top: 200px;
 }
 
 .status {
@@ -365,6 +367,15 @@ h4 {
   background-color: #185332;
 }
 
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+  .items {
+    flex-direction: row;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .about {
     width: auto;
@@ -383,34 +394,9 @@ h4 {
   }
 }
 
-@media screen and (max-width: 760px) {
-  .about {
-    font-size: 13px;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .p-3 {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .p-3 {
-    font-size: 13px;
-  }
-}
-
-/* @media screen and (max-width: 1400px) {
-  .usce {
-    margin-right: 600px;
-  }
-  
-} */
-
-@media screen and (max-width: 770px) {
-  .usce {
-    margin-right: auto;
   }
 }
 
@@ -428,9 +414,20 @@ h4 {
   }
 } 
 
- @media screen and (max-width: 1400px) {
-  .items {
-    flex-direction: row;
+@media screen and (max-width: 770px) {
+  .usce {
+    margin-right: auto;
   }
 }
 
+@media screen and (max-width: 760px) {
+  .about {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .p-3 {
+    font-size: 13px;
+  }
+}
