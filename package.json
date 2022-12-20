@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/jeffbenak/USCE-Website#readme",
   "dependencies": {
-    "concurrently": "^7.4.0",
-    "serve": "^14.0.1"
+    "concurrently": "^7.4.0"
   }
 }
