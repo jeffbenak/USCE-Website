@@ -1661,72 +1661,77 @@ h6 {
     }
     .drshik {
         height: auto;
-        width: 65%;
+        width: 80%;
         margin: auto;
     }
     .drjash {
         height: auto;
-        width: 50%;
+        padding-top: 5%;
+        margin: auto;
+        width: 70%;
     }
     .doctorreview {
         display: block
     }
     .drkat {
         height: auto;
-        width: 60%;
+        width: 80%;
         margin: auto;
     }
     .drchef {
         height: auto;
-        width: 50%;
+        width: 70%;
     }
     .drjuan {
         height: auto;
-        width: 65%;
+        width: 85%;
         margin: auto;
     }
     .drprad {
         height: auto;
-        width: 50%;
+        margin: auto;
+        width: 70%;
     }
     .drparo {
         height: auto;
-        width: 65%;
-        margin-top: 5%;
+        width: 85%;
     }
     .drfatima {
         height: auto;
-        width: 50%;
+        margin: auto;
+        width: 70%;
     }
     .drkim {
         height: auto;
-        width: 55%;
+        width: 75%;
     }
     .drcesar {
         height: auto;
-        width: 50%;
+        margin-top: auto;
+        margin-bottom: 5%;
+        width: 70%;
     }
     .drmonica {
         height: auto;
-        width: 60%;
-        margin-top: 3%;
-        margin-bottom: 3%;
+        margin: auto;
+        width: 80%;
     }
     .drmonicarev {
         margin-top: 7%;
     }
     .drronald {
         height: auto;
-        width: 55%;
+        width: 75%;
         margin-bottom: 5%;
     }
     .drpari {
         height: auto;
-        width: 55%;
+        margin: auto;
+        width: 75%;
     }
     .drharpreet {
         height: auto;
-        width: 55%;
+        width: 75%;
     }
     .drclint {
         margin-top: 1%;
