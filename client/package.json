@@ -6,6 +6,7 @@
     "npm": "6.x"
   },
   "private": true,
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@coreui/react": "^4.4.0",
     "@fortawesome/fontawesome-free-brands": "^5.0.13",

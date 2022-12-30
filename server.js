@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const mysql = require('mysql2');
 const cors = require('cors');
 require("dotenv").config();
@@ -10,14 +11,18 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 const jwt = require('jsonwebtoken');
+const stripe = require('stripe')(process.env.STRIPE_KEY);
 
 const app = express();
 
 const PORT = process.env.PORT || 3001;
-
 const endpointSecret = process.env.ENDPOINT_SECRET;
 
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Use raw type for webook route, and JSON for everything else
 app.use('/webhook', express.raw({type: "*/*"}));
 app.use(express.json());
 app.use(cors({
@@ -27,53 +32,44 @@ app.use(cors({
 })
 );
 
-const stripe = require('stripe')(process.env.STRIPE_KEY);
+// PROFESSIONAL SERVICES CHECKOUT PAGE
+const storeItems = new Map ([
+  [1, { priceInCents: 099, name: 'Our Services' }],
+])
 
-  // PROFESSIONAL SERVICES CHECKOUT PAGE
-
-  const storeItems = new Map ([
-    [1, { priceInCents: 099, name: 'Our Services' }],
-  ])
-
-  app.post('/create-checkout-session', async (req, res) => {
-    try {
-      const session = await stripe.checkout.sessions.create({
-        payment_method_types: ['card'],
-        mode: 'payment',
-        
-        
-        line_items: req.body.items.map(item => {
-          const storeItem = storeItems.get(item.id)
-          return {
-            price_data: {
-              currency: 'usd',
-              product_data: {
-                name: storeItem.name
-              },
-              unit_amount: storeItem.priceInCents
+app.post('/create-checkout-session', async (req, res) => {
+  try {
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
+      mode: 'payment',
+      
+      
+      line_items: req.body.items.map(item => {
+        const storeItem = storeItems.get(item.id)
+        return {
+          price_data: {
+            currency: 'usd',
+            product_data: {
+              name: storeItem.name
             },
-            quantity: item.quantity
-          }
-        }),
-        success_url: `${process.env.CLIENT_URL}/services`,
-        cancel_url: `${process.env.CLIENT_URL}/`,
-      })
-  
-      res.json({ url: session.url })
-    } catch (e) {
-      res.status(500).json({ error: e.message })
-    }
-  });
+            unit_amount: storeItem.priceInCents
+          },
+          quantity: item.quantity
+        }
+      }),
+      success_url: `${process.env.CLIENT_URL}/services`,
+      cancel_url: `${process.env.CLIENT_URL}/`,
+    })
 
+    res.json({ url: session.url })
+  } catch (e) {
+    res.status(500).json({ error: e.message })
+  }
+});
 
-
-let refreshTokens = []
-
-app.use(cookieParser())
-
-
-
-
+// Set up Authentication
+let refreshTokens = [];
+app.use(cookieParser());
 app.use(session({
   key: 'UserId',
   secret: process.env.SESSION_SEC,
@@ -81,12 +77,10 @@ app.use(session({
   saveUninitialized: false,
   cookie: {
     expires: 60 * 60 * 24,
-  },
-})
-);
+  }
+}));
 
-
-
+// Set up MySQL Database Connection
 const db = mysql.createConnection({
   user: "root",
   host: "localhost",
@@ -95,7 +89,6 @@ const db = mysql.createConnection({
 });
 
 app.post('/register', async (req, res) => {
-
   const email = req.body.email;
   const password = req.body.password;
   const name = req.body.name;
@@ -108,98 +101,65 @@ app.post('/register', async (req, res) => {
   const visa = req.body.visa;
   const verify = req.body.verify;
 
-
   bcrypt.hash(password, saltRounds, (err, hash) => {
     if (err) {
       console.log(err);
     }
-
     db.query("INSERT INTO userdata (email, password, name, phone, country, city, state, zip, address, visa, verify) VALUES (?,?,?,?,?,?,?,?,?,?,0)",
-    [email, hash, name, phone, country, state, city, zip, address, visa, verify],
-    (err, result) => {
-     
-      console.log(err);
-    }
-    
-   );
-  })
-  });
-
-
-  app.post('/webhook', express.raw({type: 'application/json'}), (request, response) => {
-    let event = request.body;
-    // console.log(response);
-
-    
-// (async () => {
-//   const customers = await stripe.customers.list({
-//     limit: 3,
-//   })
-//   console.log(customers);
-
-// });
-
-  
-
-    if (endpointSecret) {
-      const signature = request.headers['stripe-signature'];
-      try {
-        event = stripe.webhooks.constructEvent(
-          request.body,
-          signature,
-          endpointSecret
-          
-        );
-      } catch (err) {
-        console.log(`⚠️  Webhook signature verification failed.`, err.message);
-        return response.sendStatus(400);
+      [email, hash, name, phone, country, state, city, zip, address, visa, verify],
+      (err, result) => {      
+        console.log(err);
       }
-    }
+    );
+  })
+});
 
+app.post('/webhook', express.raw({type: 'application/json'}), (request, response) => {
+  let event = request.body;
 
-
-    switch (event.type) {
-
-
-      
-      case 'payment_intent.succeeded': 
-
-        const paymentIntent = event.data.object;
+  if (endpointSecret) {
+    const signature = request.headers['stripe-signature'];
+    try {
+      event = stripe.webhooks.constructEvent(
+        request.body,
+        signature,
+        endpointSecret
         
-        console.log(`PaymentIntent for ${paymentIntent.amount} was successful!`);
-
-          db.query('UPDATE userdata SET verify = 1'),
-          (err, result) => {
-            console.log(err);
-          }
-  
-        break;
-
-      
-      
-  
-      case 'payment_method.attached':
-        const paymentMethod = event.data.object;
-  
-
-        break;
-      
-  
-      case 'checkout.session.async_payment_failed': 
-        const session = event.data.object;
-  
-        emailCustomerAboutFailedPayment(session);
-  
-        break;
-
-        default:
-      console.log(`Unhandled event type ${event.type}.`);
-      
+      );
+    } catch (err) {
+      console.log(`⚠️  Webhook signature verification failed.`, err.message);
+      return response.sendStatus(400);
     }
-  
-    response.send();
-  });
-  
+  }
+  switch (event.type) {
+    case 'payment_intent.succeeded': 
+      const paymentIntent = event.data.object;
+      console.log(`PaymentIntent for ${paymentIntent.amount} was successful!`);
+        db.query('UPDATE userdata SET verify = 1'),
+        (err, result) => {
+          console.log(err);
+        }
+      break;
+
+    case 'payment_method.attached':
+      const paymentMethod = event.data.object;
+      break;
+
+    case 'checkout.session.async_payment_failed': 
+      const session = event.data.object;
+      emailCustomerAboutFailedPayment(session);
+      break;
+
+    default:
+      console.log(`Unhandled event type ${event.type}.`);
+  }
+
+  response.send();
+}); 
+
+function generateAccessToken(user) {
+  return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '15s' })
+}
 
 const verifyJWT = (req, res, next) => {
   const token = req.headers['x-access-token']
@@ -226,7 +186,6 @@ app.get('/login', (req, res) => {
   if (req.session.user) {
     res.send({ loggedIn: true, user: req.session.user });
   } else {
-    // console.log('no user found')
     res.send({ loggedIn: false });
   }
 });
@@ -275,11 +234,25 @@ app.post('/login', (req, res) => {
   );
 });
 
-function generateAccessToken(user) {
-  return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '15s' })
-}
-  
+// Put all API endpoints under '/api'
+app.get('/api/passwords', (req, res) => {
+  const count = 5;
 
-    app.listen(PORT, () => {
-      console.log(`server running on port ${PORT}!`);
-    });
+  // Generate some passwords
+  const passwords = Array.from(Array(count).keys());
+
+  // Return them as json
+  res.json(passwords);
+
+  console.log(`Sent ${count} passwords`);
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`server running on port ${PORT}!`);
+});

@@ -127,7 +127,6 @@ export default function LoginSignup() {
      
         </Container>
 
-            <p className='status'>{loginStatus}</p>
 
         <Button variant='success' className='loginbutton' onClick={login}>Login</Button>
 

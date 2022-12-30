@@ -10,24 +10,19 @@ import  Register  from './components/pages/register';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './css/index.css';
 
-
-
 function App() {
-
   return (
     <div className="App">
-    <Router>
-    <Routes>
-    <Route exact path="/" element={<Home />}/>
-    <Route exact path="/loginsign" element={<LoginSignup />}/>
-    <Route exact path="/services" element={<Services />}/>
-    <Route exact path="/rotations" element={<Rotations />}/>
-    <Route exact path="/hof" element={<Hof />}/>
-    <Route exact path="/register" element={<Register />}/>
-    </Routes>
-    
-    </Router>
-
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />}/>
+          <Route exact path="/loginsign" element={<LoginSignup />}/>
+          <Route exact path="/services" element={<Services />}/>
+          <Route exact path="/rotations" element={<Rotations />}/>
+          <Route exact path="/hof" element={<Hof />}/>
+          <Route exact path="/register" element={<Register />}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

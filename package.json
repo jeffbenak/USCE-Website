@@ -8,22 +8,28 @@
   "description": "https://usce-website.herokuapp.com/",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd app && cd server && npm i && cd ../client && npm i",
-    "start": "concurrently \"cd app && cd server && npm run watch\" \"cd app && cd client && npm start --max_old_space_size=2560\"",
-    "build": "cd app && cd client && npm run build"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jeffbenak/USCE-Website.git"
   },
-  "author": "",
+  "author": "Jeff Benak",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeffbenak/USCE-Website/issues"
   },
   "homepage": "https://github.com/jeffbenak/USCE-Website#readme",
   "dependencies": {
-    "concurrently": "^7.4.0"
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "stripe": "^10.12.0"
   }
 }
