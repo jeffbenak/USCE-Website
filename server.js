@@ -1,4 +1,5 @@
 const express = require('express');
+var httpsRedirect = require('express-https-redirect');
 const path = require('path');
 const mysql = require('mysql2');
 require("dotenv").config();
@@ -17,6 +18,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const endpointSecret = process.env.ENDPOINT_SECRET;
 
+// Redirect HTTP to HTTPS
+app.use('/', httpsRedirect());
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
