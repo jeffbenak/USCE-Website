@@ -11,12 +11,12 @@ const Slider = [
     >
        <source src={Doctors}/>
        </video></div>,
-    desc: <p className='text2'>Jumpstart Your Full Potential to MATCH</p>,
-    button: <Link to='/services' className='click2'><button className='button'>Click Here</button></Link>
+    desc: <p className='text2'>JUMPSTART YOUR FULL POTENTIAL TO MATCH</p>,
+    button: <Link to='/services' className='click2'><button className='button'>CLICK HERE</button></Link>
   },
   {
     image: <img className='image3' alt='doctor' src={Doc}></img>,
-    desc: <div className='slide2text'><Link to='/rotations#steps_list'><p className='text3'>Steps in Application</p></Link></div>
+    desc: <div className='slide2text'><Link to='/rotations#steps_list'><p className='text3'>STEPS IN THE APPLICATION</p></Link></div>
   },
 
 ];

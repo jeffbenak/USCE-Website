@@ -497,15 +497,6 @@ export default function Rotations() {
   </p>
   </li>
 
-  <li>
-  <p>
-
-  Shall proactively perform MMSE/MoCA testings to patients with cognitive impairments.
-
-
-  </p>
-  </li>
-
   </ul>
 
 
@@ -647,9 +638,7 @@ export default function Rotations() {
 
                 <div className='saturdaycont'>
                   <p>
-                    If you have the travel privileges inclusive in your package, you need to meet Dr Calimag in
-                    Park Ridge at 9:00 AM. In St Anthony there will be scheduled patients for EMG/NCV from
-                    10AM to 1PM.
+                  In Park Ridge, we see patients from 9:00 AM to 12:00 PM and Dr Calimag sees patients in St Anthony from 1PM to 3/4PM.
                   </p>
                 </div>
 
@@ -776,10 +765,6 @@ export default function Rotations() {
 <th className='scheduleheader'>FRIDAY</th>
 <th className='scheduleheader'>SATURDAY</th>
 </tr>
-
-
-
-
 <tr>
   <td className='r2t2'>10:00 AM - 12:30 PM in Park Ridge</td>
   <td className='r2t2'>9 AM - 2 PM New Lenox every other Tuesdays</td>
@@ -788,24 +773,14 @@ export default function Rotations() {
   <td className='r2t2'>9 AM - 2 PM in St Anthony</td>
   <td className='r2t2'>9 AM - 12 PM in Park Ridge</td>
 </tr>
-
-
-
-
-
-
 <tr>
 <td className='r3t1'>1:00 PM - 3:00 PM in Thorek Hospital Andersonville</td>
 <td className='r2black'></td>
 <td className='r2black'></td>
 <td className='r2black'></td>
-<td className='r3t1'>1:00 PM - 3:00 PM in Thorek Hospital Andersonville</td>
-<td className='r3t1'>1:00 PM -3/4 PM in St Anthony Hospital</td>
+<td className='r3t1'>4:00 PM - 5/6:00 PM in Park Ridge</td>
+<td className='r3t1'>1:00 PM - 3/4:00 PM in St Anthony Hospital</td>
 </tr>
-
-
-
-
   {/* COLUMN 4 */}
 
 

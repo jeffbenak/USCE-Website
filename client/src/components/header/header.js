@@ -29,16 +29,16 @@ export default function Header() {
             <Navbar.Collapse>
             <div className='items'>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/hof">Hall of Fame</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/hof">HALL OF FAME</NavLink>
               </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/rotations">U.S Rotations</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/rotations">U.S ROTATIONS</NavLink>
             </NavItem>   
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/services">PROFESSIONAL SERVICES</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/" onClick={logout}>Logout</NavLink>  
+              <NavLink style={{color: 'white'}} className='nav-link' to="/" onClick={logout}>LOG OUT</NavLink>
             </NavItem>
             
             </div>
@@ -57,16 +57,16 @@ export default function Header() {
             <Navbar.Collapse>
             <div className='items'>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/hof">Hall of Fame</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/hof">HALL OF FAME</NavLink>
               </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/rotations">U.S Rotations</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/rotations">U.S ROTATIONS</NavLink>
             </NavItem>   
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/services">Professional Services</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/services">PROFESSIONAL SERVICES</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">Login | Signup</NavLink>  
+              <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">LOGIN | SIGN UP</NavLink>  
             </NavItem>           
             </div>
             </Navbar.Collapse>
@@ -97,8 +97,8 @@ export default function Header() {
             <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
             <li><a href='tel:+12248884000'><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
             <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
-            {/* <li><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></li> */}
-            {/* <li><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></li>     */}
+            <li><a href='https://www.facebook.com/USCEMatch/'><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a></li>
+            <li><a href='https://wa.me/12248885000'><FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon></a></li>
             </ul>
           </div>
           </NavItem>
