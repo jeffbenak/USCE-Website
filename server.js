@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const mysql = require('mysql2');
-const cors = require('cors');
 require("dotenv").config();
 
 const cookieParser = require('cookie-parser');
@@ -25,12 +24,6 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // Use raw type for webook route, and JSON for everything else
 app.use('/webhook', express.raw({type: "*/*"}));
 app.use(express.json());
-app.use(cors({
-  origin: ["https://usce-website.herokuapp.com:3000"],
-  methods: ["GET", "POST"],
-  credentials: true,
-})
-);
 
 // PROFESSIONAL SERVICES CHECKOUT PAGE
 const storeItems = new Map ([

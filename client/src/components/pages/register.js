@@ -4,9 +4,6 @@ import Header from '../header/header'
 import Footer from '../footer/footer';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 export default function Register() {
@@ -34,7 +31,7 @@ export default function Register() {
     Axios.defaults.withCredentials = true;
 
     const register = () => {
-        Axios.post('https://usce-website.herokuapp.com:3001/register', {
+        Axios.post('/register', {
          email: emailReg,
          password: passwordReg,
          name: nameReg,
