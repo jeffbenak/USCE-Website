@@ -934,7 +934,7 @@ Individual case research presentation performance
               setVisibleFive(!visiblefive)
               }}>
           <div className='addit'>
-            <h3 className='afaq'>Additional FAQs</h3>
+            <h2 className='afaq'>ADDITIONAL FAQs</h2>
           </div>
           </button>
           </div>
@@ -1121,9 +1121,9 @@ HOW MUCH WILL THIS ROTATION COST?
             <a id='steps_list'><button type='button' className='collapsible' onClick={() => {
               setVisibleSix(!visiblesix)
               }}>
-            <h3 className='appsteps'>
+            <h2 className='appsteps'>
             STEPS IN THE APPLICATION
-            </h3>
+            </h2>
             </button>
             </a>
             <CCollapse visible={visiblesix}>
