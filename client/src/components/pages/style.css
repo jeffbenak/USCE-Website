@@ -1659,6 +1659,17 @@ h6 {
   }
 
 @media screen and (max-width: 991px) {
+    .optimumpack, .boosterpack, .sovereignpack, .packagepay, .rulestitle, .neurotitle, .installments {
+        width: 100%;
+    }
+
+    .rulestitle > h5, .neurotitle > h5, .installments > h5 {
+        text-align: center;
+    }
+
+    .installments {
+        margin-left: -8px;
+    }
 
     .reviewtitle {
         margin-top: 0;
