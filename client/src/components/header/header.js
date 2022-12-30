@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
@@ -17,6 +17,7 @@ export default function Header() {
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
+    window.location.href = '/?logged-out';
   };
 
   function navigationBar() {
@@ -38,7 +39,7 @@ export default function Header() {
               <NavLink style={{color: 'white'}} className='nav-link' to="/services">PROFESSIONAL SERVICES</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/" onClick={logout}>LOG OUT</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/logout" onClick={logout}>LOG OUT</NavLink>
             </NavItem>
             
             </div>
