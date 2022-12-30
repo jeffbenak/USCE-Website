@@ -22,16 +22,20 @@ export default function Rotations() {
   const [visiblefive, setVisibleFive] = useState(false)
   const [visiblesix, setVisibleSix] = useState(false)
   const [visibleseven, setVisibleSeven] = useState(false)
+  const [alreadyExpandedStepsList, setAlreadyExpandedStepsList] = useState(false);
 
-  setTimeout(function () {
-    if (openWithStepsListExpanded) {
+  if(openWithStepsListExpanded && !alreadyExpandedStepsList){
+    setTimeout(function () {
       setVisibleSix(true);
       const stepsListPosition =  document.getElementsByClassName('appsteps')[0].getBoundingClientRect().top + window.scrollY;
       const navbarHeight = document.getElementsByClassName('navbar')[0].offsetHeight;
       const positionToScrollTo = stepsListPosition - navbarHeight - 25;
       window.scrollTo(0, positionToScrollTo);
-    }
-  }, 500);
+      setTimeout(function() {
+        setAlreadyExpandedStepsList(true);
+      }, 250);
+    }, 500);
+  }
 
 
     return (
