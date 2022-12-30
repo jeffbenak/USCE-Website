@@ -75,10 +75,10 @@ app.use(session({
 
 // Set up MySQL Database Connection
 const db = mysql.createConnection({
-  user: "ot3xgor66q5wcgac",
-  host: "yjo6uubt3u5c16az.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-  password: "vxtx171j7yot3jku",
-  database: "tthlryeu6y487vzp",
+  user: process.env.MYSQL_USER,
+  host: process.env.MYSQL_HOST,
+  password: process.env.MYSQL_PASS,
+  database: process.env.MYSQL_DATABASE,
 });
 
 app.post('/register', async (req, res) => {
