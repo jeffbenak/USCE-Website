@@ -1659,6 +1659,21 @@ h6 {
   }
 
 @media screen and (max-width: 991px) {
+
+    .btn-slide {
+        color: black;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+    .btn-slide {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+    .arrow {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
     .optimumpack, .boosterpack, .sovereignpack, .packagepay, .rulestitle, .neurotitle, .installments {
         width: 100%;
     }
