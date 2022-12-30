@@ -94,7 +94,7 @@ export default function Header() {
           <NavItem>
           <div className='socials'>
             <ul className='list'>
-            <li><a href='mailto:info@uscematch.com subject=subject text'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
+            <li><a href='mailto:info@uscematch.com'><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a></li>
             <li><a href='tel:+12248885000'><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon></a></li>
             <li><a href='https://www.instagram.com/uscematch/?hl=en'><FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon></a></li>
             <li><a href='https://www.facebook.com/USCEMatch/'><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></a></li>
