@@ -34,7 +34,7 @@ export default function Register() {
     Axios.defaults.withCredentials = true;
 
     const register = () => {
-        Axios.post('http://localhost:3001/register', {
+        Axios.post('https://usce-website.herokuapp.com:3001/register', {
          email: emailReg,
          password: passwordReg,
          name: nameReg,

@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.use('/webhook', express.raw({type: "*/*"}));
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["https://usce-website.herokuapp.com:3000"],
   methods: ["GET", "POST"],
   credentials: true,
 })
@@ -82,10 +82,10 @@ app.use(session({
 
 // Set up MySQL Database Connection
 const db = mysql.createConnection({
-  user: "root",
-  host: "localhost",
-  password: process.env.MYSQL_PASS,
-  database: "signup",
+  user: "ot3xgor66q5wcgac",
+  host: "yjo6uubt3u5c16az.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  password: "vxtx171j7yot3jku",
+  database: "tthlryeu6y487vzp",
 });
 
 app.post('/register', async (req, res) => {
