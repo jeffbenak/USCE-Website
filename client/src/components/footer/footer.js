@@ -6,6 +6,11 @@ import usce from '../../images/Logo.png'
 
 
 export default function Footer() {
+
+    React.useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+      
     return (
         <div className='footer'>
 
