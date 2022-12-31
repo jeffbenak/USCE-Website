@@ -39,7 +39,7 @@ export default function Header() {
               <NavLink style={{color: 'white'}} className='nav-link' to="/services">PROFESSIONAL SERVICES</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink style={{color: 'white'}} className='nav-link' to="/logout" onClick={logout}>LOG OUT</NavLink>
+              <NavLink style={{color: 'white'}} className='nav-link' to="/" onClick={logout}>LOGOUT</NavLink>  
             </NavItem>
             
             </div>
@@ -68,6 +68,7 @@ export default function Header() {
             </NavItem>
             <NavItem>
               <NavLink style={{color: 'white'}} className='nav-link' to="/loginsign">LOGIN | SIGN UP</NavLink>  
+
             </NavItem>           
             </div>
             </Navbar.Collapse>

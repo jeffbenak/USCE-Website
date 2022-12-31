@@ -46,7 +46,7 @@ export default function Slider() {
                         <div>
                             {slide.image}
                             <div className='content'>
-                            <p className='text'>{slide.desc}</p>
+                            <div className='text'>{slide.desc}</div>
                             <div>{slide.button}</div>
                             </div>
                         </div>

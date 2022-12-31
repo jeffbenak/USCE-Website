@@ -18,19 +18,25 @@
   .text {
     font-size: 50px; 
     margin-bottom: 10%; 
+
   }
 
   .text2 {
-    margin-top: 20%;
+    margin-top: 25%;
     color: white;
     text-shadow: 2px 2px black;
   }
 
   .text3 {
-    margin-top: -43%;
-    margin-left: -42%;
-    color: white;
-    text-shadow: 2px 2px black;
+    margin-top: -50%;
+    color: black;
+    font-size: 95px;
+    margin-right: 45%;
+
+  }
+
+  .text3:hover {
+    color: green;
   }
 
   .text4 {
@@ -38,10 +44,6 @@
     margin-left: -42%;
     color: white;
     text-shadow: 2px 2px black;
-  }
-
-  .text3:hover {
-    color: green;
   }
   
   .slide {
