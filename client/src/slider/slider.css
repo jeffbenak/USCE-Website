@@ -190,6 +190,9 @@
   .slider {
     height: 525px;
   }
+  .text3 {
+    font-size: 80px;
+  }
   
 }
 
@@ -203,6 +206,10 @@
 @media screen and (max-width: 1080px) {
   .slider {
     height: 475px;
+  }
+  .text3 {
+    font-size: 65px;
+    margin-left: 2%;
   }
 }
 
@@ -233,7 +240,8 @@
     font-size: 40px;
   }
   .text3 {
-    margin-left: -35%;
+    padding-top: 2%;
+    font-size: 55px;
   }
 }
 
@@ -265,9 +273,6 @@
   .slider {
     height: 350px;
   }
-  .text3 {
-    font-size: 35px;
-  }
 }
 
 @media screen and (max-width: 757px) {
@@ -278,7 +283,7 @@
 
 @media screen and (max-width: 730px) {
   .text3 {
-    font-size: 30px;
+    font-size: 40px;
   }
   
 }
@@ -306,14 +311,14 @@
     width: 15px;
     height: 15px;
   }
+  .text3 {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 613px) {
   .text2 {
     font-size: 20px;
-  }
-  .text3 {
-    font-size: 25px;
   }
 }
 
@@ -323,6 +328,9 @@
   }
   .button {
     padding: 10px;
+  }
+  .text3 {
+    margin-left: 5%;
   }
 }
 
@@ -337,7 +345,7 @@
     font-size: 17px;
   }
   .text3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -347,7 +355,7 @@
     height: 200px;
   }
   .text3 {
-    font-size: 17px;
+    font-size: 25px;
   }
 }
 
@@ -369,8 +377,7 @@
     padding: 3px;
   }
   .text3 {
-    font-size: 15px;
-    margin-left: -30%;
+    font-size: 20px;
   }
 }
 
@@ -382,7 +389,8 @@
     font-size: 13px;
   }
   .text3 {
-    margin-left: -25%;
+    font-size: 17px;
+    margin-left: 9%;
   }
 }
 
@@ -390,5 +398,4 @@
   .space {
    padding-top: 270px;
   }
-   
 }
