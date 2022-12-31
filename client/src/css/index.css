@@ -78,7 +78,6 @@ a.nav-link.active {
 
 h2 {
   font-family: 'Roboto Slab' serif;
-
 }
 
 .binfo {
@@ -177,15 +176,9 @@ margin: auto;
   height: 140%;
 }
 
-
 .vid1 {
   margin-top: -100px;
 }
-/* .userlogin {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 .loginbutton {
   color: white;

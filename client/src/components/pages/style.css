@@ -1,5 +1,4 @@
 h1 {
-    /* font-family: 'Roboto', sans-serif; */
     color:rgb(8, 96, 34);
 }
 
@@ -493,8 +492,6 @@ h6 {
     text-align: left;
 }
 
-
-
 .backgroundcont > div > h2 {
     text-align: center;
 }
@@ -520,7 +517,6 @@ h6 {
 .responsetitle > h2 {
     color: white;
     padding: 0.9%;
-    
 }
 
 .backexpectcont {
@@ -1195,11 +1191,6 @@ h6 {
     display: inline-block;
 }
 
-.doc {
-    margin-left: 1sem;
-    font-family: 'Roboto Slab', serif;
-}
-
 .docimg {
     width: 100%;
 }
@@ -1262,6 +1253,10 @@ h6 {
 
 .backtotop {
     color: #008037;
+}
+
+.login-heading {
+    padding-bottom: 200px;
 }
 
 .scheduletable {
@@ -1906,11 +1901,10 @@ h6 {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .viewsign {
         margin-bottom: 400px;
     }
-
     .login-heading {
         padding-top: 100px;
         margin-bottom: 375px;
