@@ -2,7 +2,6 @@
 https://usce-website.herokuapp.com/
 
 ## Live Website Links
-- http://uscematch.com/
 - http://www.uscematch.com/
 
 ## Development Setup
