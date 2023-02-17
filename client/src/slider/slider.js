@@ -24,13 +24,6 @@ export default function Slider() {
         setCurrentSlide(index)
     }
 
-    // useEffect(()=>{
-    //     const interval = setInterval(()=>{
-    //         nextSlide();        
-    //     },6000);
-    //     return () => clearInterval(interval);
-    // });
-
     return (
         <>
         <div className='slider'>
