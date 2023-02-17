@@ -1,9 +1,6 @@
 ## Heroku Deployment Link 
 https://usce-website.herokuapp.com/
 
-## Live Website Link
-- http://www.uscematch.com/
-
 ## Development Setup
 
 ### Prerequisites
